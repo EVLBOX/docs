@@ -119,21 +119,12 @@ export default defineConfig({
 								{ label: 'Share Access (Subusers)', slug: 'getting-started/nitro-panel/subusers' },
 							],
 						},
-						{
-							label: 'Managed Nitro',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'getting-started/managed-nitro' },
-								{ label: 'Supported Games', slug: 'getting-started/managed-nitro/supported-games' },
-							],
-						},
 						{ label: 'Server Infrastructure', slug: 'getting-started/server-infrastructure' },
 					],
 				},
 				{
 					label: 'Game Servers',
 					items: [
-						{ label: 'Overview', slug: 'game-servers' },
 						{
 							label: 'Minecraft',
 							collapsed: true,

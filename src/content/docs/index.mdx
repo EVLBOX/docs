@@ -4,33 +4,27 @@ description: Official documentation for EVLBOX game server and VPS hosting. Find
 template: splash
 hero:
   tagline: Your guide to game server and VPS hosting with EVLBOX
+  image:
+    file: ../../assets/home.svg
   actions:
     - text: Get Started
       link: /getting-started/
       icon: right-arrow
     - text: Game Servers
-      link: /game-servers/
+      link: /game-servers/minecraft/
       icon: rocket
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
 
 ## Quick Links
 
-<CardGrid stagger>
-	<Card title="Getting Started" icon="rocket">
-		New to EVLBOX? Learn how to connect to your server, use the game panel, and access files via SFTP.
-	</Card>
-	<Card title="Game Servers" icon="laptop">
-		Find setup guides and configuration tutorials for Minecraft, Palworld, Valheim, Rust, ARK, and more.
-	</Card>
-	<Card title="VPS Hosting" icon="setting">
-		Documentation for our VPS hosting services, including setup and management guides.
-	</Card>
-	<Card title="Billing & Account" icon="document">
-		Manage your account, view invoices, and handle billing-related tasks.
-	</Card>
+<CardGrid>
+	<LinkCard title="Getting Started" description="Nitro Panel guides, server infrastructure, and onboarding." href="/getting-started/" />
+	<LinkCard title="Game Servers" description="Setup guides for Minecraft, Palworld, Satisfactory, and more." href="/game-servers/minecraft/" />
+	<LinkCard title="VPS Hosting" description="OS reinstall, SSH keys, snapshots, and MFA setup." href="/vps/" />
+	<LinkCard title="Billing & Account" description="Manage your account, invoices, and billing." href="/billing/" />
 </CardGrid>
 
 ---
