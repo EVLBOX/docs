@@ -1,39 +1,54 @@
 /* EVLBOX Custom Theme - Dark Gaming/Hosting Brand */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  /* Primary accent - Electric cyan for a techy gaming feel */
-  --sl-color-accent-low: #0a2a3d;
-  --sl-color-accent: #00d4ff;
-  --sl-color-accent-high: #7eeaff;
+  /* Poppins font family */
+  --sl-font: 'Poppins', system-ui, sans-serif;
+  --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
-  /* Text colors for dark theme */
-  --sl-color-white: #ffffff;
-  --sl-color-gray-1: #eceef2;
-  --sl-color-gray-2: #c0c4cc;
-  --sl-color-gray-3: #888d96;
-  --sl-color-gray-4: #545a65;
-  --sl-color-gray-5: #353a42;
-  --sl-color-gray-6: #24272e;
+  /* Primary accent - Softer, more muted cyan */
+  --sl-color-accent-low: #12103a;
+  --sl-color-accent: #5b9eaf;
+  --sl-color-accent-high: #8ec3d0;
 
-  /* Darker backgrounds for gaming aesthetic */
-  --sl-color-black: #0d0f12;
-  --sl-color-bg: #0d0f12;
-  --sl-color-bg-nav: #13161b;
-  --sl-color-bg-sidebar: #13161b;
-  --sl-color-hairline-light: #1e222a;
-  --sl-color-hairline: #2a2f3a;
+  /* Text colors - softer white for readability */
+  --sl-color-white: #e8e8ec;
+  --sl-color-gray-1: #d0d0d8;
+  --sl-color-gray-2: #a8a8b8;
+  --sl-color-gray-3: #787888;
+  --sl-color-gray-4: #505068;
+  --sl-color-gray-5: #282840;
+  --sl-color-gray-6: #181830;
+
+  /* Deep purple backgrounds matching evlbox.com - rgb(9, 5, 64) */
+  --sl-color-black: #090540;
+  --sl-color-bg: #090540;
+  --sl-color-bg-nav: #0a0745;
+  --sl-color-bg-sidebar: #0a0745;
+  --sl-color-hairline-light: #151050;
+  --sl-color-hairline: #201860;
 }
 
-/* Force dark theme as default */
-:root[data-theme='light'] {
-  --sl-color-accent-low: #d4f5ff;
-  --sl-color-accent: #0099cc;
-  --sl-color-accent-high: #006688;
+/* Sidebar active/hover state - readable text on highlight */
+.sidebar-content a[aria-current="page"],
+.sidebar-content a:hover {
+  background-color: rgba(91, 158, 175, 0.15);
+  color: #e8e8ec;
+}
+
+.sidebar-content a[aria-current="page"] {
+  border-color: #5b9eaf;
 }
 
 /* Enhanced code blocks */
 .expressive-code {
-  --code-background: #0a0c0f;
+  --code-background: #06032d;
+}
+
+/* Ensure body text is readable */
+body {
+  font-family: var(--sl-font);
+  color: var(--sl-color-white);
 }
 
 /* Sidebar styling */
@@ -52,7 +67,7 @@ nav a:hover {
 }
 
 .sl-link-button:hover {
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 15px rgba(91, 158, 175, 0.25);
 }
 
 /* Card styling for a more modern look */
@@ -63,7 +78,13 @@ nav a:hover {
 
 /* Hero section enhancements */
 .hero {
-  background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+  background: radial-gradient(ellipse at top, rgba(91, 158, 175, 0.1) 0%, transparent 60%);
+}
+
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sl-font);
+  font-weight: 600;
 }
 
 /* Scrollbar styling for consistency */
@@ -83,4 +104,11 @@ nav a:hover {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--sl-color-gray-4);
+}
+
+/* External links in sidebar - add subtle indicator */
+.sidebar-content a[target="_blank"]::after {
+  content: ' ↗';
+  font-size: 0.75em;
+  opacity: 0.6;
 }

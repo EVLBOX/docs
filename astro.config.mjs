@@ -12,11 +12,17 @@ export default defineConfig({
 			title: 'EVLBOX Docs',
 			logo: {
 				src: './src/assets/evlbox-logo.svg',
-				replacesTitle: false,
+				replacesTitle: true,
 			},
 			defaultLocale: 'en',
+			disable404Route: false,
+			components: {
+				ThemeSelect: './src/components/EmptyThemeSelect.astro',
+			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/evlbox/docs' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.com/invite/rWF4hJhbaM' },
+				{ icon: 'blueSky', label: 'Bluesky', href: 'https://bsky.app/profile/evlbox.com' },
 			],
 			editLink: {
 				baseUrl: 'https://github.com/evlbox/docs/edit/main/',
@@ -34,6 +40,14 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
+				{
+					label: 'Quick Links',
+					items: [
+						{ label: 'Game Panel (Nitro)', link: 'https://nitro.evlbox.com', attrs: { target: '_blank' } },
+						{ label: 'VPS Panel (VirtFusion)', link: 'https://vf.evlbox.com', attrs: { target: '_blank' } },
+						{ label: 'Help & Support', link: 'https://evlbox.com/help', attrs: { target: '_blank' } },
+					],
+				},
 				{
 					label: 'Getting Started',
 					items: [
