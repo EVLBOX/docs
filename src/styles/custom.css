@@ -6,6 +6,9 @@
   --sl-font: 'Poppins', system-ui, sans-serif;
   --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
 
+  /* Widen content area from default 50rem */
+  --sl-content-width: 55rem;
+
   /* Primary accent - Softer, more muted cyan */
   --sl-color-accent-low: #12103a;
   --sl-color-accent: #5b9eaf;

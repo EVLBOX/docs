@@ -6,6 +6,9 @@ dist/
 # wikijs import
 /import-data/
 
+# staff docs (not for public repo)
+STAFF-*.md
+
 # dependencies
 node_modules/
 
