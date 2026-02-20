@@ -1,0 +1,86 @@
+/* EVLBOX Custom Theme - Dark Gaming/Hosting Brand */
+
+:root {
+  /* Primary accent - Electric cyan for a techy gaming feel */
+  --sl-color-accent-low: #0a2a3d;
+  --sl-color-accent: #00d4ff;
+  --sl-color-accent-high: #7eeaff;
+
+  /* Text colors for dark theme */
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eceef2;
+  --sl-color-gray-2: #c0c4cc;
+  --sl-color-gray-3: #888d96;
+  --sl-color-gray-4: #545a65;
+  --sl-color-gray-5: #353a42;
+  --sl-color-gray-6: #24272e;
+
+  /* Darker backgrounds for gaming aesthetic */
+  --sl-color-black: #0d0f12;
+  --sl-color-bg: #0d0f12;
+  --sl-color-bg-nav: #13161b;
+  --sl-color-bg-sidebar: #13161b;
+  --sl-color-hairline-light: #1e222a;
+  --sl-color-hairline: #2a2f3a;
+}
+
+/* Force dark theme as default */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #d4f5ff;
+  --sl-color-accent: #0099cc;
+  --sl-color-accent-high: #006688;
+}
+
+/* Enhanced code blocks */
+.expressive-code {
+  --code-background: #0a0c0f;
+}
+
+/* Sidebar styling */
+.sidebar-content {
+  background-color: var(--sl-color-bg-sidebar);
+}
+
+/* Navigation hover effects */
+nav a:hover {
+  color: var(--sl-color-accent);
+}
+
+/* Button styling */
+.sl-link-button {
+  transition: all 0.2s ease;
+}
+
+.sl-link-button:hover {
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+}
+
+/* Card styling for a more modern look */
+.card {
+  border-color: var(--sl-color-hairline);
+  background: linear-gradient(135deg, var(--sl-color-bg-nav) 0%, var(--sl-color-bg) 100%);
+}
+
+/* Hero section enhancements */
+.hero {
+  background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Scrollbar styling for consistency */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sl-color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sl-color-gray-5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sl-color-gray-4);
+}

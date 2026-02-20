@@ -1,0 +1,35 @@
+---
+title: EVLBOX Documentation
+description: Official documentation for EVLBOX game server and VPS hosting. Find guides, tutorials, and reference materials for managing your servers.
+template: splash
+hero:
+  tagline: Your guide to game server and VPS hosting with EVLBOX
+  actions:
+    - text: Get Started
+      link: /getting-started/
+      icon: right-arrow
+    - text: Game Servers
+      link: /game-servers/
+      icon: rocket
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Quick Links
+
+<CardGrid stagger>
+	<Card title="Getting Started" icon="rocket">
+		New to EVLBOX? Learn how to connect to your server, use the game panel, and access files via SFTP.
+	</Card>
+	<Card title="Game Servers" icon="laptop">
+		Find setup guides and configuration tutorials for Minecraft, Palworld, Valheim, Rust, ARK, and more.
+	</Card>
+	<Card title="VPS Hosting" icon="setting">
+		Documentation for our VPS hosting services, including setup and management guides.
+	</Card>
+	<Card title="Billing & Account" icon="document">
+		Manage your account, view invoices, and handle billing-related tasks.
+	</Card>
+</CardGrid>
+
