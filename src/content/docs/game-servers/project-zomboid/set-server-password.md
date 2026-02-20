@@ -1,0 +1,29 @@
+---
+title: "How to Set Server Password in Project Zomboid"
+description: "How to Set a Server Password"
+---
+
+# How to Set a Server Password for Project Zomboid
+1. Login to the Nitro Panel, click manage server and stop the server 
+
+![stop_server.png](/zomboid/stop_server.png)
+
+2. Click on Files and then navigate to .cache/Server/EVLBOX.ini 
+
+![files.png](/zomboid/files.png)
+
+3. Open the .ini file and scroll down to around line 163 and find the line with Password. Type in a password 
+
+![set_server_password_new.png](/zomboid/set_server_password_new.png)
+
+4. Click Save Content in the lower right corner and go back to the dashboard and Start Your Server. 
+![save.png](/zomboid/save.png)
+
+5. When you connect to your server, it will now require you to enter the password. 
+
+![pass_required.png](/zomboid/pass_required.png)
+
+![in_game_password.png](/zomboid/in_game_password.png)
+
+
+![7ba0ca83a03cd2c105b945aebd1134ff4cd3d5bf.jpg](/zomboid/7ba0ca83a03cd2c105b945aebd1134ff4cd3d5bf.jpg)

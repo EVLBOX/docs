@@ -3,6 +3,9 @@ dist/
 # generated types
 .astro/
 
+# wikijs import
+/import-data/
+
 # dependencies
 node_modules/
 
