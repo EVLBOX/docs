@@ -52,11 +52,9 @@ export default defineConfig({
 					label: 'Getting Started',
 					items: [
 						{ label: 'Overview', slug: 'getting-started' },
-						{ label: 'Connecting to Your Server', slug: 'getting-started/connecting-to-your-server' },
-						{ label: 'Using the Game Panel', slug: 'getting-started/using-the-game-panel' },
-						{ label: 'SFTP Access', slug: 'getting-started/sftp-access' },
 						{
 							label: 'Nitro Panel',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'getting-started/nitro-panel' },
 								{ label: 'Adding Ports', slug: 'getting-started/nitro-panel/port-configuration' },
@@ -67,6 +65,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Managed Nitro',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'getting-started/managed-nitro' },
 								{ label: 'Supported Games', slug: 'getting-started/managed-nitro/supported-games' },
@@ -81,18 +80,18 @@ export default defineConfig({
 						{ label: 'Overview', slug: 'game-servers' },
 						{
 							label: 'Minecraft',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/minecraft' },
 								{ label: 'How to Connect', slug: 'game-servers/minecraft/how-to-connect' },
 								{ label: 'Install Modpacks', slug: 'game-servers/minecraft/modpacks' },
 								{ label: 'Change Server Version', slug: 'game-servers/minecraft/change-server-version' },
 								{ label: 'Optimize Performance', slug: 'game-servers/minecraft/optimize-your-minecraft-server-maximum-performance' },
-								{ label: 'Server Commands', slug: 'game-servers/minecraft/server-commands' },
-								{ label: 'Upload Saved Games', slug: 'game-servers/minecraft/upload-saved-games' },
 							],
 						},
 						{
 							label: 'Palworld',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/palworld' },
 								{ label: 'Connect to Server', slug: 'game-servers/palworld/connect-to-server' },
@@ -109,11 +108,9 @@ export default defineConfig({
 								{ label: 'Xbox Server', slug: 'game-servers/palworld/xbox-server' },
 							],
 						},
-						{ label: 'Valheim', slug: 'game-servers/valheim' },
-						{ label: 'Rust', slug: 'game-servers/rust' },
-						{ label: 'ARK', slug: 'game-servers/ark' },
 						{
 							label: 'Enshrouded',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/enshrouded' },
 								{ label: 'How to Connect', slug: 'game-servers/enshrouded/how-to-connect' },
@@ -122,6 +119,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Foundry',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/foundry' },
 								{ label: 'How to Connect', slug: 'game-servers/foundry/how-to-connect-to-foundry' },
@@ -133,6 +131,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Satisfactory',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/satisfactory' },
 								{ label: 'First Time Setup', slug: 'game-servers/satisfactory/first-time-setup' },
@@ -146,7 +145,9 @@ export default defineConfig({
 							],
 						},
 						{
-							label: 'Project Zomboid',						collapsed: true,							items: [
+							label: 'Project Zomboid',
+							collapsed: true,
+							items: [
 								{ label: 'Overview', slug: 'game-servers/project-zomboid' },
 								{ label: 'How to Connect', slug: 'game-servers/project-zomboid/how-to-connect' },
 								{ label: 'Set Server Password', slug: 'game-servers/project-zomboid/set-server-password' },
@@ -159,6 +160,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Factorio',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/factorio' },
 								{ label: 'Connect to Server', slug: 'game-servers/factorio/connect-to-server' },
@@ -168,7 +170,9 @@ export default defineConfig({
 							],
 						},
 						{
-							label: 'Sons of the Forest',						collapsed: true,							items: [
+							label: 'Sons of the Forest',
+							collapsed: true,
+							items: [
 								{ label: 'Overview', slug: 'game-servers/sons-of-the-forest' },
 								{ label: 'Connect to Server', slug: 'game-servers/sons-of-the-forest/connect-to-server' },
 								{ label: 'Manage Admins', slug: 'game-servers/sons-of-the-forest/manage-admins' },
@@ -177,6 +181,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Hytale',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/hytale' },
 								{ label: 'Download & Install', slug: 'game-servers/hytale/download-install-hytale-server' },
@@ -184,6 +189,7 @@ export default defineConfig({
 						},
 						{
 							label: 'Tower Unite',
+							collapsed: true,
 							items: [
 								{ label: 'Overview', slug: 'game-servers/towerunite' },
 								{ label: 'Setup Condo Server', slug: 'game-servers/towerunite/how-to-setup-condo' },
