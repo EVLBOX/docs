@@ -1,5 +1,6 @@
 ---
 title: "Tower Unite - Dedicated Condos"
+description: "Set up your Tower Unite Condo server with EVLBOX. Learn how to host, export, and manage your condo online with helpful guides and tools."
 head:
   - tag: meta
     attrs:

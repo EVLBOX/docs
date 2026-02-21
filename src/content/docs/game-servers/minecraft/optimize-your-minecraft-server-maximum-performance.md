@@ -1,5 +1,6 @@
 ---
 title: "How to Optimize Your Minecraft Server for Maximum Performance"
+description: "Learn how to optimize your Minecraft server for maximum performance. Follow these tips to reduce lag, improve FPS, and enhance the overall gaming experience."
 head:
   - tag: meta
     attrs:

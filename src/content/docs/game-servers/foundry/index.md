@@ -1,5 +1,6 @@
 ---
 title: "Foundry"
+description: "Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience."
 head:
   - tag: meta
     attrs:

@@ -1,5 +1,6 @@
 ---
-title: "Manage Automated Backups in Foudnry"
+title: "Manage Automated Backups in Foundry"
+description: "Understand and control your Foundry server backups hosted on EVLBOX. Includes steps to verify schedules, disable backups, and download .tar.gz files."
 head:
   - tag: meta
     attrs:

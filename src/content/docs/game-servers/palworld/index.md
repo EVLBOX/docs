@@ -1,5 +1,60 @@
 ---
 title: "Palworld Hosting"
+description: "Host your Palworld server with EVLBOX. Guides for connecting, server settings, admin commands, save management, RCON, and Xbox support."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Palworld hosting, EVLBOX Palworld server, Palworld dedicated server, Palworld multiplayer, Palworld Xbox server, Palworld admin commands, Palworld save management"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Palworld Server Hosting | Catch & Battle with EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Host your Palworld server with EVLBOX. Guides for connecting, server settings, admin commands, save management, RCON, and Xbox support."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/palworld/palworld_header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Palworld Game Header"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/palworld/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "Palworld Server Hosting | Catch & Battle with EVLBOX"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Host your Palworld server with EVLBOX. Guides for connecting, server settings, admin commands, save management, RCON, and Xbox support."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/palworld/palworld_header.jpg"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Palworld Game Header"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"Palworld Server Hosting | Catch & Battle with EVLBOX","description":"Host your Palworld server with EVLBOX. Guides for connecting, server settings, admin commands, save management, RCON, and Xbox support.","url":"https://evlbox.com/docs/game-servers/palworld/","image":"https://evlbox.com/docs/palworld/palworld_header.jpg","imageAlt":"Palworld Game Header","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}}}
 ---
 
 

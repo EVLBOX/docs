@@ -1,5 +1,6 @@
 ---
 title: "Minecraft"
+description: "Get high-performance Minecraft hosting with EVLBOX. Explore custom modpacks, optimize your server, and enjoy smooth multiplayer gameplay."
 head:
   - tag: meta
     attrs:

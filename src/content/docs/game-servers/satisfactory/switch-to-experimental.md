@@ -1,5 +1,6 @@
 ---
 title: "Satisfactory Server - Change to Experimental Branch"
+description: "Learn how to switch your Satisfactory server to the experimental branch to access the latest features and updates."
 head:
   - tag: meta
     attrs:

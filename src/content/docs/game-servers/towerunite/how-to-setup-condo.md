@@ -1,5 +1,6 @@
 ---
 title: "First Time Setup - Tower Unite Condo Server"
+description: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
 head:
   - tag: meta
     attrs:

@@ -1,5 +1,6 @@
 ---
 title: "Known Tower Unite Condo Server bugs"
+description: "Having issues with your Tower Unite server? Learn how to fix common problems like missing textures, Steam Workshop collisions, and AGC connection errors."
 head:
   - tag: meta
     attrs:
