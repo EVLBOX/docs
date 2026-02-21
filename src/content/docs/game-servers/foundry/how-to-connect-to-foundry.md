@@ -1,6 +1,60 @@
 ---
 title: "Connect to your Foundry Server"
 description: "Learn how to connect to your FOUNDRY server hosted by EVLBOX. Follow our guide to join directly by IP or browse for your server in-game."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "connect to foundry server, foundry direct connection, foundry server browser, EVLBOX foundry hosting, foundry multiplayer, foundry port IP, server_name foundry"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Connect to Your FOUNDRY Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Learn how to connect to your FOUNDRY server hosted by EVLBOX. Follow our guide to join directly by IP or browse for your server in-game."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/foundry/foundry-multiplayer.png"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "FOUNDRY Multiplayer Connection Menu"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/foundry/how-to-connect-to-foundry/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Connect to Your FOUNDRY Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Learn how to connect to your FOUNDRY server hosted by EVLBOX. Follow our guide to join directly by IP or browse for your server in-game."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/foundry/foundry-multiplayer.png"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "FOUNDRY Multiplayer Connection Menu"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Connect to Your FOUNDRY Server | EVLBOX Hosting Guide","description":"Learn how to connect to your FOUNDRY server hosted by EVLBOX. Follow our guide to join directly by IP or browse for your server in-game.","url":"https://evlbox.com/docs/game-servers/foundry/how-to-connect-to-foundry/","image":"https://evlbox.com/docs/foundry/foundry-multiplayer.png","imageAlt":"FOUNDRY Multiplayer Connection Menu","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-16","dateModified":"2025-06-16"}
 ---
 
 # **How to Connect to Your FOUNDRY Server**

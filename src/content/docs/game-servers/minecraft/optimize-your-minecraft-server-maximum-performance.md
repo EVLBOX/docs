@@ -1,5 +1,59 @@
 ---
 title: "How to Optimize Your Minecraft Server for Maximum Performance"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "optimize Minecraft server, Minecraft server performance, improve Minecraft FPS, Minecraft server lag fix, Paper server setup, Minecraft server settings, server performance tips"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Optimize Your Minecraft Server for Maximum Performance | EVLBOX Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Learn how to optimize your Minecraft server for maximum performance. Follow these tips to reduce lag, improve FPS, and enhance the overall gaming experience."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/static/images/blog/satisfactory/outpost.webp"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Optimize Minecraft Server Performance"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/minecraft/optimize-your-minecraft-server-maximum-performance/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Optimize Your Minecraft Server for Maximum Performance | EVLBOX Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Learn how to optimize your Minecraft server for maximum performance. Follow these tips to reduce lag, improve FPS, and enhance the overall gaming experience."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/static/images/blog/satisfactory/outpost.webp"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Optimize Minecraft Server Performance"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Optimize Your Minecraft Server for Maximum Performance | EVLBOX Guide","description":"Learn how to optimize your Minecraft server for maximum performance. Follow these tips to reduce lag, improve FPS, and enhance the overall gaming experience.","url":"https://evlbox.com/docs/game-servers/minecraft/optimize-your-minecraft-server-maximum-performance/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Optimize Minecraft Server Performance","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-05-08","dateModified":"2025-05-08"}
 ---
 
 

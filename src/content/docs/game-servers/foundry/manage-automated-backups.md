@@ -1,5 +1,59 @@
 ---
 title: "Manage Automated Backups in Foudnry"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Foundry backup guide, Foundry server backup, EVLBOX Foundry hosting, Nitro control panel, Foundry schedule backup, Foundry tar.gz download, 7-Zip Foundry restore"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Manage Automated Backups in Foundry | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Understand and control your Foundry VTT server backups hosted on EVLBOX. Includes steps to verify schedules, disable backups, and download .tar.gz files."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/foundry/schedules.jpg"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Foundry Backup Job Schedule Screenshot"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/foundry/manage-automated-backups/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Manage Automated Backups in Foundry | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Understand and control your Foundry VTT server backups hosted on EVLBOX. Includes steps to verify schedules, disable backups, and download .tar.gz files."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/foundry/schedules.jpg"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Foundry Backup Job Schedule Screenshot"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Manage Automated Backups in Foundry | EVLBOX Hosting Guide","description":"Understand and control your Foundry VTT server backups hosted on EVLBOX. Includes steps to verify schedules, disable backups, and download .tar.gz files.","url":"https://evlbox.com/docs/game-servers/foundry/manage-automated-backups/","image":"https://evlbox.com/docs/foundry/schedules.jpg","imageAlt":"Foundry Backup Job Schedule Screenshot","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-17","dateModified":"2025-06-17"}
 ---
 
 # **How to Check and Manage Automated Backups in Foundry**

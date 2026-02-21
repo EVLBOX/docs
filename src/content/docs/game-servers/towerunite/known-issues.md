@@ -1,5 +1,59 @@
 ---
 title: "Known Tower Unite Condo Server bugs"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Tower Unite server issues, condo texture bug, Steam Workshop no collision, AGC not connected, TowerServer.ini, EVLBOX troubleshooting"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Known Issues | Tower Unite Server Troubleshooting Guide | EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Having issues with your Tower Unite server? Learn how to fix common problems like missing textures, Steam Workshop collisions, and AGC connection errors."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/tower-unite/tower_unite_issue_preview.png"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Tower Unite Server Issue Example"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/towerunite/known-issues/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "Known Issues | Tower Unite Server Troubleshooting Guide | EVLBOX"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Having issues with your Tower Unite server? Learn how to fix common problems like missing textures, Steam Workshop collisions, and AGC connection errors."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/tower-unite/tower_unite_issue_preview.png"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Tower Unite Server Issue Example"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"Known Issues | Tower Unite Server Troubleshooting Guide | EVLBOX","description":"Having issues with your Tower Unite server? Learn how to fix common problems like missing textures, Steam Workshop collisions, and AGC connection errors.","url":"https://evlbox.com/docs/game-servers/towerunite/known-issues/","image":"https://evlbox.com/docs/tower-unite/tower_unite_issue_preview.png","imageAlt":"Tower Unite Server Issue Example","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2025-07-22"}
 ---
 
 # Known Issues

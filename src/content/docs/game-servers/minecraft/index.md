@@ -1,5 +1,59 @@
 ---
 title: "Minecraft"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Minecraft hosting, EVLBOX Minecraft hosting, dedicated Minecraft server, custom Minecraft server, Minecraft performance, Minecraft modpacks, Minecraft server guides"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Minecraft Hosting | High-Performance Servers by EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Get high-performance Minecraft hosting with EVLBOX. Explore custom modpacks, optimize your server, and enjoy smooth multiplayer gameplay. Start your Minecraft adventure today!"
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/minecraft/minecraft_logo.avif"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Minecraft Logo"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/minecraft/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "Minecraft Hosting | High-Performance Servers by EVLBOX"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Get high-performance Minecraft hosting with EVLBOX. Explore custom modpacks, optimize your server, and enjoy smooth multiplayer gameplay. Start your Minecraft adventure today!"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/minecraft/minecraft_logo.avif"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Minecraft Logo"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"Minecraft Hosting | High-Performance Servers by EVLBOX","description":"Get high-performance Minecraft hosting with EVLBOX. Explore custom modpacks, optimize your server, and enjoy smooth multiplayer gameplay. Start your Minecraft adventure today!","url":"https://evlbox.com/docs/game-servers/minecraft/","image":"https://evlbox.com/docs/minecraft/minecraft_logo.avif","imageAlt":"Minecraft Overworld Logo","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-03-06","dateModified":"2025-05-08"}
 ---
 
 # **Minecraft Hosting with EVLBOX**

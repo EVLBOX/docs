@@ -1,5 +1,59 @@
 ---
 title: "First Time Setup - Tower Unite Condo Server"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Tower Unite condo server setup, EVLBOX condo guide, Tower Unite GSLT, Tower Unite dedicated condo, condo map export, condo admin SteamID, TowerServer.ini"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Set Up Your Tower Unite Condo Server | EVLBOX Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/towerunite/gslt.png"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Steam GSLT Token Creation Page"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/towerunite/how-to-setup-condo/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Set Up Your Tower Unite Condo Server | EVLBOX Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/towerunite/gslt.png"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Steam GSLT Token Creation Page"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Set Up Your Tower Unite Condo Server | EVLBOX Guide","description":"Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo.","url":"https://evlbox.com/docs/game-servers/towerunite/how-to-setup-condo/","image":"https://evlbox.com/docs/towerunite/gslt.png","imageAlt":"Steam GSLT Token Creation Page","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2025-07-22"}
 ---
 
 # **How to Set Up Your Tower Unite Condo Server**

@@ -1,6 +1,60 @@
 ---
 title: "How to Connect to your Minecraft Server"
 description: "How to connect to a minecraft dedicated server for multiplayer games"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "connect to Minecraft server, Minecraft server connection, EVLBOX Minecraft hosting, Nitro Control Panel, Minecraft server IP, Minecraft subdomain, Java Edition Minecraft server"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Connect to Your Minecraft Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Learn how to easily connect to your Minecraft server hosted by EVLBOX. Step-by-step instructions to connect via IP, hostname, or subdomain."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/minecraft/minecraft_logo.avif"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "EVLBOX Minecraft Server Logo - Simplified Minecraft Branding"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/minecraft/how-to-connect/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Connect to Your Minecraft Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Learn how to easily connect to your Minecraft server hosted by EVLBOX. Step-by-step instructions to connect via IP, hostname, or subdomain."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/minecraft/minecraft_logo.avif"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "EVLBOX Minecraft Server Logo - Simplified Minecraft Branding"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Connect to Your Minecraft Server | EVLBOX Hosting Guide","description":"Learn how to easily connect to your Minecraft server hosted by EVLBOX. Step-by-step instructions to connect via IP, hostname, or subdomain.","url":"https://evlbox.com/docs/game-servers/minecraft/how-to-connect/","image":"https://evlbox.com/docs/minecraft/minecraft_logo.avif","imageAlt":"EVLBOX Minecraft Server Logo - Simplified Minecraft Branding","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-03-06","dateModified":"2025-05-08"}
 ---
 
 

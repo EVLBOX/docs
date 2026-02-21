@@ -1,5 +1,59 @@
 ---
 title: "Satisfactory Server - Change to Experimental Branch"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "switch to experimental branch, Satisfactory experimental branch, update game server, Nitro Panel, server settings, game server setup, Satisfactory server, Satisfactory mods"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Switch to the Experimental Branch for Your Satisfactory Game Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Learn how to switch your Satisfactory server to the experimental branch to access the latest features and updates. Step-by-step guide with troubleshooting tips."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/static/images/blog/satisfactory/outpost.webp"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Satisfactory Experimental Branch Setup"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/satisfactory/switch-to-experimental/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Switch to the Experimental Branch for Your Satisfactory Game Server"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Learn how to switch your Satisfactory server to the experimental branch to access the latest features and updates. Step-by-step guide with troubleshooting tips."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/static/images/blog/satisfactory/outpost.webp"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Satisfactory Experimental Branch Setup"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Switch to the Experimental Branch for Your Satisfactory Game Server","description":"Learn how to switch your Satisfactory server to the experimental branch to access the latest features and updates. Step-by-step guide with troubleshooting tips.","url":"https://evlbox.com/docs/game-servers/satisfactory/switch-to-experimental/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Experimental Branch Setup","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2025-05-08"}
 ---
 
 # **How to Switch to the Experimental Branch for Your Game Server**

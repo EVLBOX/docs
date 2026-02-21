@@ -1,6 +1,60 @@
 ---
 title: "How to add Mods to Foundry Dedicated Server"
 description: "Learn how to install and manage Foundry mods on your EVLBOX server. Step-by-step tutorial for uploading workshop mods, using the mod loader, and troubleshooting issues."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Foundry mods, Foundry server mods, EVLBOX Foundry mod loader, how to install mods Foundry, Steam Workshop Foundry mods, mods-upload folder Foundry, EVLBOX server hosting"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Add Mods to Your Foundry Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Install and manage Steam Workshop mods for your Foundry server hosted by EVLBOX. This guide shows how to upload, activate, and troubleshoot mods with ease."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/foundry/workshop-content.jpg"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Workshop Content Directory for Foundry Mods"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/foundry/how-to-add-mods/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "How to Add Mods to Your Foundry Server | EVLBOX Hosting Guide"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Install and manage Steam Workshop mods for your Foundry server hosted by EVLBOX. Step-by-step tutorial with images and troubleshooting tips."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/foundry/workshop-content.jpg"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Workshop Content Directory for Foundry Mods"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Add Mods to Your Foundry Server | EVLBOX Hosting Guide","description":"Install and manage Steam Workshop mods for your Foundry server hosted by EVLBOX. Learn how to zip and upload mods, use the EVLBOX mod loader, and remove or troubleshoot mods.","url":"https://evlbox.com/docs/game-servers/foundry/how-to-add-mods/","image":"https://evlbox.com/docs/foundry/workshop-content.jpg","imageAlt":"Workshop Content Directory for Foundry Mods","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-16","dateModified":"2025-06-16"}
 ---
 
 # **How to Add Mods to Your Foundry Server**

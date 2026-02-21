@@ -1,5 +1,59 @@
 ---
 title: "Foundry"
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "FOUNDRY hosting, EVLBOX foundry server, foundry factory game, foundry server mods, dedicated foundry server, foundry multiplayer server, foundry game save transfer"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "FOUNDRY Server Hosting | Automate Your Factory with EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/foundry/foundryimage.jpg"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "FOUNDRY Factory Assembly Line"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/foundry/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "FOUNDRY Server Hosting | Automate Your Factory with EVLBOX"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/foundry/foundryimage.jpg"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "FOUNDRY Factory Assembly Line"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"FOUNDRY Server Hosting | Automate Your Factory with EVLBOX","description":"Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience.","url":"https://evlbox.com/docs/game-servers/foundry/","image":"https://evlbox.com/docs/foundry/foundryimage.jpg","imageAlt":"FOUNDRY Factory Assembly Line","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-16","dateModified":"2025-06-16"}
 ---
 
 # **FOUNDRY Server Hosting with EVLBOX**
