@@ -40,11 +40,11 @@ export default defineConfig({
 						content: 'EVLBOX Docs',
 					},
 				},
-				{
+{
 					tag: 'meta',
 					attrs: {
 						property: 'og:image',
-						content: 'https://docs.evlbox.com/twitter-card.png',
+						content: 'https://evlbox.com/docs/twitter-card.png',
 					},
 				},
 				{
@@ -54,11 +54,11 @@ export default defineConfig({
 						content: 'summary_large_image',
 					},
 				},
-				{
+{
 					tag: 'meta',
 					attrs: {
 						name: 'twitter:image',
-						content: 'https://docs.evlbox.com/twitter-card.png',
+						content: 'https://evlbox.com/docs/twitter-card.png',
 					},
 				},
 				{
@@ -67,7 +67,7 @@ export default defineConfig({
 						rel: 'icon',
 						type: 'image/png',
 						sizes: '32x32',
-						href: '/favicon-32x32.png',
+						href: '/docs/favicon-32x32.png',
 					},
 				},
 				{
@@ -76,7 +76,7 @@ export default defineConfig({
 						rel: 'icon',
 						type: 'image/png',
 						sizes: '16x16',
-						href: '/favicon-16x16.png',
+						href: '/docs/favicon-16x16.png',
 					},
 				},
 				{
@@ -84,14 +84,14 @@ export default defineConfig({
 					attrs: {
 						rel: 'apple-touch-icon',
 						sizes: '180x180',
-						href: '/apple-touch-icon.png',
+						href: '/docs/apple-touch-icon.png',
 					},
 				},
 				{
 					tag: 'link',
 					attrs: {
 						rel: 'mask-icon',
-						href: '/safari-pinned-tab.svg',
+						href: '/docs/safari-pinned-tab.svg',
 						color: '#00d4ff',
 					},
 				},
