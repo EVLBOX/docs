@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://docs.evlbox.com',
+	site: 'https://evlbox.com',
+	base: '/docs/',
 	output: 'static',
 	integrations: [
 		starlight({
