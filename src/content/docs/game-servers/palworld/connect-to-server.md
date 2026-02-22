@@ -1,4 +1,4 @@
----
+﻿---
 title: "Connect to your Palworld Server"
 description: "This tutorial covers how to conenct to your Palworld server at evlbox"
 ---
@@ -11,16 +11,16 @@ Grab your connection string. this can be found
  - From the Manage Server Window, copy the Hostname
 
 
-![palworld_hostname.png](/palworld/palworld_hostname.png)
+![palworld_hostname.png](/docs/palworld/palworld_hostname.png)
 
 Paste this into palworld and click connect
 
-![server-browser.jpg](/server-browser.jpg)
+![server-browser.jpg](/docs/server-browser.jpg)
 
 
 You can also set a custom subdomain in the subdomain option. In this window, enter a name and click create. You can now use this subdomain to connect to your server. 
 
-![create_subdomain2.png](/palworld/create_subdomain2.png)
+![create_subdomain2.png](/docs/palworld/create_subdomain2.png)
 
 
-![mammorest.jpg](/palworld/mammorest.jpg)
+![mammorest.jpg](/docs/palworld/mammorest.jpg)

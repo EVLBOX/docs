@@ -1,4 +1,4 @@
----
+﻿---
 title: "Foundry"
 description: "Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience."
 head:
@@ -59,11 +59,11 @@ head:
 
 # **FOUNDRY Server Hosting with EVLBOX**
 
-![FOUNDRY Assembly Line](/foundry/foundryimage.jpg)
+![FOUNDRY Assembly Line](/docs/foundry/foundryimage.jpg)
 
 Build complex factories, program logistics, and expand your robotic workforce with **FOUNDRY**, the voxel-based automation game. Host your own dedicated **FOUNDRY server** with **EVLBOX** and enjoy uninterrupted gameplay, mod support, and full save management for your massive industrial empire.
 
-Whether you're assembling your first production line or optimizing an interplanetary export network, **EVLBOX hosting** gives you the power and flexibility to run your world 24/7—lag-free, mod-ready, and fully in your control.
+Whether you're assembling your first production line or optimizing an interplanetary export network, **EVLBOX hosting** gives you the power and flexibility to run your world 24/7â€”lag-free, mod-ready, and fully in your control.
 
 ---
 
@@ -72,11 +72,11 @@ Whether you're assembling your first production line or optimizing an interplane
 
 Explore our growing collection of how-to articles designed to make server hosting seamless:
 
-- [**How to Connect to Your FOUNDRY Server**](/game-servers/foundry/how-to-connect-to-foundry)
-- [**Add Mods to Your FOUNDRY Server**](/game-servers/foundry/how-to-add-mods)
-- [**Use Steam collections to keep mods in sync**](/game-servers/foundry/create-collection-for-mod-syncing)
-- [**Using Backups in FOUNDRY**](/game-servers/foundry/manage-automated-backups)
-- [**Transfer Your Single-Player Save to Your Server**](/game-servers/foundry/transfer-singleplayer-save)
+- [**How to Connect to Your FOUNDRY Server**](/docs/game-servers/foundry/how-to-connect-to-foundry)
+- [**Add Mods to Your FOUNDRY Server**](/docs/game-servers/foundry/how-to-add-mods)
+- [**Use Steam collections to keep mods in sync**](/docs/game-servers/foundry/create-collection-for-mod-syncing)
+- [**Using Backups in FOUNDRY**](/docs/game-servers/foundry/manage-automated-backups)
+- [**Transfer Your Single-Player Save to Your Server**](/docs/game-servers/foundry/transfer-singleplayer-save)
 
 ---
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Secure your VPS Control Panel account with MFA"
 description: "Add MFA to your virtualizor account for additional security"
 ---
@@ -10,12 +10,12 @@ description: "Add MFA to your virtualizor account for additional security"
 Below is the client login for the VPS Panel
 https://vf.evlbox.com/login
 
-![Login Screenshot](/vps/loginlol.jpg)
+![Login Screenshot](/docs/vps/loginlol.jpg)
 
 
 ## Go to Security Settings.
 
-![Login Screenshot](/vps/security_settings.gif)
+![Login Screenshot](/docs/vps/security_settings.gif)
 
 At the moment you have 2 options to choose from, None (No Multifactor authentication), YubiKey OTP, or TOTP App Based.
 
@@ -35,6 +35,6 @@ TOTP App Based - is ultimately the easiest choice, we recommend https://getaegis
 If you choose the Enable App option, you will need a two-factor authentication app such as Google Authenticator, Authy, etc.
 You must scan the QR code given on *YOUR* screen and add this as a new entry in the app. *Do not scan the below QR CODE*
 
-![Login Screenshot](/vps/enable_app.jpg)
+![Login Screenshot](/docs/vps/enable_app.jpg)
 
 Once you have completed this the APP will show you the OTP for this service, you must enter the unique OTP in the APP into the "Confirmation Code" field and press the submit button

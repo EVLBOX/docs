@@ -1,4 +1,4 @@
----
+﻿---
 title: "Tower Unite - Dedicated Condos"
 description: "Set up your Tower Unite Condo server with EVLBOX. Learn how to host, export, and manage your condo online with helpful guides and tools."
 head:
@@ -59,7 +59,7 @@ head:
 
 # **Tower Unite Condo Servers by EVLBOX**
 
-![Tower Unite Condos Banner](/towerunite/logo2.png)
+![Tower Unite Condos Banner](/docs/towerunite/logo2.png)
 
 Welcome to our Tower Unite - Condo Hosting Wiki. This page will be updated with instructions and guides to help you make the most of your EVLBOX Condo server. 
 
@@ -75,19 +75,19 @@ Welcome to our Tower Unite - Condo Hosting Wiki. This page will be updated with 
 
 Everything you need to get started with your condo server:
 
-- [**How to Set Up Your Condo Server**](/game-servers/towerunite/how-to-setup-condo): Learn the required setup steps for your condo server.
-- [**Known Issues and Troubleshooting**](/game-servers/towerunite/known-issues): Common problems and how to fix them.
+- [**How to Set Up Your Condo Server**](/docs/game-servers/towerunite/how-to-setup-condo): Learn the required setup steps for your condo server.
+- [**Known Issues and Troubleshooting**](/docs/game-servers/towerunite/known-issues): Common problems and how to fix them.
 
 ---
 
-### 🎉 **Get Your Own Tower Unite Condo Server**
+### ðŸŽ‰ **Get Your Own Tower Unite Condo Server**
 
 Ready to show off your masterpiece? [**Order your condo server from EVLBOX**](https://evlbox.com/games/towerunite-condos) and get online today!
 
 ---
 
-### 💻 **Want to Host It Yourself?**
+### ðŸ’» **Want to Host It Yourself?**
 
-Prefer self-hosting? Check out [**PixelTail’s official dedicated condo guide**](https://towerunite.com/guides/condo_dedicated.html) to run your own server on your personal computer.
+Prefer self-hosting? Check out [**PixelTailâ€™s official dedicated condo guide**](https://towerunite.com/guides/condo_dedicated.html) to run your own server on your personal computer.
 
 ---

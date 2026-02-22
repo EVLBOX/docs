@@ -1,11 +1,11 @@
----
+﻿---
 title: "Transfer singleplayer save to Foundry Server"
 description: "Learn how to transfer your singleplayer save to your Foundry dedicated server with this easy step-by-step EVLBOX guide."
 ---
 
 # **How to Transfer a Singleplayer Save to Your Foundry Server**
 
-Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left off—now with friends!
+Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left offâ€”now with friends!
 
 ---
 
@@ -19,7 +19,7 @@ Your local Foundry saves are stored here:
 
 Each folder here contains multiple saves, including autosaves.
 
-![list-of-local-saves](/foundry/app-data-saves.jpg)
+![list-of-local-saves](/docs/foundry/app-data-saves.jpg)
 
 For this example we'll use Jeer_178174133. You can rename this if you like, but just remember the name for step 5!
 
@@ -39,7 +39,7 @@ For this example we'll use Jeer_178174133. You can rename this if you like, but 
 3. Navigate to:  
    **Files > serverfiles > save**
 
-![Save Folder Location](/foundry/saves.jpg)
+![Save Folder Location](/docs/foundry/saves.jpg)
 
 ---
 
@@ -48,10 +48,10 @@ For this example we'll use Jeer_178174133. You can rename this if you like, but 
 - Drag and drop your ZIP file into the folder.
 - Select the ZIP, checkmark it, then choose **Unarchive**.
 
-> ⚠️ Note: Save files are large and may take time to upload. Check progress via the cloud icon near “Create Directory”. See below screenshot for the upload "spinner"
+> âš ï¸ Note: Save files are large and may take time to upload. Check progress via the cloud icon near â€œCreate Directoryâ€. See below screenshot for the upload "spinner"
 
-![Uploading Save](/foundry/loading.jpg)  
-![Unarchiving Save](/foundry/unarchive.jpg)
+![Uploading Save](/docs/foundry/loading.jpg)  
+![Unarchiving Save](/docs/foundry/unarchive.jpg)
 
 ---
 
@@ -70,12 +70,12 @@ Ensure the **server is stopped** before proceeding.
 - Click **Start**.
 - Launch Foundry and join your server.
 
-Need help? See our article on [**How to Connect to Your Foundry Server**](/game-servers/foundry/how-to-connect-to-foundry)
+Need help? See our article on [**How to Connect to Your Foundry Server**](/docs/game-servers/foundry/how-to-connect-to-foundry)
 
-![In-Game Screenshot](/foundry/screenshot-game.jpg)
+![In-Game Screenshot](/docs/foundry/screenshot-game.jpg)
 
 ---
 
 ## **Get a Foundry Server**
 
-Haven’t ordered your server yet? Get your own high-performance server now on [**EVLBOX Foundry Hosting**](https://evlbox.com/games/foundry).
+Havenâ€™t ordered your server yet? Get your own high-performance server now on [**EVLBOX Foundry Hosting**](https://evlbox.com/games/foundry).

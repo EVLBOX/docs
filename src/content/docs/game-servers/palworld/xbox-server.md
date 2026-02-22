@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Update Your Dedicated Server for Xbox"
 description: "Update your server to be compatible with Xbox and Gamepass"
 ---
@@ -12,8 +12,8 @@ If you are switching your server between the Xbox and Steam Versions of the game
 Any Buildings you created on the server will still exist but may not be accessible due to being in a different Guild. 
 ## Update the Server Setting
 1. Login to your Server in the EVLBOX Nitro Panel and Stop your server
-![stop_server.png](/palworld/stop_server.png)
+![stop_server.png](/docs/palworld/stop_server.png)
 2. Then Click to the Startup Tab under configurations. Scroll to the bottom of the page until you see a box labeled ALLOWCONNECTPLATFORM. Type Xbox into this field. 
-![configure_xbox.png](/palworld/configure_xbox.png)
+![configure_xbox.png](/docs/palworld/configure_xbox.png)
 3. Scroll back to the top or go to the dashboard and Start Your Server. Wait for your server to finish setting up. More information is available in the Console Tab and Logs. 
-4. Log in to your server. More information on how to login can be found here: [Article - How to connect to your server](/game-servers/palworld/connect-to-server)
+4. Log in to your server. More information on how to login can be found here: [Article - How to connect to your server](/docs/game-servers/palworld/connect-to-server)

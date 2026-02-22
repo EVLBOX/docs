@@ -1,4 +1,4 @@
----
+﻿---
 title: "Reset Root Password"
 description: "How to reset root password on a virtfusion VPS"
 ---
@@ -10,7 +10,7 @@ description: "How to reset root password on a virtfusion VPS"
 Below is the client login URL for the VPS Panel
 https://vf.evlbox.com/login
 
-![Login Screenshot](/vps/loginlol.jpg)
+![Login Screenshot](/docs/vps/loginlol.jpg)
 
 ## Go to the VPS Management Page for your machine and Change the Root Password
 

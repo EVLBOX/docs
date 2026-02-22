@@ -1,4 +1,4 @@
----
+﻿---
 title: "Add SSH keys to VPS on creation"
 description: "Automatically add SSH keys to your VPS upon creation."
 ---
@@ -12,18 +12,18 @@ https://vf.evlbox.com/login
 
 You should probably login first.
 
-![Login Screenshot](/vps/loginlol.jpg)
+![Login Screenshot](/docs/vps/loginlol.jpg)
 
 
 ## Navigate to the SSH Key Tab and "Add Key"
 
 After Logging in, you should be directed your Dashboard, at the top of the Dashboard is the navigation bar, Select the "SSH Keys" Tab and then press the "Add Key" button.
-![ssh key button](/vps/ssh_keys.gif)
+![ssh key button](/docs/vps/ssh_keys.gif)
 
 
 ## Name Your Key And Copy And Paste Your Key Information.
 
-![name your key](/vps/new_key_field.jpg)
+![name your key](/docs/vps/new_key_field.jpg)
 
 In this use case, the keys are named "Key1".
  In the "Public Key" Field, an example of a Public Key is shown.

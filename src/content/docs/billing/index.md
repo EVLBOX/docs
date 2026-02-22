@@ -1,4 +1,4 @@
----
+﻿---
 title: "Billing"
 description: "Learn how to upgrade or downgrade your hosting services."
 ---
@@ -18,7 +18,7 @@ At any time you may swap the game your server is running! At EVLBOX some of the 
 2. Select the service you wish to change. 
 3. Click the Upgrade / Downgrade link on the left. 
 
-![Upgrade](/billing/upgrade-options.jpg)
+![Upgrade](/docs/billing/upgrade-options.jpg)
 
 4. Select which game / packages you'd like to switch to. 
 5. Submit the change order and pay the difference if needed. 
@@ -36,7 +36,7 @@ Before submitting a cancellation request, please download your backups, or downl
 1. Login to the billing portal - [https://portal.evlbox.com](https://portal.evlbox.com/clientarea.php)
 2. Select the service you wish to cancel, and choose the "Request Cancellation" option (left side of screenshot) 
 
-![cancel](/billing/cancel.jpg)
+![cancel](/docs/billing/cancel.jpg)
 
 3. Choose a cancellation type, and submit. 
 

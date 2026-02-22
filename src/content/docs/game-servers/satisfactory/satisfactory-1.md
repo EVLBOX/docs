@@ -1,4 +1,4 @@
----
+﻿---
 title: "Satisfactory 1.0 Information"
 description: "Updates about Satisfactory 1.0 dedicated server compatibility"
 head:
@@ -61,13 +61,13 @@ head:
 
 Satisfactory 1.1 is now available on the **experimental branch**, and it brings with it exciting new features, optimizations, and fixes. As always, we recommend that server owners back up their save files before updating to ensure that all progress is safely stored.
 
-Here’s how you can update to **Satisfactory 1.1** and get your server running with the latest features.
+Hereâ€™s how you can update to **Satisfactory 1.1** and get your server running with the latest features.
 
 ---
 
 ## **How to Update to Satisfactory 1.1 (Experimental Branch)**
 
-Before updating, **server owners** should **download a copy of their save files** for safety, especially if you’re running a custom or heavily modified server. This step ensures that you can always roll back to a previous version if needed.
+Before updating, **server owners** should **download a copy of their save files** for safety, especially if youâ€™re running a custom or heavily modified server. This step ensures that you can always roll back to a previous version if needed.
 
 ### **Steps to Update:**
 
@@ -76,7 +76,7 @@ Before updating, **server owners** should **download a copy of their save files*
 
 2. **Log in to the Nitro Control Panel**:
    - In the **Nitro Control Panel**, navigate to the **Startup** tab.
-   - Choose **“FactoryGame”** as your **startup mode**.
+   - Choose **â€œFactoryGameâ€** as your **startup mode**.
    - Note: Customers with **new servers (post 9/10/2024)** should not need to follow this step, as the 1.1 update will be automatically set up for you.
 
 3. **Set the Branch to Experimental**:
@@ -92,7 +92,7 @@ Before updating, **server owners** should **download a copy of their save files*
    - Once the update is applied, you can connect to the server and enjoy the latest features.
 
 7. **Stay Updated**:
-   - For the latest updates and patches, be sure to subscribe to notifications in the [EVLBOX Discord](https://evlbox.com/discord). We’ll post frequent updates in the **#rules-and-roles** channel to alert you when new updates are available.
+   - For the latest updates and patches, be sure to subscribe to notifications in the [EVLBOX Discord](https://evlbox.com/discord). Weâ€™ll post frequent updates in the **#rules-and-roles** channel to alert you when new updates are available.
 
 ---
 
@@ -107,23 +107,23 @@ To play on the updated server with Satisfactory 1.1, follow these steps:
    - In the main menu of the game, go to the **Server Manager** option.
 
 3. **Add Your Server**:
-   - Click on **“Add Server”** at the bottom of the screen.
+   - Click on **â€œAdd Serverâ€** at the bottom of the screen.
    - Enter your **server address** and **port number** (provided in the Nitro Panel of your server).
 
-   ![join_server.png](/satisfactory/join_server.png)
+   ![join_server.png](/docs/satisfactory/join_server.png)
 
 4. **Enter Server Details**:
-   - The **address and port** can be found in the **Nitro Panel** for your game server. If you’ve connected to the server before the update, you might need to **update** or **re-enter the port number**.
+   - The **address and port** can be found in the **Nitro Panel** for your game server. If youâ€™ve connected to the server before the update, you might need to **update** or **re-enter the port number**.
 
 5. **Server Certificate Warning**:
-   - After confirming your server details, you’ll receive a **Server Certificate Warning**. Click **“Confirm”** to proceed.
+   - After confirming your server details, youâ€™ll receive a **Server Certificate Warning**. Click **â€œConfirmâ€** to proceed.
 
-   ![certificate_warning.png](/satisfactory/certificate_warning.png)
+   ![certificate_warning.png](/docs/satisfactory/certificate_warning.png)
 
 6. **Authenticate**:
-   - If your server is **password-protected**, you will be prompted to enter the **server password**. Once authenticated, you’ll be able to enjoy the game!
+   - If your server is **password-protected**, you will be prompted to enter the **server password**. Once authenticated, youâ€™ll be able to enjoy the game!
 
-   ![authenticate.png](/satisfactory/authenticate.png)
+   ![authenticate.png](/docs/satisfactory/authenticate.png)
 
 ---
 
@@ -132,7 +132,7 @@ To play on the updated server with Satisfactory 1.1, follow these steps:
 While the update brings many exciting changes, there are some **known issues** that we want to highlight:
 
 1. **Max Players Above 4**:
-   - Currently, setting **max players above 4** in the server settings is not functioning as expected. It’s unclear whether this feature has been **removed** or needs to be **configured differently**. We’ll provide an update as soon as this issue is resolved.
+   - Currently, setting **max players above 4** in the server settings is not functioning as expected. Itâ€™s unclear whether this feature has been **removed** or needs to be **configured differently**. Weâ€™ll provide an update as soon as this issue is resolved.
 
 2. **Mod Compatibility**:
    - **Mods** are currently **not compatible** with Satisfactory 1.1 (Experimental). This means that **mods** may **break the game** or **cause issues**. If you have mods installed, they will likely **not work** properly, and could even prevent the game from running correctly. We recommend **removing any mods** until the stable version of 1.1 is released, as mod support is not fully functional yet.
@@ -146,7 +146,7 @@ While the update brings many exciting changes, there are some **known issues** t
 ---
 
 ### **Conclusion**:
-Updating to **Satisfactory 1.1** on your EVLBOX server is easy and can be done in just a few steps. Whether you’re interested in trying out the latest experimental features or just want to keep your server up to date, the process is simple and well-documented. Make sure to keep an eye on our **Discord channel** for future updates and announcements.
+Updating to **Satisfactory 1.1** on your EVLBOX server is easy and can be done in just a few steps. Whether youâ€™re interested in trying out the latest experimental features or just want to keep your server up to date, the process is simple and well-documented. Make sure to keep an eye on our **Discord channel** for future updates and announcements.
 
 ---
 

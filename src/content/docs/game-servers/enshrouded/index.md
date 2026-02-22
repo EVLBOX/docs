@@ -1,4 +1,4 @@
----
+﻿---
 title: "Enshrouded Guides"
 description: "Host your Enshrouded server with EVLBOX. Guides for connecting to your server and managing quest progression."
 head:
@@ -60,7 +60,7 @@ head:
 
 Enshrouded is a game of survival, crafting, and Action RPG combat, set within a sprawling voxel-based continent. As you journey across the mountains and deserts of an open world, you are free to choose your path and shape your destiny.
 
-![header.jpg](/enshrouded/header.jpg)
+![header.jpg](/docs/enshrouded/header.jpg)
 
 
 [Enshrouded Servers](https://evlbox.com/epic-enshrouded-server-hosting-6gb-ram/)
@@ -68,7 +68,7 @@ Enshrouded is a game of survival, crafting, and Action RPG combat, set within a 
 ## Hosting Guides
 
 ---
-[Article - How to Connect to your Enshrouded Server](/game-servers/enshrouded/how-to-connect)
+[Article - How to Connect to your Enshrouded Server](/docs/game-servers/enshrouded/how-to-connect)
 
-[Article - Upcoming Changes to Quest Progression](/game-servers/enshrouded/quest-progression)
+[Article - Upcoming Changes to Quest Progression](/docs/game-servers/enshrouded/quest-progression)
 

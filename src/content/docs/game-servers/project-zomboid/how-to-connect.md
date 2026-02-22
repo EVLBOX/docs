@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Connect to your Project Zomboid Server"
 description: "A step by step guide to connect to project zomboid"
 ---
@@ -9,7 +9,7 @@ description: "A step by step guide to connect to project zomboid"
 
 1. Log in to the Nitro Panel and check the console to make sure your server is up and running. Click Manager Server and find the Server IP Address and Port number (The port number is after the semicolon in the host name '876'). 
 
-![server_dashboard.png](/zomboid/server_dashboard.png)
+![server_dashboard.png](/docs/zomboid/server_dashboard.png)
 
 :::caution
 Both IP address and Hostname are displayed in the panel but it is highly suggested to connect with the IP address and not the DNS name.
@@ -17,20 +17,20 @@ Both IP address and Hostname are displayed in the panel but it is highly suggest
 2. Launch the game and select join. 
 3. In the panel, enter a Favorite name, IP address, Port number found from the nitro panel. Then you will neeed to create an account username and password. 
 
-![in_game_add.png](/zomboid/in_game_add.png)
+![in_game_add.png](/docs/zomboid/in_game_add.png)
 
 4. Click Add. It will list the server info and may state that "The server is not responding." 
 
-![not_responding.png](/zomboid/not_responding.png)
+![not_responding.png](/docs/zomboid/not_responding.png)
 
 5. You can try clicking on the refresh button to display the server status or click join server. 
 
-![after_refresh.png](/zomboid/after_refresh.png)
+![after_refresh.png](/docs/zomboid/after_refresh.png)
 
-![join_game.png](/zomboid/join_game.png)
+![join_game.png](/docs/zomboid/join_game.png)
 
 6. It will then prompt you to select a map and create a character. Good luck! 
-![run.png](/zomboid/run.png)
+![run.png](/docs/zomboid/run.png)
 
 
 ## How to Connect to Your Server via Steam
@@ -42,19 +42,19 @@ Both IP address and Hostname are displayed in the panel but it is highly suggest
 :::
 2. In steam, click view at the top and select Game Servers. 
 
-![steam_game_servers.png](/enshrouded/steam_game_servers.png)
+![steam_game_servers.png](/docs/enshrouded/steam_game_servers.png)
 
 3. In this pop up window, click on the favorites tab, and then the + icon at the bottom. Here you can enter in the server IP and port number. Click Ok. 
 
-![add_server_by_ip.png](/enshrouded/add_server_by_ip.png)
+![add_server_by_ip.png](/docs/enshrouded/add_server_by_ip.png)
 
 4. The server name, game and player information will display in this window. Click connect to join. 
 
-![steam_list_server.png](/zomboid/steam_list_server.png)
+![steam_list_server.png](/docs/zomboid/steam_list_server.png)
 
 5. This will launch the game and you will be prompted to enter an account username and password
 
-![connect_via_steam.png](/zomboid/connect_via_steam.png)
+![connect_via_steam.png](/docs/zomboid/connect_via_steam.png)
 
 
-![welcome.png](/zomboid/welcome.png)
+![welcome.png](/docs/zomboid/welcome.png)

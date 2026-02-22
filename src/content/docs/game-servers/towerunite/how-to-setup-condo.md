@@ -1,4 +1,4 @@
----
+﻿---
 title: "First Time Setup - Tower Unite Condo Server"
 description: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
 head:
@@ -59,7 +59,7 @@ head:
 
 # **How to Set Up Your Tower Unite Condo Server**
 
-If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTail’s official guide](https://towerunite.com/guides/condo_dedicated.html).
+If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTailâ€™s official guide](https://towerunite.com/guides/condo_dedicated.html).
 
 
 ## **Step-by-Step Setup Instructions**
@@ -74,9 +74,9 @@ Visit [Steam Game Server Token Management](https://steamcommunity.com/dev/manage
 
 This token is tied to your **Steam account**. EVLBOX cannot provide this for you.
 
-![GSLT Creation](/towerunite/gslt.png)
+![GSLT Creation](/docs/towerunite/gslt.png)
 
-Save your token—you'll use it in Step 3.
+Save your tokenâ€”you'll use it in Step 3.
 
 
 ### **Step 2: Generate a Tower Unite Server Token**
@@ -110,7 +110,7 @@ To enable in-game admin tools, you need your **Steam64 ID**:
 4. In Nitro click Files and browse to Tower/Saved/Config/LinuxServer -- Click on TowerServer.ini
 5. Paste in your SteamID 64 (DEC) value from SteamID finder into the `AdminSteamID=` section
 6. *(optional)* If you want multiple admins just add multiple lines of `AdminSteamID=` you can have as many as you like. 
-![GSLT Creation](/towerunite/admins.png)
+![GSLT Creation](/docs/towerunite/admins.png)
 
 
 ### **Step 6: Launch and Access Your Condo**
@@ -141,7 +141,7 @@ If you've built a condo in single player and want to move it to your server, fol
 
 Make sure the file name and folder match the map name exactly.
 
-![Condo Map Folder Example](/towerunite/condo-map.png)
+![Condo Map Folder Example](/docs/towerunite/condo-map.png)
 
 
 ### **Set the Condo Map in Nitro**
@@ -151,11 +151,11 @@ In the **Startup** tab of Nitro:
 - Set **Map Name** to match the `.map` file name (e.g. `C_Condo`, no extension)
 
 
-## ✅ Your Condo Server is Ready!
+## âœ… Your Condo Server is Ready!
 
-You’re now hosting your own persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience.
+Youâ€™re now hosting your own persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience.
 
-Want more? Check out our [**Tower Unite Condos Hub**](/game-servers/towerunite) for more guides and support.
+Want more? Check out our [**Tower Unite Condos Hub**](/docs/game-servers/towerunite) for more guides and support.
 
 ---
 

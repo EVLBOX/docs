@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Connect to your Minecraft Server"
 description: "How to connect to a minecraft dedicated server for multiplayer games"
 head:
@@ -63,30 +63,30 @@ Connecting to your **Minecraft server** hosted by **EVLBOX** is simple! Follow t
 ### **Step-by-Step Guide to Connect to Your Minecraft Server**
 
 1. **Login to the Nitro Control Panel**:
-   - To begin, log in to the **[EVLBOX Nitro Control Panel](https://nitro.evlbox.com)**. This is where you’ll find all the details you need to connect to your **Minecraft server**.
+   - To begin, log in to the **[EVLBOX Nitro Control Panel](https://nitro.evlbox.com)**. This is where youâ€™ll find all the details you need to connect to your **Minecraft server**.
 
 2. **Grab Your Connection String**:
    - There are two ways to grab the connection information:
      - **From the Dashboard**: Copy the **IP address** displayed on your server dashboard.
      - **From the Manage Server Window**: Copy the **hostname** from this window.
 
-   ![connection_string.png](/minecraft/connection_string.png)
+   ![connection_string.png](/docs/minecraft/connection_string.png)
 
 3. **Launch Minecraft**:
    - Open **Minecraft** and select **Java Edition**.
    - Click on **Multiplayer** from the main menu, and then select **Direct Connection**.
    - In the **Direct Connection** window, paste the **IP address** or **hostname** you copied earlier and click **Join Server**.
 
-   ![direct_connection.png](/minecraft/direct_connection.png)
+   ![direct_connection.png](/docs/minecraft/direct_connection.png)
 
 ### **Alternative: Connect Using a Subdomain**
 
-You can also set up a **subdomain** to make connecting to your server easier. Here’s how:
+You can also set up a **subdomain** to make connecting to your server easier. Hereâ€™s how:
 
 1. **Create a Subdomain**:
    - From the Nitro Control Panel, set up a subdomain for your **Minecraft server**. This allows you to use an easy-to-remember address (e.g., **yourserver.evlbox.com**) to join your server.
 
-   ![subdomain.png](/minecraft/subdomain.png)
+   ![subdomain.png](/docs/minecraft/subdomain.png)
 
 2. **Use the Subdomain to Connect**:
    - Instead of using an IP address, you can now use the subdomain as your **server address** when joining the server in **Minecraft**.

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Creating Snapshot Backups"
 description: "How to take snapshot backups in virtfusion"
 ---
@@ -12,7 +12,7 @@ Snapshot backups capture an image of the state of your VPS's hard drive. EVLBOX 
 Below is the client login URL for the VPS Panel
 https://vf.evlbox.com/login
 
-![Login Screenshot](/vps/loginlol.jpg)
+![Login Screenshot](/docs/vps/loginlol.jpg)
 
 ### How To Backup
 
@@ -26,7 +26,7 @@ https://vf.evlbox.com/login
 :::caution
 It is recomended to power down your VPS before creating a backup, Backup is only for the primary disk.
 :::
-![Manage button](/vps/backup.gif)
+![Manage button](/docs/vps/backup.gif)
 
 
 ### How To Restore From A Backup
@@ -37,7 +37,7 @@ To restore from a backup.
 1. Wait for the Restore procedure to complete.
 
 
-![Manage button](/vps/restore.jpg)
+![Manage button](/docs/vps/restore.jpg)
 
 
 :::tip

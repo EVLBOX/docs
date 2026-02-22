@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Install Minecraft Modpacks"
 description: "Learn how to easily install modpacks on your EVLBOX Minecraft server. Step-by-step guide to customize your server with the latest mods and modpacks."
 head:
@@ -68,27 +68,27 @@ Installing modpacks on your **EVLBOX Minecraft server** is a simple and straight
    - Once logged in, click on **Manage Server** to access your server settings.
 
 2. **Create a Backup** (Optional but Recommended):
-   - Before making any changes, it’s highly recommended to **back up your server data** to prevent potential data loss.
+   - Before making any changes, itâ€™s highly recommended to **back up your server data** to prevent potential data loss.
    - For detailed instructions on how to create a backup, refer to our [Backup Guide](#).
 
 3. **Navigate to the Modpack Tab**:
    - In the Nitro Panel, click on the **Modpack** tab.
    - Select the **modpack provider** and **modpack version** that you would like to install from the list of available options.
 
-   ![modpacks_tab.png](/minecraft/modpacks_tab.png)
+   ![modpacks_tab.png](/docs/minecraft/modpacks_tab.png)
 
 4. **Choose the Modpack Version**:
    - Click on the **download icon** next to your desired modpack.
    - You will be prompted to choose the **version** of the modpack you want to install. 
    - **Important**: We recommend **deleting all existing files** before proceeding with the installation to avoid potential conflicts.
 
-   ![install_modpack.png](/minecraft/install_modpack.png)
+   ![install_modpack.png](/docs/minecraft/install_modpack.png)
 
 5. **Installation Progress**:
    - After selecting the modpack version, click **Install** to begin the installation process.
    - A pop-up window will appear showing the installation progress. The window will automatically close once the download and installation are complete.
 
-   ![installer.png](/minecraft/installer.png)
+   ![installer.png](/docs/minecraft/installer.png)
 
 6. **Start Your Server**:
    - Once the installation is complete, go back to the **Dashboard** and click **Start Server** to launch your modded Minecraft server with the new modpack installed.

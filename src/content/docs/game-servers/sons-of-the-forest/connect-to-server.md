@@ -1,4 +1,4 @@
----
+﻿---
 title: "Connecting to the Server"
 description: "Connecting to your Sons of the Forest is easy with our comprehensive dedicated server guides."
 ---
@@ -17,15 +17,15 @@ Prefer to watch this in video form? Check out our [Sons of the Forest tutorial v
 1. Login to nitro.evlbox.com, and locate your Sons of the Forest server. 
 2. Click the "startup" tab in the top menu.
 
-![topmenu](/sotf/top-menu.jpg)
+![topmenu](/docs/sotf/top-menu.jpg)
  
 3. Enter a unique name in the Server Name field. You will use this name to find your server. We suggest using your username in the name to make it easier to find and join. 
 
-![servername](/sotf/servername.jpg)
+![servername](/docs/sotf/servername.jpg)
 
 4. After setting a name, restart your server from the console menu. 
 
-![consolebuttons](/sotf/console-buttons.jpg)
+![consolebuttons](/docs/sotf/console-buttons.jpg)
 
 ### Set a password
 
@@ -39,16 +39,16 @@ Passwords are not required but we highly reccomend you set one!
 1. Launch Sons of the Forest
 2. Click Multiplayer -> Join
 
-![join](/sotf/join.jpg)
+![join](/docs/sotf/join.jpg)
 
 3. Set the Source to Dedicated, enter your unique server name in the filter box and press enter. We suggest only using one word for the best results. 
 
-![filter](/sotf/filter.jpg)
+![filter](/docs/sotf/filter.jpg)
 
 5. Join your server, and enter a password. 
 
-![servers-list](/sotf/servers-list.jpg)
+![servers-list](/docs/sotf/servers-list.jpg)
 
-![password](/sotf/password.jpg)
+![password](/docs/sotf/password.jpg)
 
 [**Grab your own Sons of the Forest Server**](https://evlbox.com/sons-of-the-forest/)

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Minecraft"
 description: "Get high-performance Minecraft hosting with EVLBOX. Explore custom modpacks, optimize your server, and enjoy smooth multiplayer gameplay."
 head:
@@ -59,7 +59,7 @@ head:
 
 # **Minecraft Hosting with EVLBOX**
 
-![Minecraft Logo](/minecraft/minecraft_logo.avif)
+![Minecraft Logo](/docs/minecraft/minecraft_logo.avif)
 
 Explore vast, **procedurally generated worlds**, and create your own masterpieces with the power of a **dedicated Minecraft server**. With **EVLBOX Minecraft hosting**, you can customize your server, install mods, and invite friends to join your adventure in your very own Minecraft world.
 
@@ -71,10 +71,10 @@ Whether you're playing solo or with friends, our **high-performance servers** en
 
 Looking for help with your server? Check out our in-depth guides to get the most out of your Minecraft server:
 
-- [**How to Connect to Your Minecraft Server**](/game-servers/minecraft/how-to-connect): A step-by-step guide on how to join your Minecraft server with ease.
-- [**How to Install Modpacks**](/game-servers/minecraft/modpacks): Learn how to enhance your Minecraft experience with custom modpacks.
-- [**How to Change Minecraft Versions**](/game-servers/minecraft/change-server-version): Instructions for switching between different Minecraft versions.
-- [**How to Optimize Your Minecraft Server for Maximum Performance**](/game-servers/minecraft/optimize-your-minecraft-server-maximum-performance): Tips and tricks for improving server performance, reducing lag, and boosting FPS.
+- [**How to Connect to Your Minecraft Server**](/docs/game-servers/minecraft/how-to-connect): A step-by-step guide on how to join your Minecraft server with ease.
+- [**How to Install Modpacks**](/docs/game-servers/minecraft/modpacks): Learn how to enhance your Minecraft experience with custom modpacks.
+- [**How to Change Minecraft Versions**](/docs/game-servers/minecraft/change-server-version): Instructions for switching between different Minecraft versions.
+- [**How to Optimize Your Minecraft Server for Maximum Performance**](/docs/game-servers/minecraft/optimize-your-minecraft-server-maximum-performance): Tips and tricks for improving server performance, reducing lag, and boosting FPS.
 
 ---
 

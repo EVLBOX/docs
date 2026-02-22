@@ -1,4 +1,4 @@
----
+﻿---
 title: "Reinstall OS on a VPS"
 description: "Learn how to re-install the Operating system on a VPS with ease"
 ---
@@ -10,7 +10,7 @@ description: "Learn how to re-install the Operating system on a VPS with ease"
 Below is the client login for the VPS Panel
 https://vf.evlbox.com/login
 
-![Login Screenshot](/vps/loginlol.jpg)
+![Login Screenshot](/docs/vps/loginlol.jpg)
 
 
 ## Navigate to your server and Rebuild.

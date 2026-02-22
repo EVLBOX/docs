@@ -1,4 +1,4 @@
----
+﻿---
 title: "Admin Commands"
 description: "How to use admin commands"
 ---
@@ -14,7 +14,7 @@ After setting up the admin password in the console under the startup menu, compl
 - Type: '/AdminPassword {yourchosenpassword}'
 
 If successful, you will get a SYSTEM confirmation message
-![successadmin.png](/palworld/successadmin.png)
+![successadmin.png](/docs/palworld/successadmin.png)
 
 ### Admin Commands
 

@@ -1,4 +1,4 @@
----
+﻿---
 title: "Share Control Panel Access"
 description: "Add additional users to your Nitro Control Panel. This allows others to manage a game server on your behalf."
 ---
@@ -12,10 +12,10 @@ User permissions are selectively assigned, giving you the ability to control exa
 
 1. Under Server Controls, choose "Users"
 
-![users.jpg](/nitro/users.jpg)
+![users.jpg](/docs/nitro/users.jpg)
 
 2. Click the add user button 
-![image.png](/nitro/image.png)
+![image.png](/docs/nitro/image.png)
 
 3. Enter the users email address (they will use this to sign into the Nitro Panel).  Then scroll down to check the permissions you wish to
-![invite.jpg](/nitro/invite.jpg)
+![invite.jpg](/docs/nitro/invite.jpg)

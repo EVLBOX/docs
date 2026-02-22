@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Fix Mod Installation Errors"
 description: "How to troubleshoot and fix mod errors"
 ---
@@ -14,22 +14,22 @@ Mods significantly enhance your Project Zomboid gameplay, but sometimes errors o
 If your server shows the error message **"DownloadPending -> Fail ID"** and crashes when trying to download Steam Workshop mods, follow these easy steps to fix it:
 
 **Example of the error:**  
-![Steam Download Error Example](/zomboid/steam_download_error.png)
+![Steam Download Error Example](/docs/zomboid/steam_download_error.png)
 
 ### **Step-by-Step Fix:**
 
 1. **Stop Your Server**  
    - Log into your **Nitro Panel** and click **Stop** to shut down your Project Zomboid server.
    
-   ![Stop Server](/zomboid/stop_server.png)
+   ![Stop Server](/docs/zomboid/stop_server.png)
 
 2. **Delete the `appworkshop.acf` File**  
-   - Navigate to **Files → Steamapps/Workshop**.  
+   - Navigate to **Files â†’ Steamapps/Workshop**.  
    - Locate and **delete** the file named `appworkshop.acf`.
 
-   ![Steamapps Workshop Folder](/zomboid/steamapps_workshop.png)
+   ![Steamapps Workshop Folder](/docs/zomboid/steamapps_workshop.png)
 
-   > **⚠️ Warning**:  
+   > **âš ï¸ Warning**:  
    > Double-check that you're deleting the `appworkshop.acf` file located specifically inside the **Workshop folder**.  
    > **Do NOT delete** the similarly named file in the Steamapps main folder by mistake.
 
@@ -37,7 +37,7 @@ If your server shows the error message **"DownloadPending -> Fail ID"** and cras
    - Next, navigate to **Steamapps/Workshop/Content**.  
    - Delete the **folder named `108600`**. This folder contains Project Zomboid mod files that failed to download properly.
 
-   ![Steamapps Workshop Content Folder](/zomboid/steamapps_workshop_content.png)
+   ![Steamapps Workshop Content Folder](/docs/zomboid/steamapps_workshop_content.png)
 
 4. **Restart Your Server**  
    - Go back to the **Dashboard** in the Nitro Panel.  

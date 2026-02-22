@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Set Up a Satisfactory Server for the First Time | EVLBOX"
 description: "Learn how to set up your first Satisfactory server with this step-by-step guide from EVLBOX. Get your server running smoothly with easy instructions and tips."
 ---
@@ -22,7 +22,7 @@ Can't login? When you created your first server with us an email was sent from n
 :::
 2. Click your server and then the "startup" tab and find the Server Query Port field. This is the port you will use to join your server. 
 
-![query-port](/satisfactory/query.png)
+![query-port](/docs/satisfactory/query.png)
 
 ### Satisfactory Server Manager
 
@@ -30,21 +30,21 @@ Can't login? When you created your first server with us an email was sent from n
 2. Click add server and enter your Servers IP address (looks like 10.11.12.13). Do not include the number after the colon :
 3. Enter the query port from the above section (from your startup tab) 
 
-![port](/satisfactory/port.jpg)
+![port](/docs/satisfactory/port.jpg)
 
 4. You are prompted to claim the server, set a name, and set an admin password. Do not share the admin password with people you do not trust. 
 
-![claim](/satisfactory/claim.png)
+![claim](/docs/satisfactory/claim.png)
 
-![admin](/satisfactory/admin.png)
+![admin](/docs/satisfactory/admin.png)
 
 5. You are then taken to the server settings tab. Adjust as needed. 
 
-![settings](/satisfactory/settings.png)
+![settings](/docs/satisfactory/settings.png)
 
 6. Click the "Create Game" tab and choose a starting area and set a session name. Tick the "Join" box to auto join after the server starts up. 
 
-![startup](/satisfactory/startup.jpg)
+![startup](/docs/satisfactory/startup.jpg)
 
 At this point you and your friends are free to join the server! 
 
