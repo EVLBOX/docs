@@ -9,7 +9,7 @@ description: "Learn how to set up your first Satisfactory server with this step-
 
 We've created a tutorial video that covers most of the sections in our Satisfactory documentation.
 
-[Watch on YouTube](https://youtu.be/0UXPOXPJ69I){target=_blank}
+<iframe width="100%" style="aspect-ratio:16/9;" src="https://www.youtube.com/embed/0UXPOXPJ69I" title="Satisfactory Server Setup Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Find your Query Port
 

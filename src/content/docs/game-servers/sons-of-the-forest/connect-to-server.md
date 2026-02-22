@@ -9,7 +9,9 @@ description: "Connecting to your Sons of the Forest is easy with our comprehensi
 :::note
 As of 1/4/2023 the only way to join your server is to first locate it in the dedicated server browser. You aren't able to enter your server IP. EVLBOX will update this documentation if this changes.
 :::
-Prefer to watch this in video form? Check out our [Sons of the Forest tutorial video](https://youtu.be/4PNXuuY92ts/ "Sons of the Forest tutorial video") on YouTube.
+Prefer to watch this in video form?
+
+<iframe width="100%" style="aspect-ratio:16/9;" src="https://www.youtube.com/embed/4PNXuuY92ts" title="Sons of the Forest Server Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### Set a server name
 
