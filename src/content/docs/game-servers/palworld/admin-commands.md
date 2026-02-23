@@ -31,4 +31,4 @@ If successful, you will get a SYSTEM confirmation message
 | `/Info` | Shows server information. |
 | `/Save` | Save the world data to disk. |
 
-[Get your own Palworld Server](https://evlbox.com/amazing-palworld-hosting-6gb-ram/)
+[Get your own Palworld Server](https://evlbox.com/games/palworld)
