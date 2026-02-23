@@ -81,7 +81,7 @@ For example, if you create `src/content/docs/game-servers/minecraft/custom-world
         { label: 'Overview', slug: 'game-servers/minecraft' },
         { label: 'How to Connect', slug: 'game-servers/minecraft/how-to-connect' },
         // ... existing entries ...
-        { label: 'Custom Maps', slug: 'game-servers/minecraft/custom-maps' },  // ← your new page
+        { label: 'Custom Worlds', slug: 'game-servers/minecraft/custom-worlds' },  // ← your new page
     ],
 },
 ```
@@ -171,3 +171,13 @@ Always run `npm run build` before pushing. The build will **fail** if a sidebar 
 - **Discord** — [discord.gg/rWF4hJhbaM](https://discord.gg/rWF4hJhbaM)
 - **Starlight docs** — [starlight.astro.build](https://starlight.astro.build/)
 - **Astro docs** — [docs.astro.build](https://docs.astro.build/)
+
+---
+
+## Legal
+
+This project is [MIT licensed](LICENSE). The license applies to the site code, configuration, and original documentation text.
+
+**Game logos, names, screenshots, and other third-party assets** included in this repository are the property of their respective rights holders and are used here solely for illustrative and informational purposes. They are **not** covered by the MIT license. All trademarks and registered trademarks are the property of their respective owners.
+
+The EVLBOX name and logo are property of EVL Gaming, LLC.
