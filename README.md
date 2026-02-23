@@ -34,13 +34,18 @@ For a live reference of all available formatting (admonitions, tabs, code blocks
 
 ### How to contribute
 
-1. **Create a branch** from `main` with a descriptive name (e.g. `add-rust-server-guide`, `fix-palworld-typo`).
-2. Make your changes — add or edit `.md` / `.mdx` files in `src/content/docs/`.
-3. If you're adding a new page, add it to the sidebar in `astro.config.mjs` (see [Project structure](#project-structure) below).
-4. **Test locally** to make sure the build passes (see [Running locally](#running-locally) below).
-5. **Open a Pull Request** against `main` with a brief description of what you changed and why.
+1. **Fork** this repo to your own GitHub account.
+2. **Create a branch** in your fork with a descriptive name (e.g. `add-rust-server-guide`, `fix-palworld-typo`).
+3. Make your changes — add or edit `.md` / `.mdx` files in `src/content/docs/`.
+4. If you're adding a new page, add it to the sidebar in `astro.config.mjs` (see [Project structure](#project-structure) below).
+5. **Test locally** to make sure the build passes (see [Running locally](#running-locally) below).
+6. **Open a Pull Request** from your fork against `main` with a brief description of what you changed and why.
 
 A maintainer will review your PR and either merge it or leave feedback. Once merged, changes deploy automatically.
+
+### Not comfortable with GitHub?
+
+No worries — you can also send us your guide as a **Word doc, Google Doc, PDF, or even plain text** and we'll format it for the site. Open a ticket in the **#create-a-ticket** channel on our [Discord](https://discord.com/invite/rWF4hJhbaM) and attach your content. We prefer the PR method above, but we'd rather have your guide in any format than not at all!
 
 ---
 
