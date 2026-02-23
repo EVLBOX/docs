@@ -83,7 +83,7 @@ Mods are often found under this path:
 
 `C:\Program Files (x86)\Steam\steamapps\`
 
-â€¦but may be located on a different drive. Refer to the image below if you're unsure:
+…but may be located on a different drive. Refer to the image below if you're unsure:
 
 ![Workshop Content Path](/docs/foundry/workshop-content.jpg)
 
@@ -93,9 +93,9 @@ Mods are often found under this path:
 
 - Inside the `983870` folder, select the mods you want.
 - Right-click and choose:  
-  **Send to â†’ Compressed (zipped) folder**
+  **Send to → Compressed (zipped) folder**
 
-> âœ… You can zip **one** or **multiple** mods. The EVLBOX Mod Loader handles both formats.
+> ✅ You can zip **one** or **multiple** mods. The EVLBOX Mod Loader handles both formats.
 
 ![Zip Workshop Mods](/docs/foundry/zip-workshop-content.jpg)
 
@@ -127,7 +127,7 @@ Mods are often found under this path:
 
 The console will launch the **EVLBOX Foundry Mod Loader**, showing installed mods.
 
-> âš ï¸ Sometimes multi-mod zips show duplicate mods. This is normal and wonâ€™t cause issues.
+> ⚠️ Sometimes multi-mod zips show duplicate mods. This is normal and won’t cause issues.
 
 ---
 
@@ -138,13 +138,13 @@ Foundry does **not support auto-syncing mods** with players. Everyone who joins 
 
 We strongly recommend using a **Steam Workshop Collection** to make this easy.
 
-ðŸ‘‰ [**How to Create a Steam Collection for Mod Syncing**](/docs/game-servers/foundry/create-collection-for-mod-syncing)
+👉 [**How to Create a Steam Collection for Mod Syncing**](/docs/game-servers/foundry/create-collection-for-mod-syncing)
 
 ---
 
 ### **Most Mods Require the "Unfoundry" Mod**
 To work correctly, most server mods need **Unfoundry**:  
-ðŸ‘‰ [Unfoundry on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3297627927)
+👉 [Unfoundry on Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=3297627927)
 
 ---
 
@@ -158,7 +158,7 @@ Some mods are **not compatible** with servers and may be **auto-deleted** during
 1. Stop your server.
 2. Go to the `/Mods` folder.
 3. Check the mod folders you want to remove.
-4. Use the **trash icon** or right-click â†’ **Delete**.
+4. Use the **trash icon** or right-click → **Delete**.
 
 Also clear the matching zip files from `mods-upload` to prevent reloading.
 
@@ -171,7 +171,7 @@ Mods for Foundry are still in **early access**. They may be buggy or unstable.
 
 ### **Need Help Connecting?**
 See our companion guide:  
-ðŸ‘‰ [**How to Connect to a Foundry Server**](/docs/game-servers/foundry/how-to-connect-to-foundry)
+👉 [**How to Connect to a Foundry Server**](/docs/game-servers/foundry/how-to-connect-to-foundry)
 
 ---
 

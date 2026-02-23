@@ -40,13 +40,13 @@ These updates will not write over your saves or player data.
 ![broadcast_console.png](/docs/palworld/broadcast_console.png)
 ![broadcast_message.png](/docs/palworld/broadcast_message.png)
 
-Shutdown [Seconds] [MessageText] â€“ Shut down the server with the indicated time
-DoExit â€“ Shut down the server immediately after using the command
-Broadcast [MessageText] â€“ Broadcast a message to all players (Does not allow spaces in text) 
-KickPlayer [SteamID] â€“ Kick a player
-BanPlayer [SteamID] â€“ Ban a player
-ShowPlayers â€“ List all players on the server
-Info â€“ Shows server name, current game version, and more.
-Save â€“ Save all data from your world
+Shutdown [Seconds] [MessageText] – Shut down the server with the indicated time
+DoExit – Shut down the server immediately after using the command
+Broadcast [MessageText] – Broadcast a message to all players (Does not allow spaces in text) 
+KickPlayer [SteamID] – Kick a player
+BanPlayer [SteamID] – Ban a player
+ShowPlayers – List all players on the server
+Info – Shows server name, current game version, and more.
+Save – Save all data from your world
 
 [Get your own Palworld Server](https://evlbox.com/amazing-palworld-hosting-6gb-ram/)

@@ -63,7 +63,7 @@ Connecting to your **Minecraft server** hosted by **EVLBOX** is simple! Follow t
 ### **Step-by-Step Guide to Connect to Your Minecraft Server**
 
 1. **Login to the Nitro Control Panel**:
-   - To begin, log in to the **[EVLBOX Nitro Control Panel](https://nitro.evlbox.com)**. This is where youâ€™ll find all the details you need to connect to your **Minecraft server**.
+   - To begin, log in to the **[EVLBOX Nitro Control Panel](https://nitro.evlbox.com)**. This is where you’ll find all the details you need to connect to your **Minecraft server**.
 
 2. **Grab Your Connection String**:
    - There are two ways to grab the connection information:
@@ -81,7 +81,7 @@ Connecting to your **Minecraft server** hosted by **EVLBOX** is simple! Follow t
 
 ### **Alternative: Connect Using a Subdomain**
 
-You can also set up a **subdomain** to make connecting to your server easier. Hereâ€™s how:
+You can also set up a **subdomain** to make connecting to your server easier. Here’s how:
 
 1. **Create a Subdomain**:
    - From the Nitro Control Panel, set up a subdomain for your **Minecraft server**. This allows you to use an easy-to-remember address (e.g., **yourserver.evlbox.com**) to join your server.

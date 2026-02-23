@@ -63,9 +63,9 @@ Connecting to your **FOUNDRY server** hosted by **EVLBOX** is simple, whether yo
 
 ---
 
-## ðŸ”— **Direct Connection (Recommended)**
+## 🔗 **Direct Connection (Recommended)**
 
-The direct method uses your serverâ€™s IP and port and is the most consistent way to join your server.
+The direct method uses your server’s IP and port and is the most consistent way to join your server.
 
 ### **Step-by-Step Instructions**
 
@@ -76,7 +76,7 @@ The direct method uses your serverâ€™s IP and port and is the most consiste
    On the dashboard, click on your **FOUNDRY server** to open its management interface.
 
 3. **Copy the Server Address**  
-   In the **Terminal** section, click on the **address string**â€”this will automatically copy the IP and port to your clipboard.  
+   In the **Terminal** section, click on the **address string**—this will automatically copy the IP and port to your clipboard.  
    ![copy-foundry-address](/docs/foundry/copy-address.jpg)
 
 4. **Launch the Game**  
@@ -96,9 +96,9 @@ The direct method uses your serverâ€™s IP and port and is the most consiste
 
 ---
 
-## ðŸŒ **Connecting via the Server Browser**
+## 🌐 **Connecting via the Server Browser**
 
-This method allows you to browse public servers, including yoursâ€”but it may be harder to find due to current limitations.
+This method allows you to browse public servers, including yours—but it may be harder to find due to current limitations.
 
 1. **Open the Server Browser**  
    From the main menu, click **Multiplayer**, then select the **tiny button next to Direct Connect** to open the **Server Browser**.
@@ -108,7 +108,7 @@ This method allows you to browse public servers, including yoursâ€”but it m
    Since there is currently no search function, sorting by **Latency** helps bring your server closer to the top.
 
 3. **Check Server Name in App.cfg**  
-   Your serverâ€™s name is defined in the `App.cfg` file inside Nitro â†’ Files. Look for the `server_name=` field. You can **edit this name** to something memorable.  
+   Your server’s name is defined in the `App.cfg` file inside Nitro → Files. Look for the `server_name=` field. You can **edit this name** to something memorable.  
 
 
 4. **Find and Join Your Server**  
@@ -116,6 +116,6 @@ This method allows you to browse public servers, including yoursâ€”but it m
 
 ---
 
-### ðŸ’¡ Need More Help?
+### 💡 Need More Help?
 
-If youâ€™re still having trouble connecting, check out our other helpful guides or reach out to our support team. [**Get a FOUNDRY server today**](https://evlbox.com/games/foundry) and enjoy reliable hosting with built-in support from EVLBOX!
+If you’re still having trouble connecting, check out our other helpful guides or reach out to our support team. [**Get a FOUNDRY server today**](https://evlbox.com/games/foundry) and enjoy reliable hosting with built-in support from EVLBOX!

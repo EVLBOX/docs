@@ -63,7 +63,7 @@ head:
 
 Build complex factories, program logistics, and expand your robotic workforce with **FOUNDRY**, the voxel-based automation game. Host your own dedicated **FOUNDRY server** with **EVLBOX** and enjoy uninterrupted gameplay, mod support, and full save management for your massive industrial empire.
 
-Whether you're assembling your first production line or optimizing an interplanetary export network, **EVLBOX hosting** gives you the power and flexibility to run your world 24/7â€”lag-free, mod-ready, and fully in your control.
+Whether you're assembling your first production line or optimizing an interplanetary export network, **EVLBOX hosting** gives you the power and flexibility to run your world 24/7—lag-free, mod-ready, and fully in your control.
 
 ---
 

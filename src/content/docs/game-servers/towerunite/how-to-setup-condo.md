@@ -59,7 +59,7 @@ head:
 
 # **How to Set Up Your Tower Unite Condo Server**
 
-If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTailâ€™s official guide](https://towerunite.com/guides/condo_dedicated.html).
+If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTail’s official guide](https://towerunite.com/guides/condo_dedicated.html).
 
 
 ## **Step-by-Step Setup Instructions**
@@ -76,7 +76,7 @@ This token is tied to your **Steam account**. EVLBOX cannot provide this for you
 
 ![GSLT Creation](/docs/towerunite/gslt.png)
 
-Save your tokenâ€”you'll use it in Step 3.
+Save your token—you'll use it in Step 3.
 
 
 ### **Step 2: Generate a Tower Unite Server Token**
@@ -151,9 +151,9 @@ In the **Startup** tab of Nitro:
 - Set **Map Name** to match the `.map` file name (e.g. `C_Condo`, no extension)
 
 
-## âœ… Your Condo Server is Ready!
+## ✅ Your Condo Server is Ready!
 
-Youâ€™re now hosting your own persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience.
+You’re now hosting your own persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience.
 
 Want more? Check out our [**Tower Unite Condos Hub**](/docs/game-servers/towerunite) for more guides and support.
 

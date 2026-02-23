@@ -24,12 +24,12 @@ If your server shows the error message **"DownloadPending -> Fail ID"** and cras
    ![Stop Server](/docs/zomboid/stop_server.png)
 
 2. **Delete the `appworkshop.acf` File**  
-   - Navigate to **Files â†’ Steamapps/Workshop**.  
+   - Navigate to **Files → Steamapps/Workshop**.  
    - Locate and **delete** the file named `appworkshop.acf`.
 
    ![Steamapps Workshop Folder](/docs/zomboid/steamapps_workshop.png)
 
-   > **âš ï¸ Warning**:  
+   > **⚠️ Warning**:  
    > Double-check that you're deleting the `appworkshop.acf` file located specifically inside the **Workshop folder**.  
    > **Do NOT delete** the similarly named file in the Steamapps main folder by mistake.
 

@@ -78,7 +78,7 @@ To view your current server version, including the **Minecraft version**, **buil
 
 ### **How to Change the Minecraft Version on Your Server**
 
-Changing the version of Minecraft on your EVLBOX server is straightforward. Hereâ€™s a simple step-by-step guide:
+Changing the version of Minecraft on your EVLBOX server is straightforward. Here’s a simple step-by-step guide:
 
 1. **Log in to the Nitro Panel** and **Stop Your Server**.
    - After logging in, navigate to the **Startup** tab.
@@ -90,7 +90,7 @@ Changing the version of Minecraft on your EVLBOX server is straightforward. Here
    - Visit the **[PaperMC Documentation](https://docs.papermc.io/paper/getting-started)** to find the **corresponding Java version** for the Minecraft version you want to use.
    
 4. **Select the Java Version**:
-   - In the **Docker Image** dropdown menu, select the appropriate Java version that corresponds to the Minecraft version youâ€™ve chosen.
+   - In the **Docker Image** dropdown menu, select the appropriate Java version that corresponds to the Minecraft version you’ve chosen.
 
    ![change_version.png](/docs/minecraft/change_version.png)
 
@@ -113,5 +113,5 @@ Changing your **Minecraft version** allows you to access new features, optimizat
 
 ### **Get Your Own Minecraft Server with EVLBOX**
 
-Ready to start your own **Minecraft server**? Visit [**EVLBOX Minecraft Servers**](https://evlbox.com/games/minecraft) and purchase your server today to enjoy high-performance hosting and full control over your serverâ€™s versions and settings!
+Ready to start your own **Minecraft server**? Visit [**EVLBOX Minecraft Servers**](https://evlbox.com/games/minecraft) and purchase your server today to enjoy high-performance hosting and full control over your server’s versions and settings!
 

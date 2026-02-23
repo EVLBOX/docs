@@ -5,7 +5,7 @@ description: "Learn how to transfer your singleplayer save to your Foundry dedic
 
 # **How to Transfer a Singleplayer Save to Your Foundry Server**
 
-Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left offâ€”now with friends!
+Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left off—now with friends!
 
 ---
 
@@ -48,7 +48,7 @@ For this example we'll use Jeer_178174133. You can rename this if you like, but 
 - Drag and drop your ZIP file into the folder.
 - Select the ZIP, checkmark it, then choose **Unarchive**.
 
-> âš ï¸ Note: Save files are large and may take time to upload. Check progress via the cloud icon near â€œCreate Directoryâ€. See below screenshot for the upload "spinner"
+> ⚠️ Note: Save files are large and may take time to upload. Check progress via the cloud icon near “Create Directory”. See below screenshot for the upload "spinner"
 
 ![Uploading Save](/docs/foundry/loading.jpg)  
 ![Unarchiving Save](/docs/foundry/unarchive.jpg)
@@ -78,4 +78,4 @@ Need help? See our article on [**How to Connect to Your Foundry Server**](/docs/
 
 ## **Get a Foundry Server**
 
-Havenâ€™t ordered your server yet? Get your own high-performance server now on [**EVLBOX Foundry Hosting**](https://evlbox.com/games/foundry).
+Haven’t ordered your server yet? Get your own high-performance server now on [**EVLBOX Foundry Hosting**](https://evlbox.com/games/foundry).

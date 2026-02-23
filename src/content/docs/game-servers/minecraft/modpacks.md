@@ -68,7 +68,7 @@ Installing modpacks on your **EVLBOX Minecraft server** is a simple and straight
    - Once logged in, click on **Manage Server** to access your server settings.
 
 2. **Create a Backup** (Optional but Recommended):
-   - Before making any changes, itâ€™s highly recommended to **back up your server data** to prevent potential data loss.
+   - Before making any changes, it’s highly recommended to **back up your server data** to prevent potential data loss.
    - For detailed instructions on how to create a backup, refer to our [Backup Guide](#).
 
 3. **Navigate to the Modpack Tab**:

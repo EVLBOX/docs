@@ -80,14 +80,14 @@ Everything you need to get started with your condo server:
 
 ---
 
-### ðŸŽ‰ **Get Your Own Tower Unite Condo Server**
+### 🎉 **Get Your Own Tower Unite Condo Server**
 
 Ready to show off your masterpiece? [**Order your condo server from EVLBOX**](https://evlbox.com/games/towerunite-condos) and get online today!
 
 ---
 
-### ðŸ’» **Want to Host It Yourself?**
+### 💻 **Want to Host It Yourself?**
 
-Prefer self-hosting? Check out [**PixelTailâ€™s official dedicated condo guide**](https://towerunite.com/guides/condo_dedicated.html) to run your own server on your personal computer.
+Prefer self-hosting? Check out [**PixelTail’s official dedicated condo guide**](https://towerunite.com/guides/condo_dedicated.html) to run your own server on your personal computer.
 
 ---

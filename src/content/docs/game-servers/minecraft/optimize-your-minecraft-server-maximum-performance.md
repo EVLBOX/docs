@@ -66,7 +66,7 @@ Follow the steps below to improve **FPS**, reduce lag, and make your Minecraft s
 
 ## **1. Log in to the Nitro Panel**
 
-To get started, **log in to the Nitro Panel** for your **EVLBOX Minecraft server**. This is where you will manage your serverâ€™s **settings** and make performance adjustments.
+To get started, **log in to the Nitro Panel** for your **EVLBOX Minecraft server**. This is where you will manage your server’s **settings** and make performance adjustments.
 
 1. Visit the **[Nitro Control Panel](https://nitro.evlbox.com)**.
 2. Enter your login details and access your **Minecraft server**.
@@ -78,7 +78,7 @@ To get started, **log in to the Nitro Panel** for your **EVLBOX Minecraft server
 In the **Nitro Panel**, you can adjust key server settings that will directly affect performance.
 
 ### **Server Mode (Paper)**:
-To ensure your server is optimized, **Paper** should be running as the server mode. Hereâ€™s how you can set it:
+To ensure your server is optimized, **Paper** should be running as the server mode. Here’s how you can set it:
 
 1. **Click on the Settings tab** in the **Nitro Panel**.
 2. Under the **Server Egg** section, set the **Server Egg** to **Paper**.
@@ -145,10 +145,10 @@ Ensure that your server is running the **optimal version of Java** for best perf
 
 ## **6. Use a Server Performance Monitor**
 
-Use a **performance monitoring tool** to track your serverâ€™s usage of **CPU**, **RAM**, and **disk space**. This will help you identify bottlenecks and optimize accordingly.
+Use a **performance monitoring tool** to track your server’s usage of **CPU**, **RAM**, and **disk space**. This will help you identify bottlenecks and optimize accordingly.
 
 - You can enable **timings reports** within **Paper** to track performance metrics.
-- The **Nitro Panel** (based on **Pterodactyl Panel**) displays **CPU** and **memory usage** in real-time, helping you to monitor your serverâ€™s resource usage.
+- The **Nitro Panel** (based on **Pterodactyl Panel**) displays **CPU** and **memory usage** in real-time, helping you to monitor your server’s resource usage.
 
 ---
 
@@ -167,7 +167,7 @@ If you're using **plugins** or **mods**, be sure that they are **performance-opt
 Sometimes, the issue isn't the server settings but the **Minecraft world** itself. Over time, **chunks** can become corrupted or inefficiently generated.
 
 ### **Steps to Optimize World Performance**:
-1. Use the **WorldBorder plugin** to limit the size of your serverâ€™s world.
+1. Use the **WorldBorder plugin** to limit the size of your server’s world.
 2. Use **Chunk Fixer tools** to optimize **world chunks** and repair any corruption.
 3. Consider **resetting unused chunks** in large worlds to reduce the load on the server.
 
@@ -175,7 +175,7 @@ Sometimes, the issue isn't the server settings but the **Minecraft world** itsel
 
 ### **Conclusion: Achieving Maximum Minecraft Server Performance**
 
-By following these tips and optimizing your **server settings**, **plugins**, and **Java configuration**, you can dramatically improve your **Minecraft server performance**. Whether youâ€™re hosting a **small multiplayer server** or a **large community world**, these optimizations will help reduce **lag** and create a smoother gaming experience for everyone.
+By following these tips and optimizing your **server settings**, **plugins**, and **Java configuration**, you can dramatically improve your **Minecraft server performance**. Whether you’re hosting a **small multiplayer server** or a **large community world**, these optimizations will help reduce **lag** and create a smoother gaming experience for everyone.
 
 ---
 

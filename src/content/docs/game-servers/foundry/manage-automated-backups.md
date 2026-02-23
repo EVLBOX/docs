@@ -60,21 +60,21 @@ head:
 # **How to Check and Manage Automated Backups in Foundry**
 
 
-EVLBOX provides **automated backups** for your Foundry VTT server to help ensure your campaigns and configurations are safe, even in the event of hardware failure. These backups are created and managed with minimal user input, but knowing how they workâ€”and how to verify or manage themâ€”can give you greater peace of mind.
+EVLBOX provides **automated backups** for your Foundry VTT server to help ensure your campaigns and configurations are safe, even in the event of hardware failure. These backups are created and managed with minimal user input, but knowing how they work—and how to verify or manage them—can give you greater peace of mind.
 
 ---
 
 ## **Understanding EVLBOX Automated Backups**
 
-When you purchase a Foundry server from EVLBOX, a backup schedule is automatically createdâ€”usually within 6 to 12 hours. Here's how it works:
+When you purchase a Foundry server from EVLBOX, a backup schedule is automatically created—usually within 6 to 12 hours. Here's how it works:
 
 - **Backup Frequency**: Every 2 hours
 - **Retention**: 12 backup slots (1 full day of backups)
 - **Backup Contents**: Only your **saves**, **mods**, and **server configuration** are included. Game files are **not** backed up.
 - **Backup Timing**: Randomized to avoid conflicts with other servers on the same node
-- **Storage Location**: Offsite at EVLBOXâ€™s **Canada Datacenter** for high availability
+- **Storage Location**: Offsite at EVLBOX’s **Canada Datacenter** for high availability
 
-> ðŸ”’ When all 12 slots are used, the **oldest backup is deleted first**â€”unless itâ€™s been manually locked by you.
+> 🔒 When all 12 slots are used, the **oldest backup is deleted first**—unless it’s been manually locked by you.
 
 ---
 
@@ -91,7 +91,7 @@ When you purchase a Foundry server from EVLBOX, a backup schedule is automatical
 
 This confirms that the automatic backup system is in place.
 
-> âš ï¸ **Do not delete this job.** If removed, EVLBOX will re-add it automatically.
+> ⚠️ **Do not delete this job.** If removed, EVLBOX will re-add it automatically.
 
 ---
 
@@ -110,7 +110,7 @@ You may choose to manage backups manually using the 12 backup slots. To disable 
 
    ![disable schedule](/docs/foundry/schedule-disable.jpg)
 
-> ðŸš¨ Disabling automatic backups reduces EVLBOX's ability to help recover your server in the event of node failure. We strongly recommend creating your own schedule if you disable this one.
+> 🚨 Disabling automatic backups reduces EVLBOX's ability to help recover your server in the event of node failure. We strongly recommend creating your own schedule if you disable this one.
 
 ---
 

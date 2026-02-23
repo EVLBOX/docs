@@ -6,7 +6,7 @@ description: "How to update the file manager and configure the server settings"
 # Server Settings
 Palworld allows players to adjust several World Settings. This can be done in game for a single player game, but these can also be set for multiplayer games from the PalWorldSettings.ini file. 
 
-âœ¨NEW: There are now two ways to update the server settings, please see the links below for using the configuration Builder or How to update settings manually
+✨NEW: There are now two ways to update the server settings, please see the links below for using the configuration Builder or How to update settings manually
 
 [How to Use the Configuration Builder](#how-to-use-the-configuration-builder)
 
