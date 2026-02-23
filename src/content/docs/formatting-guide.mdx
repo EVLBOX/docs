@@ -1,0 +1,590 @@
+---
+title: Formatting Guide
+description: A reference for all formatting options available in EVLBOX documentation pages. Use this as a template when writing new docs.
+---
+
+import { Card, CardGrid, LinkCard, Aside, Badge, Icon, Steps, Tabs, TabItem, FileTree } from '@astrojs/starlight/components';
+
+This page is a reference for staff and contributors writing documentation for EVLBOX. It demonstrates every formatting option available in Starlight so you can copy snippets directly into your pages.
+
+---
+
+## Headings
+
+Use headings to organize content into sections. Headings `##` through `####` automatically appear in the table of contents on the right.
+
+```md
+## Heading 2
+### Heading 3
+#### Heading 4
+```
+
+### Heading 3 Example
+
+#### Heading 4 Example
+
+---
+
+## Text Formatting
+
+```md
+**Bold text** for emphasis.
+*Italic text* for subtle emphasis.
+~~Strikethrough~~ for removed or deprecated content.
+`Inline code` for commands, file names, or values.
+[Link text](https://evlbox.com) for URLs.
+```
+
+**Bold text** for emphasis.
+*Italic text* for subtle emphasis.
+~~Strikethrough~~ for removed or deprecated content.
+`Inline code` for commands, file names, or values.
+[Link text](https://evlbox.com) for URLs.
+
+---
+
+## Lists
+
+### Unordered List
+
+```md
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+```
+
+- First item
+- Second item
+  - Nested item
+  - Another nested item
+- Third item
+
+### Ordered List
+
+```md
+1. Step one
+2. Step two
+3. Step three
+```
+
+1. Step one
+2. Step two
+3. Step three
+
+---
+
+## Admonitions
+
+Admonitions (callout boxes) highlight important information. Starlight supports four types using Markdown syntax.
+
+### Note
+
+```md
+:::note
+General information the reader should be aware of.
+:::
+```
+
+:::note
+General information the reader should be aware of.
+:::
+
+### Tip
+
+```md
+:::tip
+Helpful advice or best practices.
+:::
+```
+
+:::tip
+Helpful advice or best practices.
+:::
+
+### Caution
+
+```md
+:::caution
+Something to be careful about — may cause issues if ignored.
+:::
+```
+
+:::caution
+Something to be careful about — may cause issues if ignored.
+:::
+
+### Danger
+
+```md
+:::danger
+Critical warning — data loss or breaking changes ahead.
+:::
+```
+
+:::danger
+Critical warning — data loss or breaking changes ahead.
+:::
+
+### Custom Admonition Title
+
+```md
+:::tip[Pro Move]
+You can set a custom title on any admonition type.
+:::
+```
+
+:::tip[Pro Move]
+You can set a custom title on any admonition type.
+:::
+
+---
+
+## Aside Component
+
+The `<Aside>` component is the JSX equivalent of Markdown admonitions. Useful inside other components.
+
+```mdx
+<Aside type="tip" title="Did You Know?">
+You can use the Aside component inside tabs, cards, and other places where Markdown admonitions don't work.
+</Aside>
+```
+
+<Aside type="tip" title="Did You Know?">
+You can use the Aside component inside tabs, cards, and other places where Markdown admonitions don't work.
+</Aside>
+
+---
+
+## Badges
+
+Badges are small inline labels for tagging status or categories.
+
+```mdx
+<Badge text="New" variant="note" />
+<Badge text="Recommended" variant="tip" />
+<Badge text="Deprecated" variant="caution" />
+<Badge text="Critical" variant="danger" />
+<Badge text="Default" variant="default" />
+```
+
+<Badge text="New" variant="note" />
+<Badge text="Recommended" variant="tip" />
+<Badge text="Deprecated" variant="caution" />
+<Badge text="Critical" variant="danger" />
+<Badge text="Default" variant="default" />
+
+---
+
+## Icons
+
+Starlight includes a set of built-in icons you can use inline.
+
+```mdx
+<Icon name="rocket" /> Launch
+<Icon name="warning" /> Warning
+<Icon name="information" /> Info
+<Icon name="approve-check-circle" /> Success
+<Icon name="setting" /> Settings
+<Icon name="discord" /> Discord
+<Icon name="github" /> GitHub
+```
+
+<Icon name="rocket" /> Launch &nbsp;&nbsp;
+<Icon name="warning" /> Warning &nbsp;&nbsp;
+<Icon name="information" /> Info &nbsp;&nbsp;
+<Icon name="approve-check-circle" /> Success &nbsp;&nbsp;
+<Icon name="setting" /> Settings &nbsp;&nbsp;
+<Icon name="discord" /> Discord &nbsp;&nbsp;
+<Icon name="github" /> GitHub
+
+See the [full icon list in the Starlight docs](https://starlight.astro.build/reference/icons/#all-icons).
+
+---
+
+## Code Blocks
+
+### Basic Code Block
+
+````md
+```
+plain text code block
+```
+````
+
+```
+plain text code block
+```
+
+### Syntax Highlighting
+
+````md
+```json
+{
+  "server": "evlbox",
+  "game": "minecraft",
+  "port": 25565
+}
+```
+````
+
+```json
+{
+  "server": "evlbox",
+  "game": "minecraft",
+  "port": 25565
+}
+```
+
+### Code Block with Title
+
+````md
+```ini title="server.properties"
+server-port=25565
+max-players=20
+difficulty=hard
+```
+````
+
+```ini title="server.properties"
+server-port=25565
+max-players=20
+difficulty=hard
+```
+
+### Highlighted Lines
+
+````md
+```js {2,4}
+const config = {
+  server: 'evlbox',       // highlighted
+  game: 'minecraft',
+  optimized: true,         // highlighted
+};
+```
+````
+
+```js {2,4}
+const config = {
+  server: 'evlbox',       // highlighted
+  game: 'minecraft',
+  optimized: true,         // highlighted
+};
+```
+
+---
+
+## Images
+
+### Where to put images
+
+Images go in the `public/` folder, organized by game or section to keep things tidy:
+
+<FileTree>
+- public/
+  - minecraft/
+    - connect-screenshot.png
+    - server-list.png
+  - palworld/
+    - admin-panel.png
+  - satisfactory/
+    - first-time-setup.png
+  - vps/
+    - ssh-key-example.png
+  - enshrouded/
+  - factorio/
+  - foundry/
+</FileTree>
+
+:::tip[Where does my image go?]
+Match the folder to the section your page lives in. Writing a Minecraft guide? Drop your image in `public/minecraft/`. If a folder doesn't exist yet for your game or section, create one.
+:::
+
+Supported formats: `.png`, `.jpg`, `.webp`, `.avif`, `.gif`
+
+### Referencing images in Markdown
+
+Images in `public/` are served from the site root. Since the site is deployed at `/docs/`, prefix the path with `/docs/`:
+
+```md
+![Server list screenshot](/docs/minecraft/connect-screenshot.png)
+```
+
+### Image with HTML (for sizing)
+
+Use an HTML `<img>` tag when you need to control width or height:
+
+```html
+<img src="/docs/minecraft/connect-screenshot.png" alt="Server list" width="600" />
+```
+
+<img src="/docs/favicon.png" alt="EVLBOX Favicon" width="64" />
+
+### Optimized images (advanced)
+
+For images that benefit from build-time optimization (e.g. large hero images), place them in `src/assets/` instead and use a relative path from your `.md` file:
+
+```md
+![EVLBOX Logo](../../assets/evlbox-logo.svg)
+```
+
+![EVLBOX Logo](../../assets/evlbox-logo.svg)
+
+:::note
+Most contributors should use `public/` — it's simpler. The `src/assets/` approach is mainly for site-wide assets like logos that Astro can optimize at build time.
+:::
+
+---
+
+## Tables
+
+```md
+| Feature        | Free | Pro  |
+|----------------|------|------|
+| Backups        | 1    | 5    |
+| Subdomains     | No   | Yes  |
+| Priority Queue | No   | Yes  |
+```
+
+| Feature        | Free | Pro  |
+|----------------|------|------|
+| Backups        | 1    | 5    |
+| Subdomains     | No   | Yes  |
+| Priority Queue | No   | Yes  |
+
+---
+
+## Blockquotes
+
+```md
+> This is a blockquote. Use it for quoting external sources or calling out key statements.
+```
+
+> This is a blockquote. Use it for quoting external sources or calling out key statements.
+
+---
+
+## Horizontal Rules
+
+Use `---` on its own line to create a horizontal divider between sections.
+
+```md
+Content above
+
+---
+
+Content below
+```
+
+---
+
+## Steps
+
+The `<Steps>` component styles a numbered list as a step-by-step guide.
+
+```mdx
+<Steps>
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com).
+2. Select your server from the dashboard.
+3. Click **Console** to access the server terminal.
+4. Run your command and verify the output.
+</Steps>
+```
+
+<Steps>
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com).
+2. Select your server from the dashboard.
+3. Click **Console** to access the server terminal.
+4. Run your command and verify the output.
+</Steps>
+
+---
+
+## Tabs
+
+Use tabs to show alternative instructions (e.g., different OS, different methods).
+
+```mdx
+<Tabs>
+  <TabItem label="Windows">
+    Open **PowerShell** and run:
+    ```
+    ssh root@your-server-ip
+    ```
+  </TabItem>
+  <TabItem label="macOS / Linux">
+    Open **Terminal** and run:
+    ```
+    ssh root@your-server-ip
+    ```
+  </TabItem>
+</Tabs>
+```
+
+<Tabs>
+  <TabItem label="Windows">
+    Open **PowerShell** and run:
+    ```
+    ssh root@your-server-ip
+    ```
+  </TabItem>
+  <TabItem label="macOS / Linux">
+    Open **Terminal** and run:
+    ```
+    ssh root@your-server-ip
+    ```
+  </TabItem>
+</Tabs>
+
+---
+
+## Cards & Link Cards
+
+### Card Grid
+
+```mdx
+<CardGrid>
+  <Card title="Game Servers" icon="rocket">
+    High-performance servers for Minecraft, Palworld, Satisfactory, and more.
+  </Card>
+  <Card title="VPS Hosting" icon="laptop">
+    Full root access Linux VPS with DDoS protection included.
+  </Card>
+</CardGrid>
+```
+
+<CardGrid>
+  <Card title="Game Servers" icon="rocket">
+    High-performance servers for Minecraft, Palworld, Satisfactory, and more.
+  </Card>
+  <Card title="VPS Hosting" icon="laptop">
+    Full root access Linux VPS with DDoS protection included.
+  </Card>
+</CardGrid>
+
+### Link Cards
+
+```mdx
+<LinkCard title="Getting Started" description="New here? Start with the basics." href="/docs/getting-started/" />
+```
+
+<LinkCard title="Getting Started" description="New here? Start with the basics." href="/docs/getting-started/" />
+
+---
+
+## File Tree
+
+Display directory structures using the `<FileTree>` component.
+
+```mdx
+<FileTree>
+- server/
+  - server.properties
+  - world/
+    - level.dat
+    - region/
+  - plugins/
+    - EssentialsX.jar
+  - logs/
+    - latest.log
+</FileTree>
+```
+
+<FileTree>
+- server/
+  - server.properties
+  - world/
+    - level.dat
+    - region/
+  - plugins/
+    - EssentialsX.jar
+  - logs/
+    - latest.log
+</FileTree>
+
+---
+
+## Keyboard Shortcuts
+
+Use the HTML `<kbd>` tag for keyboard keys.
+
+```md
+Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+```
+
+Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.
+
+---
+
+## Line Breaks & Spacing
+
+- A blank line between paragraphs creates a new paragraph.
+- Use `<br />` for a manual line break within a paragraph.
+- Use `---` for a horizontal rule divider.
+- Use `&nbsp;` for a non-breaking space.
+
+---
+
+## Frontmatter Reference
+
+Every documentation page starts with YAML frontmatter between `---` fences.
+
+```md
+---
+title: Page Title
+description: A short description for SEO and link previews.
+---
+```
+
+### Common Frontmatter Fields
+
+| Field         | Required | Description                                      |
+|---------------|----------|--------------------------------------------------|
+| `title`       | Yes      | Page title shown in the browser tab and sidebar. |
+| `description` | Yes      | Short description for SEO meta tags.             |
+| `sidebar`     | No       | Override sidebar label or order.                 |
+| `template`    | No       | Use `splash` for landing pages.                  |
+| `hero`        | No       | Hero section config (splash pages only).         |
+| `tableOfContents` | No   | Set to `false` to hide the TOC.                 |
+
+---
+
+## Page Template
+
+Here's a starter template you can copy for new documentation pages:
+
+````md
+---
+title: Your Page Title
+description: Brief description of what this page covers.
+---
+
+Introduction paragraph — explain what this guide covers and who it's for.
+
+## Prerequisites
+
+- Requirement one
+- Requirement two
+
+## Step-by-step Instructions
+
+1. First step
+2. Second step
+3. Third step
+
+:::tip
+Include helpful tips where appropriate.
+:::
+
+## Troubleshooting
+
+| Issue              | Solution                |
+|--------------------|-------------------------|
+| Connection refused | Check your firewall     |
+| Server won't start | Verify config file      |
+
+## Related Pages
+
+- [Link to related page](/docs/path-to-page/)
+````

@@ -1,88 +1,173 @@
 # EVLBOX Documentation
 
-Official documentation site for [EVLBOX](https://evlbox.com) game server and VPS hosting.
+The official documentation for [EVLBOX](https://evlbox.com) — powering the guides, tutorials, and references at [evlbox.com/docs](https://evlbox.com/docs).
 
-Built with [Astro Starlight](https://starlight.astro.build/).
+Built with [Astro Starlight](https://starlight.astro.build/), a documentation framework on top of [Astro](https://astro.build/). Hosted on Cloudflare Pages.
 
-## Local Development
+---
+
+## Contributing
+
+We welcome contributions from the community! Whether you're fixing a typo, improving an existing guide, or writing a brand-new one — we appreciate the help.
+
+### What we're looking for
+
+- **Game server guides** — setup, configuration, modding, troubleshooting
+- **VPS tutorials** — common tasks, best practices, getting-started walkthroughs
+- **General improvements** — better explanations, updated screenshots, fixed links
+
+If it's useful to someone running a game server or VPS through EVLBOX, it belongs here.
+
+### Style guidelines
+
+Keep things **practical and friendly**. These docs are read by people who just want to get their server running — not engineers parsing an RFC.
+
+- **Be clear and direct.** Short sentences. Simple words. Say what to click and where.
+- **Use step-by-step instructions** when walking through a process.
+- **Add screenshots or images** when they help — a picture of the right button to click saves a paragraph of explanation.
+- **Use admonitions** (`:::tip`, `:::caution`, `:::danger`) to call out important info instead of burying it in a paragraph.
+- **One topic per page.** If a guide covers two unrelated things, split it into two pages.
+- **Don't assume expertise.** If a step requires something non-obvious, link to the relevant page or explain briefly.
+- **Keep titles short and scannable** — "How to Connect" beats "A Comprehensive Guide to Connecting to Your Server Instance."
+
+For a live reference of all available formatting (admonitions, tabs, code blocks, cards, badges, icons, etc.), check out the **[Formatting Guide](https://evlbox.com/docs/formatting-guide/)** on the docs site itself.
+
+### How to contribute
+
+1. **Create a branch** from `main` with a descriptive name (e.g. `add-rust-server-guide`, `fix-palworld-typo`).
+2. Make your changes — add or edit `.md` / `.mdx` files in `src/content/docs/`.
+3. If you're adding a new page, add it to the sidebar in `astro.config.mjs` (see [Project structure](#project-structure) below).
+4. **Test locally** to make sure the build passes (see [Running locally](#running-locally) below).
+5. **Open a Pull Request** against `main` with a brief description of what you changed and why.
+
+A maintainer will review your PR and either merge it or leave feedback. Once merged, changes deploy automatically.
+
+---
+
+## Project Structure
+
+```
+src/content/docs/          ← All documentation pages
+  getting-started/         ← Nitro Panel, onboarding
+  game-servers/            ← One subfolder per game
+  vps/                     ← VPS hosting guides
+  billing/                 ← Billing & account
+  formatting-guide.mdx     ← Formatting reference / template
+public/                    ← Images and static assets
+src/styles/custom.css      ← Theme overrides
+astro.config.mjs           ← Sidebar navigation & site config
+```
+
+Pages are Markdown (`.md`) or MDX (`.mdx`) files with YAML frontmatter:
+
+```yaml
+---
+title: Your Page Title
+description: Short description for SEO and link previews.
+---
+
+Your content starts here.
+```
+
+New pages must also be added to the `sidebar` array in `astro.config.mjs` or they won't appear in the navigation.
+
+For example, if you create `src/content/docs/game-servers/minecraft/custom-worlds.md`, add an entry to the Minecraft group in the sidebar:
+
+```js
+{
+    label: 'Minecraft',
+    collapsed: true,
+    items: [
+        { label: 'Overview', slug: 'game-servers/minecraft' },
+        { label: 'How to Connect', slug: 'game-servers/minecraft/how-to-connect' },
+        // ... existing entries ...
+        { label: 'Custom Maps', slug: 'game-servers/minecraft/custom-maps' },  // ← your new page
+    ],
+},
+```
+
+The `slug` is the file path under `src/content/docs/` without the `.md` extension. See the [Starlight sidebar docs](https://starlight.astro.build/reference/configuration/#sidebar) for the full config reference.
+
+---
+
+<details>
+<summary><strong>Running Locally</strong></summary>
 
 ### Prerequisites
 
-- Node.js 18+ 
-- npm
+- [Node.js](https://nodejs.org/) 18+
+- npm (comes with Node)
 
 ### Setup
 
 ```bash
+# Clone the repo
+git clone https://github.com/evlbox/docs.git
+cd docs
+
 # Install dependencies
 npm install
 
-# Start development server
+# Start the dev server
 npm run dev
 ```
 
-The site will be available at `http://localhost:4321`
+The site will be available at `http://localhost:4321/docs/`.
 
-## Adding Documentation
+### Commands
 
-Create `.md` or `.mdx` files in `src/content/docs/`:
+| Command             | What it does                                 |
+|---------------------|----------------------------------------------|
+| `npm install`       | Install dependencies                         |
+| `npm run dev`       | Start dev server at `localhost:4321`         |
+| `npm run build`     | Build the production site to `./dist/`       |
+| `npm run preview`   | Preview the production build locally         |
 
+### Important
+
+Always run `npm run build` before pushing. The build will **fail** if a sidebar slug points to a page that doesn't exist — this catches broken links and typos before they go live.
+
+</details>
+
+<details>
+<summary><strong>Adding a New Game Section</strong></summary>
+
+1. Create a folder under `src/content/docs/game-servers/` — e.g. `rust/`
+2. Add an `index.md` as the overview page for that game
+3. Add individual guide `.md` files in the same folder
+4. Open `astro.config.mjs` and add a new collapsed group inside the **Game Servers** sidebar section:
+
+```js
+{
+    label: 'Rust',
+    collapsed: true,
+    items: [
+        { label: 'Overview', slug: 'game-servers/rust' },
+        { label: 'How to Connect', slug: 'game-servers/rust/how-to-connect' },
+    ],
+},
 ```
-src/content/docs/
-├── index.mdx                    # Homepage
-├── getting-started/             # Getting started guides
-├── game-servers/                # Per-game documentation
-│   ├── minecraft/
-│   ├── palworld/
-│   └── ...
-├── vps/                         # VPS documentation
-└── billing/                     # Billing & account docs
-```
 
-### Frontmatter
+5. Run `npm run build` to verify everything links up correctly.
 
-Each page should include frontmatter:
+</details>
 
-```yaml
+<details>
+<summary><strong>Images</strong></summary>
+
+- Drop image files in `public/` organized by section — e.g. `public/minecraft/screenshot.png`
+- Reference them in Markdown as `![alt text](/docs/minecraft/screenshot.png)`
+- For optimized images, place them in `src/assets/` and use a relative import path
+- Supported formats: `.png`, `.jpg`, `.webp`, `.avif`, `.gif`
+
+</details>
+
 ---
-title: Page Title
-description: Brief description for SEO (150-160 characters recommended)
----
-```
 
-For custom SEO/Open Graph tags, use the `head` property. See `getting-started/seo-example.md` for an example.
+## Links
 
-## Production Build
-
-```bash
-# Build static site
-npm run build
-
-# Preview build locally
-npm run preview
-```
-
-Output is generated to the `dist/` directory.
-
-## Deployment (Cloudflare Pages)
-
-1. Connect this GitHub repository to Cloudflare Pages
-2. Set build command: `npm run build`
-3. Set output directory: `dist/`
-4. Deploy
-
-The site includes a `public/_headers` file for proper caching of static assets.
-
-## Commands
-
-| Command           | Action                                       |
-| :---------------- | :------------------------------------------- |
-| `npm install`     | Install dependencies                         |
-| `npm run dev`     | Start dev server at `localhost:4321`         |
-| `npm run build`   | Build production site to `./dist/`           |
-| `npm run preview` | Preview production build locally             |
-| `npm run astro`   | Run Astro CLI commands                       |
-
-## License
-
-Private repository - All rights reserved.
+- **Live docs** — [evlbox.com/docs](https://evlbox.com/docs)
+- **EVLBOX** — [evlbox.com](https://evlbox.com)
+- **Discord** — [discord.gg/rWF4hJhbaM](https://discord.gg/rWF4hJhbaM)
+- **Starlight docs** — [starlight.astro.build](https://starlight.astro.build/)
+- **Astro docs** — [docs.astro.build](https://docs.astro.build/)

@@ -263,6 +263,12 @@ export default defineConfig({
 						{ label: 'Overview', slug: 'billing' },
 					],
 				},
+				{
+					label: 'Resources',
+					items: [
+						{ label: 'Formatting Guide', slug: 'formatting-guide' },
+					],
+				},
 			],
 		}),
 		sitemap(),
