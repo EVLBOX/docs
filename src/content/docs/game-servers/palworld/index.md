@@ -59,24 +59,23 @@ head:
 
 
 ![palworld_header.jpg](/docs/palworld/palworld_header.jpg)
-[Palworld Servers](https://evlbox.com/amazing-palworld-hosting-6gb-ram/)
+[Palworld Servers](https://evlbox.com/games/palworld)
 
 
 ## Hosting Guides
 
-
-[Article - Connect to your Server](/docs/game-servers/palworld/connect-to-server)
-[Article - Change your Server Name and Password](/docs/game-servers/palworld/server-name-and-password)
-[Article - Change your Server Settings](/docs/game-servers/palworld/server-settings)
-[Article - Admin Commands](/docs/game-servers/palworld/admin-commands)
-[Article - How to Delete and Archive Save Data](/docs/game-servers/palworld/delete-and-archive-saves)
-[Article - How to Change your Server RAM and CPU](/docs/game-servers/palworld/change-server-specs)
-[Article - How to Migrate Save Data](/docs/game-servers/palworld/migrate-save-data)
-[Article - How to Restore Saves from Backup Data](/docs/game-servers/palworld/restore-saves)
-[Article - How to Enable Automatic Updates](/docs/game-servers/palworld/update-server)
-[Article - How to Schedule Automatic Server Starts](/docs/game-servers/palworld/scheduled-start)
-[Article - How to Setup RCON Commands](/docs/game-servers/palworld/rcon-commands)
-[Article - How to Update Your Server for Xbox](/docs/game-servers/palworld/xbox-server)
+- [Connect to your Server](/docs/game-servers/palworld/connect-to-server/)
+- [Change your Server Name and Password](/docs/game-servers/palworld/server-name-and-password/)
+- [Change your Server Settings](/docs/game-servers/palworld/server-settings/)
+- [Admin Commands](/docs/game-servers/palworld/admin-commands/)
+- [Delete and Archive Save Data](/docs/game-servers/palworld/delete-and-archive-saves/)
+- [Change your Server RAM and CPU](/docs/game-servers/palworld/change-server-specs/)
+- [Migrate Save Data](/docs/game-servers/palworld/migrate-save-data/)
+- [Restore Saves from Backup Data](/docs/game-servers/palworld/restore-saves/)
+- [Enable Automatic Updates](/docs/game-servers/palworld/update-server/)
+- [Schedule Automatic Server Starts](/docs/game-servers/palworld/scheduled-start/)
+- [Setup RCON Commands](/docs/game-servers/palworld/rcon-commands/)
+- [Update Your Server for Xbox](/docs/game-servers/palworld/xbox-server/)
 
 ## Updates
 
