@@ -177,6 +177,8 @@ Sometimes, the issue isn't the server settings but the **Minecraft world** itsel
 
 By following these tips and optimizing your **server settings**, **plugins**, and **Java configuration**, you can dramatically improve your **Minecraft server performance**. Whether you’re hosting a **small multiplayer server** or a **large community world**, these optimizations will help reduce **lag** and create a smoother gaming experience for everyone.
 
+Not sure how much **RAM**, **CPU**, or **bandwidth** your server needs? Try our [**Minecraft Server Resource Calculator**](https://evlbox.com/tools/minecraft-server-calculator) for personalized recommendations based on your player count, mods, and world settings.
+
 ---
 
 ### **Get Your Own Minecraft Server with EVLBOX**
