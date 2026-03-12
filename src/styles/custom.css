@@ -9,107 +9,161 @@
   /* Widen content area from default 50rem */
   --sl-content-width: 55rem;
 
-  /* Primary accent - Softer, more muted cyan */
-  --sl-color-accent-low: #12103a;
-  --sl-color-accent: #5b9eaf;
-  --sl-color-accent-high: #8ec3d0;
+  /* Primary accent - Electric cyan #00d4ff */
+  --sl-color-accent-low: #001f2e;
+  --sl-color-accent: #00d4ff;
+  --sl-color-accent-high: #66e5ff;
 
-  /* Text colors - softer white for readability */
-  --sl-color-white: #e8e8ec;
-  --sl-color-gray-1: #d0d0d8;
+  /* Text colors */
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #e0e0e0;
   --sl-color-gray-2: #a8a8b8;
   --sl-color-gray-3: #787888;
   --sl-color-gray-4: #505068;
   --sl-color-gray-5: #282840;
   --sl-color-gray-6: #181830;
 
-  /* Deep purple backgrounds matching evlbox.com - rgb(9, 5, 64) */
+  /* Deep purple backgrounds matching evlbox.com - rgb(9, 5, 64) = #090540 */
   --sl-color-black: #090540;
   --sl-color-bg: #090540;
-  --sl-color-bg-nav: #0a0745;
-  --sl-color-bg-sidebar: #0a0745;
-  --sl-color-hairline-light: #151050;
-  --sl-color-hairline: #201860;
+  --sl-color-bg-nav: #090540;
+  --sl-color-bg-sidebar: #090540;
+  --sl-color-hairline-light: rgba(255, 255, 255, 0.1);
+  --sl-color-hairline: rgba(255, 255, 255, 0.1);
 }
 
-/* Sidebar active/hover state - readable text on highlight */
-.sidebar-content a[aria-current="page"],
+/* ===== TYPOGRAPHY ===== */
+body {
+  font-family: var(--sl-font);
+  font-weight: 400;
+  color: var(--sl-color-gray-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--sl-font);
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00d4ff;
+}
+
+a:hover {
+  color: #66e5ff;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar-content {
+  background-color: #090540;
+}
+
+.sidebar-content a {
+  color: #e0e0e0;
+}
+
 .sidebar-content a:hover {
-  background-color: rgba(91, 158, 175, 0.15);
-  color: #e8e8ec;
+  background-color: rgba(0, 212, 255, 0.1);
+  color: #00d4ff;
 }
 
 .sidebar-content a[aria-current="page"] {
-  border-color: #5b9eaf;
+  background-color: rgba(0, 212, 255, 0.12);
+  border-color: #00d4ff;
+  color: #00d4ff;
 }
 
-/* Enhanced code blocks */
+/* ===== NAV ===== */
+nav a:hover {
+  color: #00d4ff;
+}
+
+/* ===== BUTTONS / CTA ===== */
+/* Primary CTA — filled cyan */
+.sl-link-button[data-variant="primary"],
+a.sl-link-button:not([data-variant]),
+.hero .sl-link-button:first-of-type {
+  background-color: #00d4ff;
+  color: #090540;
+  border: 1px solid #00d4ff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.sl-link-button[data-variant="primary"]:hover,
+a.sl-link-button:not([data-variant]):hover,
+.hero .sl-link-button:first-of-type:hover {
+  background-color: #33ddff;
+  border-color: #33ddff;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
+  color: #090540;
+}
+
+/* Secondary CTA — outlined cyan */
+.sl-link-button[data-variant="secondary"],
+.hero .sl-link-button:last-of-type {
+  background-color: transparent;
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.sl-link-button[data-variant="secondary"]:hover,
+.hero .sl-link-button:last-of-type:hover {
+  background-color: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
+}
+
+/* Minimal variant */
+.sl-link-button[data-variant="minimal"] {
+  color: #00d4ff;
+}
+
+/* ===== CARDS ===== */
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
+}
+
+/* ===== CODE BLOCKS ===== */
 .expressive-code {
   --code-background: #06032d;
 }
 
-/* Ensure body text is readable */
-body {
-  font-family: var(--sl-font);
-  color: var(--sl-color-white);
+/* ===== DIVIDERS / BORDERS ===== */
+hr,
+.sl-markdown-content hr {
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Sidebar styling */
-.sidebar-content {
-  background-color: var(--sl-color-bg-sidebar);
-}
-
-/* Navigation hover effects */
-nav a:hover {
-  color: var(--sl-color-accent);
-}
-
-/* Button styling */
-.sl-link-button {
-  transition: all 0.2s ease;
-}
-
-.sl-link-button:hover {
-  box-shadow: 0 0 15px rgba(91, 158, 175, 0.25);
-}
-
-/* Card styling for a more modern look */
-.card {
-  border-color: var(--sl-color-hairline);
-  background: linear-gradient(135deg, var(--sl-color-bg-nav) 0%, var(--sl-color-bg) 100%);
-}
-
-/* Hero section enhancements */
-.hero {
-  background: radial-gradient(ellipse at top, rgba(91, 158, 175, 0.1) 0%, transparent 60%);
-}
-
-/* Headings styling */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--sl-font);
-  font-weight: 600;
-}
-
-/* Scrollbar styling for consistency */
+/* ===== SCROLLBAR ===== */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--sl-color-bg);
+  background: #090540;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--sl-color-gray-5);
+  background: #282840;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--sl-color-gray-4);
+  background: #505068;
 }
 
-/* External links in sidebar - add subtle indicator */
+/* ===== EXTERNAL LINK INDICATOR ===== */
 .sidebar-content a[target="_blank"]::after {
   content: ' ↗';
   font-size: 0.75em;
