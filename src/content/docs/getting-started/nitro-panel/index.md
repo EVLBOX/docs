@@ -20,4 +20,6 @@ All Game Servers, Discord Bots, and applications use the Nitro Control Panel to 
   [**Setup a Subdomain**](/docs/getting-started/nitro-panel/using-subdomains) - Create a custom subdomain `*.evlbox.io` to connect to your game server instead of needing to use the default name, or IP address. 
  
  [**Share Access**](/docs/getting-started/nitro-panel/subusers) - Share control panel access with other individuals -- Users must be invited via email.
+
+ [**MySQL Databases**](/docs/getting-started/nitro-panel/databases) - Create and manage a MySQL database for your game server, and access it via our web-based Adminer interface.
  
