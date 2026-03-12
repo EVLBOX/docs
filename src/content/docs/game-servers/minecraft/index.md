@@ -76,6 +76,7 @@ Looking for help with your server? Check out our in-depth guides to get the most
 - [**How to Change Minecraft Versions**](/docs/game-servers/minecraft/change-server-version): Instructions for switching between different Minecraft versions.
 - [**How to Optimize Your Minecraft Server for Maximum Performance**](/docs/game-servers/minecraft/optimize-your-minecraft-server-maximum-performance): Tips and tricks for improving server performance, reducing lag, and boosting FPS.
 - [**Minecraft Server Resource Calculator**](https://evlbox.com/tools/minecraft-server-calculator): Not sure how much RAM, CPU, or bandwidth your server needs? Get personalized recommendations based on your player count, mods, and world settings.
+- [**MySQL Database Setup**](/docs/getting-started/nitro-panel/databases): Set up and manage a MySQL database for plugins like LuckPerms, CoreProtect, and more.
 
 ---
 
