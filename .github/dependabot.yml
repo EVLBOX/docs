@@ -12,5 +12,10 @@ updates:
       - "jeeringsole"
     labels:
       - "dependencies"
+    groups:
+      astro-ecosystem:
+        patterns:
+          - "astro"
+          - "@astrojs/*"
     commit-message:
       prefix: "chore(deps):"
