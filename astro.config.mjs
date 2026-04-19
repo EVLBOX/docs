@@ -256,6 +256,16 @@ export default defineConfig({
 								{ label: 'Known Issues', slug: 'game-servers/towerunite/known-issues' },
 							],
 						},
+						{
+							label: 'Windrose',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/windrose' },
+								{ label: 'First Time Setup', slug: 'game-servers/windrose/first-time-setup' },
+								{ label: 'Server Settings', slug: 'game-servers/windrose/server-settings' },
+								{ label: 'World & Save Management', slug: 'game-servers/windrose/world-save-management' },
+							],
+						},
 					],
 				},
 				{

@@ -1,0 +1,106 @@
+---
+title: "Windrose Server Settings"
+description: "Configure your Windrose server: invite code, password, server name, max players, auto-update, and the underlying ServerDescription.json."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Server Settings | EVLBOX Windrose Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Configure your Windrose server: invite code, password, server name, max players, auto-update, and the underlying ServerDescription.json."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/windrose/server-settings/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+---
+
+Windrose has two layers of configuration:
+
+- **Common server settings** live in `R5/ServerDescription.json` and are exposed in the Nitro panel's **Startup** tab. These cover invite code, password, server name, and max players.
+- **Per-world settings** (difficulty preset, mob/ship multipliers, combat difficulty) live in a `WorldDescription.json` file inside each world's save folder. Those are covered in [World & Save Management](/docs/game-servers/windrose/world-save-management).
+
+## Startup tab
+
+Almost everything you'll change is here. Stop the server, edit the field, then start the server for changes to apply.
+
+![Nitro panel Startup tab](/docs/windrose/startup-tab.png)
+
+| Field                  | What it does |
+|------------------------|---|
+| **Server Name**        | Display name for the server. Up to 40 characters. |
+| **Server Password**    | Optional password. Players are prompted on connect. Up to 30 characters. |
+| **Max players**        | Maximum simultaneous players. |
+| **Auto Update**        | When **On**, SteamCMD checks for an update on every server start and installs it before the world boots. Leave on unless you have a reason not to. |
+| **Invite code**        | 6+ characters, `0-9 a-z A-Z`, case-sensitive. Leave blank for an auto-generated code. |
+| **Password Protected** | Must be **On** for the **Server Password** field to take effect. Off by default. |
+
+:::caution
+Changing the **Invite code** requires a full **server restart** to apply correctly.
+:::
+
+## Updating the server
+
+Updates are automatic. With **Auto Update** on (the default), SteamCMD checks for a new Windrose dedicated server build every time the server starts. If one is available it installs before the world boots — so to update, just **Restart** the server from the panel.
+
+:::tip
+Always keep your server version matched to the game client. Mismatched versions cause connection issues and can introduce subtle bugs. If your friends just patched the game, give your server a quick restart.
+:::
+
+## Advanced: ServerDescription.json
+
+The Startup tab fields above write to `R5/ServerDescription.json`. You can open the file directly via the **Files** tab in the Nitro panel:
+
+![Nitro panel Files tab editing ServerDescription.json](/docs/windrose/nitro-serverdescription.png)
+
+| Field                 | Description |
+|-----------------------|---|
+| `PersistentServerId`  | Unique server ID. **Don't edit.** |
+| `InviteCode`          | Same as the Startup tab field. |
+| `IsPasswordProtected` | `true` or `false`. Mirrors the Startup toggle. |
+| `Password`            | The server password. |
+| `ServerName`          | Display name. |
+| `WorldIslandId`       | ID of the world to load. Must match a folder under `Worlds/`. See [World & Save Management](/docs/game-servers/windrose/world-save-management). |
+| `MaxPlayerCount`      | Max simultaneous players. |
+| `P2pProxyAddress`     | Listening socket address. Locked on EVLBOX — don't change. |
+
+:::danger
+The Startup tab **overwrites** matching fields in `ServerDescription.json` every time the server starts. If you edit `ServerName`, `InviteCode`, `Password`, `IsPasswordProtected`, `MaxPlayerCount`, or `P2pProxyAddress` directly in the JSON, your changes will be replaced on next boot.
+
+Use the JSON file only for fields the Startup tab doesn't expose (e.g. `WorldIslandId` when switching worlds).
+:::
+
+Example `ServerDescription.json`:
+
+```json
+{
+  "Version": 1,
+  "ServerDescription_Persistent": {
+    "PersistentServerId": "1B80182E460F...",
+    "InviteCode": "d6221bb7",
+    "IsPasswordProtected": false,
+    "Password": "",
+    "ServerName": "The Salty Brigade",
+    "WorldIslandId": "DB57768A...",
+    "MaxPlayerCount": 8,
+    "P2pProxyAddress": "127.0.0.1"
+  }
+}
+```
+
+---
+
+Have a crew but no server? [Grab a server here](https://evlbox.com/games/windrose).
