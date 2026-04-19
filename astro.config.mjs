@@ -193,6 +193,18 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Vintage Story',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/vintage-story' },
+								{ label: 'Getting Started', slug: 'game-servers/vintage-story/getting-started' },
+								{ label: 'Server Configuration', slug: 'game-servers/vintage-story/server-configuration' },
+								{ label: 'Mods', slug: 'game-servers/vintage-story/mods' },
+								{ label: 'World Management', slug: 'game-servers/vintage-story/world-management' },
+								{ label: 'Maintenance', slug: 'game-servers/vintage-story/maintenance' },
+							],
+						},
+						{
 							label: 'Project Zomboid',
 							collapsed: true,
 							items: [
