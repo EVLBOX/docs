@@ -1,0 +1,101 @@
+---
+title: "First Time Setup: Connect to your Windrose Server"
+description: "Set your invite code, optional password, and connect to your EVLBOX Windrose server — by invite code or by direct address."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "First Time Setup | EVLBOX Windrose Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Set your invite code, optional password, and connect to your EVLBOX Windrose server — by invite code or by direct address."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/windrose/first-time-setup/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+---
+
+Windrose lets you connect two ways: by **invite code** (a short string like `f1014dc1`) or by **direct address** (e.g. `locate.evlbox.com:6297`). EVLBOX gives every server a stable hostname, so the direct-address option is the easiest for a regular crew.
+
+This guide covers setting your invite code, an optional password, and joining from the game.
+
+## 1. Set your invite code (recommended)
+
+Windrose's own console output is noisy and the auto-generated invite code is hard to spot. We strongly recommend setting your own code in the panel before first launch.
+
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com) and open your Windrose server.
+2. Stop the server if it's running.
+3. Open the **Startup** tab.
+4. In the **Invite code** field, enter a code you'll remember. Rules:
+   - 6 or more characters
+   - Letters `a-z` `A-Z` and digits `0-9` only
+   - Case-sensitive
+5. Click out of the field to save.
+
+![Nitro panel Startup tab with the Invite code field](/docs/windrose/startup-tab.png)
+
+:::caution
+Changing the invite code requires a full **server restart** from the Nitro panel to apply correctly.
+:::
+
+If you'd rather use the auto-generated code, leave the **Invite code** field blank and start the server. Use **Ctrl + F** in the console to search for `InviteCode` once the server is up — the in-terminal find is separate from the browser's find.
+
+![Console output showing the auto-generated invite code](/docs/windrose/invitecode-terminal.png)
+
+## 2. (Optional) Set a password
+
+1. With the server stopped, in the **Startup** tab, enter a password in the **Server Password** field.
+2. Toggle **Password Protected** to **On**. This is required — without it the password is ignored.
+3. Start the server.
+
+## 3. Find your server's address
+
+EVLBOX assigns every server a stable hostname like `locate.evlbox.com:6297`. To find yours:
+
+1. Open the **Terminal** tab in the Nitro panel.
+2. The **Address** is shown in the stats card at the top-right of the page — click it to copy.
+
+![Nitro panel Terminal page with the Address card at the top right](/docs/windrose/address.png)
+
+## 4. Connect from the game
+
+Launch **Windrose** and open the **FIND SERVERS** panel. There are two tabs: **Invite code** and **Direct IP**. Use whichever your crew prefers — the result is the same.
+
+### Option A: Invite code
+
+1. Select the **Invite code** tab.
+2. Type your invite code into **Enter invite code** and click **Find**.
+3. Your server appears in the list — click it.
+4. The **CONNECT TO SERVER** dialog opens. If you set a password, enter it under **Enter password**.
+5. Click **Connect**.
+
+![Windrose FIND SERVERS panel with an invite code entered and the CONNECT TO SERVER dialog](/docs/windrose/game-invitecode.png)
+
+### Option B: Direct IP
+
+1. Select the **Direct IP** tab.
+2. In **IP address**, paste the hostname part of your server address (e.g. `locate.evlbox.com`).
+3. In **Port**, enter the port number (the digits after the `:`, e.g. `6297`).
+4. If you set a password, enter it under **Server Password**.
+5. Click **Connect via IP**.
+
+![Windrose FIND SERVERS panel on the Direct IP tab with hostname, port, and password fields](/docs/windrose/game-directip.png)
+
+Share the invite code or address (and password, if any) with your crew so they can join the same way.
+
+---
+
+Have a crew but no server? [Grab a server here](https://evlbox.com/games/windrose).

@@ -1,0 +1,156 @@
+---
+title: "Windrose World & Save Management"
+description: "Worlds, difficulty presets, switching between multiple worlds, uploading a save via SFTP, and backups on your EVLBOX Windrose server."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "World & Save Management | EVLBOX Windrose Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Worlds, difficulty presets, switching between multiple worlds, uploading a save via SFTP, and backups on your EVLBOX Windrose server."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/windrose/world-save-management/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/windrose/header.jpg"
+---
+
+import { FileTree } from '@astrojs/starlight/components';
+
+Each Windrose server can hold multiple worlds, but only one runs at a time — controlled by the `WorldIslandId` field in `R5/ServerDescription.json`. All world data lives under `R5/Saved/`.
+
+## Server file layout
+
+Here's the layout of the relevant folders on your EVLBOX Windrose server:
+
+<FileTree>
+- R5/
+  - ServerDescription.json
+  - Saved/
+    - Config/
+    - Logs/
+    - SaveProfiles/
+      - Default/
+        - RocksDB/
+          - **0.10.0** _game version folder_
+            - Worlds/
+              - **E24A22C9C8D3448951AFD002162576D5/** _world ID folder_
+                - WorldDescription.json
+                - … world database files
+              - … additional world folders
+</FileTree>
+
+The `<game version>` folder is named after the dedicated server version (e.g. `0.10.0`) and changes when Windrose updates. Each world folder is named with a unique world ID.
+
+:::caution
+**Don't rename world folders.** The folder name is the world's ID, and the database relies on it. To switch worlds, change `WorldIslandId` in `ServerDescription.json` instead.
+:::
+
+![Files tab showing the Worlds folder](/docs/windrose/files-world.png)
+
+## Difficulty presets
+
+Each world's `WorldDescription.json` has a `WorldPresetType` field with one of three values: `Easy`, `Medium`, or `Hard`. These set the multipliers in `WorldSettings`:
+
+| Preset   | Mob HP | Mob DMG | Ship HP | Ship DMG | Boarding | Combat |
+|----------|--------|---------|---------|----------|----------|--------|
+| `Easy`   | ×0.7   | ×0.6    | ×0.7    | ×0.6     | ×0.7     | Easy   |
+| `Medium` | ×1.0   | ×1.0    | ×1.0    | ×1.0     | ×1.0     | Normal |
+| `Hard`   | ×1.5   | ×1.25   | ×1.5    | ×1.25    | ×1.5     | Hard   |
+
+To customize individual values, edit the multipliers in `WorldSettings` directly. On the next launch the server will detect that the values don't match any preset and flip `WorldPresetType` to `Custom` for you — you don't set `Custom` yourself.
+
+The full list of custom parameters (mob/ship multipliers, boarding difficulty, co-op stat correction, combat difficulty, etc.) and their valid ranges is in the [official Windrose dedicated server guide](https://playwindrose.com/dedicated-server-guide/#wsg-custom).
+
+![WorldDescription.json open in the Nitro file editor](/docs/windrose/nitro-worldescription.png)
+
+## Switching between multiple worlds
+
+You can store as many worlds on your server as you want, but only one runs at a time.
+
+1. Stop your server.
+2. Open the **Files** tab and navigate to `R5/Saved/SaveProfiles/Default/RocksDB/<game version>/Worlds/`.
+3. Note the folder name (the world ID) of the world you want to load.
+4. Open `R5/ServerDescription.json` and set `WorldIslandId` to that folder name.
+5. Save and start the server.
+
+:::danger
+Three things must match exactly or the server will silently generate a brand-new world (and overwrite `WorldIslandId` in `ServerDescription.json`):
+
+1. `WorldIslandId` in `ServerDescription.json`
+2. The world's folder name under `…/Worlds/`
+3. The `islandId` field inside that world's `WorldDescription.json`
+
+If you copy or rename a world folder, update `islandId` in its `WorldDescription.json` to match the new folder name before starting the server.
+:::
+
+## Uploading a singleplayer save
+
+You can move a world from your local game into your dedicated server via SFTP.
+
+:::caution
+Always **back up your save first**, and shut down both the dedicated server and the game client before copying files.
+:::
+
+### 1. Find your local save
+
+On your local PC, find your world folder. The path varies by platform:
+
+- **Steam / EGS:** `C:\Users\<you>\AppData\Local\R5\Saved\SaveProfiles\<profile>\RocksDB\<game version>\Worlds\<world id>`
+- **Stove:** `C:\Users\<you>\AppData\Local\R5\Saved\SaveProfiles\StoveDefault\RocksDB\<game version>\Worlds\<world id>`
+
+### 2. Get your server's SFTP details
+
+We recommend [Cyberduck](https://cyberduck.io/download/) — the built-in file manager doesn't handle nested folder uploads well.
+
+1. In the Nitro panel, open the **Settings** tab for your Windrose server.
+2. The page shows the **SFTP address**, **port**, and **username** to use. Your password is your Nitro panel password.
+
+![Nitro panel Settings page showing SFTP details](/docs/windrose/settings-page.png)
+
+### 3. Upload the world folder
+
+1. Stop your Windrose server.
+2. Connect with Cyberduck using the details from above.
+3. Navigate to `R5/Saved/SaveProfiles/Default/RocksDB/<game version>/Worlds/`.
+4. Drag your **entire world folder** into that directory, keeping its original folder name.
+5. Open `R5/ServerDescription.json` and set `WorldIslandId` to the exact name of the folder you just uploaded.
+6. Start the server.
+
+To go the other way (server → local), reverse the steps. When the game asks, choose the **local** copy of the save.
+
+## Backups
+
+EVLBOX Windrose plans include backup slots managed from the **Backups** tab in the Nitro panel. Click **Create Backup**, set a name, and optionally specify an ignore-files path.
+
+![Nitro panel Backups tab with the Create Backup dialog](/docs/windrose/backup.png)
+
+Take a backup before:
+
+- Switching `WorldIslandId` to a different world
+- Uploading a singleplayer save over an existing world
+- Editing `WorldDescription.json` for a live world
+- Major game updates
+
+Restoring a backup rolls the entire `R5/Saved` directory back to that point.
+
+:::tip
+Need more backup slots than your plan includes? [Open a ticket](https://evlbox.com/help) and we'll get you sorted.
+:::
+
+---
+
+Have a crew but no server? [Grab a server here](https://evlbox.com/games/windrose).

@@ -193,6 +193,18 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Vintage Story',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/vintage-story' },
+								{ label: 'Getting Started', slug: 'game-servers/vintage-story/getting-started' },
+								{ label: 'Server Configuration', slug: 'game-servers/vintage-story/server-configuration' },
+								{ label: 'Mods', slug: 'game-servers/vintage-story/mods' },
+								{ label: 'World Management', slug: 'game-servers/vintage-story/world-management' },
+								{ label: 'Maintenance', slug: 'game-servers/vintage-story/maintenance' },
+							],
+						},
+						{
 							label: 'Project Zomboid',
 							collapsed: true,
 							items: [
@@ -242,6 +254,16 @@ export default defineConfig({
 								{ label: 'Overview', slug: 'game-servers/towerunite' },
 								{ label: 'Setup Condo Server', slug: 'game-servers/towerunite/how-to-setup-condo' },
 								{ label: 'Known Issues', slug: 'game-servers/towerunite/known-issues' },
+							],
+						},
+						{
+							label: 'Windrose',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/windrose' },
+								{ label: 'First Time Setup', slug: 'game-servers/windrose/first-time-setup' },
+								{ label: 'Server Settings', slug: 'game-servers/windrose/server-settings' },
+								{ label: 'World & Save Management', slug: 'game-servers/windrose/world-save-management' },
 							],
 						},
 					],
