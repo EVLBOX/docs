@@ -5,7 +5,7 @@ description: "Learn how to transfer your singleplayer save to your Foundry dedic
 
 # **How to Transfer a Singleplayer Save to Your Foundry Server**
 
-Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left off—now with friends!
+Want to continue your singleplayer factory world on your **Foundry Dedicated Server**? Follow this simple guide to migrate your save and pick up exactly where you left off — now with friends!
 
 ---
 
@@ -21,7 +21,7 @@ Each folder here contains multiple saves, including autosaves.
 
 ![list-of-local-saves](/docs/foundry/app-data-saves.jpg)
 
-For this example we'll use Jeer_178174133. You can rename this if you like, but just remember the name for step 5!
+For this example, we'll use the name Jeer_178174133. You can rename this if you like, but just remember the name that you've used for step 5!
 
 ---
 
