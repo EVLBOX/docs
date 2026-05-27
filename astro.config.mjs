@@ -225,7 +225,7 @@ export default defineConfig({
 								{ label: 'Overview', slug: 'game-servers/factorio' },
 								{ label: 'Connect to Server', slug: 'game-servers/factorio/connect-to-server' },
 								{ label: 'Admin Access', slug: 'game-servers/factorio/admin' },
-								{ label: 'Install Mods', slug: 'game-servers/factorio/intall-mods' },
+								{ label: 'Install Mods', slug: 'game-servers/factorio/install-mods' },
 								{ label: 'Upload Save', slug: 'game-servers/factorio/upload-save' },
 							],
 						},
