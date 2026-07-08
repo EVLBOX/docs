@@ -75,11 +75,15 @@ head:
 - [Enable Automatic Updates](/docs/game-servers/palworld/update-server/)
 - [Schedule Automatic Server Starts](/docs/game-servers/palworld/scheduled-start/)
 - [Setup RCON Commands](/docs/game-servers/palworld/rcon-commands/)
-- [Update Your Server for Xbox](/docs/game-servers/palworld/xbox-server/)
+- [Console Crossplay: Xbox and PS5](/docs/game-servers/palworld/xbox-server/)
 
 ## Updates
 
 ---
+**7/8/26**
+Console crossplay is here! Your server can now be joined from Xbox, PS5, and Mac in addition to Steam. Turn on the new "Community Server (Public Lobby)" setting in the Startup tab so console players can find your server in the in-game Community Servers browser. See the updated [Console Crossplay guide](/docs/game-servers/palworld/xbox-server/) for full steps. Every server setting from PalWorldSettings.ini is now also editable from the Startup tab - see [Change your Server Settings](/docs/game-servers/palworld/server-settings/).
+
+
 **6/27/24**
 Version 0.3.1 is here! With the Sakurajimma update there are many new changes to explore including dedicated servers for Xbox. See the article above for more information on how to update your server to connect to Xbox. 
 
