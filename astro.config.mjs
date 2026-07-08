@@ -3,6 +3,24 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import sitemap from '@astrojs/sitemap';
 
+// GA4 gtag is injected only when PUBLIC_GA4_ID is set at build time.
+const GA4_ID = process.env.PUBLIC_GA4_ID;
+const gtagHead = GA4_ID
+	? [
+			{
+				tag: 'script',
+				attrs: {
+					async: true,
+					src: `https://www.googletagmanager.com/gtag/js?id=${GA4_ID}`,
+				},
+			},
+			{
+				tag: 'script',
+				content: `window.dataLayer = window.dataLayer || [];\nfunction gtag(){dataLayer.push(arguments);}\ngtag('js', new Date());\ngtag('config', '${GA4_ID}');`,
+			},
+		]
+	: [];
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://evlbox.com',
@@ -33,6 +51,7 @@ export default defineConfig({
 			],
 			favicon: '/favicon.ico',
 			head: [
+				...gtagHead,
 				{
 					tag: 'meta',
 					attrs: {
