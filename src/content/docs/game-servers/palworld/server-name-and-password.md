@@ -13,7 +13,7 @@ At this time we do recommend using a server password. The lastest updates allow 
 To change your server name and password, simply click Startup and edit the Server Name or password field. Then restart your server. 
 ![setservernamepass.png](/docs/setservernamepass.png)
 
-To clear your server password, just leave your server field blank. Also make sure that Pal/Saved/Config/LinuxServer/PalWorldSettings.ini does not have a password set!
+To clear your server password, just leave your server field blank. The settings from the Startup tab are applied to the PalWorldSettings.ini file automatically on every server start.
 
 :::caution
 The server name and save file are not linked!
