@@ -3,7 +3,7 @@ title: "Server Settings (.evlbox.toml)"
 description: "Control your automatic backups and request support directly from your server's files with the .evlbox.toml settings file."
 ---
 
-Every supported game server includes a small settings file, `.evlbox.toml`, in the root of its files. Edit it in the File Manager and save — that's how you control your automatic backups and light the Support Beacon when you need help. No extra logins or dashboards. Changes apply automatically within about 10 minutes.
+Every supported game server includes a small settings file, `.evlbox.toml`, in the root of its files. Edit it in the File Manager and save — that's how you light the Support Beacon, which sends extra context about your problem to our support team and lets them access your server to help, and how you control your automatic backups. No extra logins or dashboards. Changes apply automatically within about 10 minutes.
 
 ![file-manager-showing-evlbox-files](/docs/nitro/evlbox-files.png)
 
@@ -11,11 +11,38 @@ Every supported game server includes a small settings file, `.evlbox.toml`, in t
 
 | File | Who writes it | What it's for |
 |---|---|---|
-| `.evlbox.toml` | You | Your settings. We create it once with defaults, then never touch it again. |
+| `.evlbox.toml` | You | Your settings. We create it with defaults, and if it's ever deleted we re-create it with your saved settings — we never change what you've set. |
 | `.evlbox-status.txt` | EVLBOX | Read-only report: what the system is doing, backup status, and Support Beacon codes. Don't edit it — it gets rewritten. |
 
 :::tip
 Deleting `.evlbox.toml` doesn't reset anything — it comes back within ~10 minutes with the same settings. This also means a full server wipe or reinstall keeps your backup preferences. If you save a typo (broken TOML), nothing breaks: your previous settings stay in force and `.evlbox-status.txt` explains what's wrong.
+:::
+
+## The Support Beacon
+
+Lighting the beacon sends our support team extra context about your problem and lets them access your server to investigate:
+
+```toml
+[support]
+beacon = "server crashes every night around 3am"
+discord = "yourdiscordname"    # optional, helps staff reach you
+```
+
+1. Write a short description of the problem into `beacon` (up to 60 characters) and save the file.
+2. Within 5–10 minutes, a support code appears in `.evlbox-status.txt` — it looks like `EMBER-4821` and is valid for 24 hours.
+
+   ![status-file-showing-support-beacon-lit](/docs/nitro/evlbox-status.png)
+
+3. The server owner also gets a confirmation email from `noreply@evlbox.com` with the code — even if a subuser lit the beacon. A beacon does **not** open a ticket by itself.
+
+   ![beacon-confirmation-email](/docs/nitro/status-email.png)
+
+4. Open a ticket in the [EVLBOX Discord](https://evlbox.com/discord) or at [portal.evlbox.com](https://portal.evlbox.com) and paste the code. Staff instantly see which server it is and what's wrong — no twenty questions.
+
+To light the beacon again later, *change* the text. Limit: one beacon per server per hour (edits within the hour are ignored — the first message is the one staff see).
+
+:::note
+The beacon replaces the old support-PIN step for **game server** tickets only. Billing and account matters (cancellation, payment, ownership) still verify through [portal.evlbox.com](https://portal.evlbox.com) as before.
 :::
 
 ## Backup settings
@@ -44,33 +71,6 @@ If backups were turned off via the panel schedule while the file already says `e
 :::
 
 Backups auto-rotate at your slot limit (oldest unlocked backup is deleted first) — a faster interval doesn't grant more storage, it just cycles your slots faster.
-
-## The Support Beacon
-
-Need help with your game server? Light the beacon:
-
-```toml
-[support]
-beacon = "server crashes every night around 3am"
-discord = "yourdiscordname"    # optional, helps staff reach you
-```
-
-1. Write a short description of the problem into `beacon` (up to 60 characters) and save the file.
-2. Within 5–10 minutes, a support code appears in `.evlbox-status.txt` — it looks like `EMBER-4821` and is valid for 24 hours.
-
-   ![status-file-showing-support-beacon-lit](/docs/nitro/evlbox-status.png)
-
-3. The server owner also gets a confirmation email from `noreply@evlbox.com` with the code — even if a subuser lit the beacon. A beacon does **not** open a ticket by itself.
-
-   ![beacon-confirmation-email](/docs/nitro/status-email.png)
-
-4. Open a ticket in the [EVLBOX Discord](https://evlbox.com/discord) or at [portal.evlbox.com](https://portal.evlbox.com) and paste the code. Staff instantly see which server it is and what's wrong — no twenty questions.
-
-To light the beacon again later, *change* the text. Limit: one beacon per server per hour (edits within the hour are ignored — the first message is the one staff see).
-
-:::note
-The beacon replaces the old support-PIN step for **game server** tickets only. Billing and account matters (cancellation, payment, ownership) still verify through the billing panel as before.
-:::
 
 ## Supported games
 
