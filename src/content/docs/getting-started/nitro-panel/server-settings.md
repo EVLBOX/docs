@@ -80,6 +80,9 @@ Automatic backups (and the settings file) are currently live for:
 - **Satisfactory**
 - **Palworld**
 - **Minecraft** — all variants we host (Paper, Forge, NeoForge, Fabric)
+- **FOUNDRY**
+- **Windrose**
+- **Project Zomboid**
 
 More games are coming. If your server doesn't have a `.evlbox.toml` file yet, its game isn't supported — there's nothing to configure.
 
