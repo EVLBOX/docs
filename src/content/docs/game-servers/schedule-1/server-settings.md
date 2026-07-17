@@ -16,7 +16,11 @@ Settings in the Startup tab overwrite the server config file on every start. Alw
 1. Log in to the Nitro Panel and **stop your server**
 2. Go to the **Startup** tab
 3. Edit any settings you want to change
-4. **Start** the server — changes take effect immediately
+4. **Start** the server — changes take effect on next start
+
+:::tip
+A server restart is required for any setting changes to take effect. Simply stop, adjust, and start again.
+:::
 
 ## Server Core
 
