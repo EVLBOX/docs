@@ -71,6 +71,16 @@ Controls how the server communicates with clients.
 |---------|---------|-------------|
 | Target Frame Rate | `60` | Server tick rate. Lower values reduce CPU usage. Range: 10–120. |
 
+## Mod Setup
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| Runtime | `il2cpp` | The game build type. `il2cpp` for default Steam branch, `mono` for alternate branch. |
+
+:::caution
+Changing the Runtime setting requires a full **reinstall** — the correct S1DS mod DLL is downloaded during installation. Stop the server, change the setting, then click **Reinstall**.
+:::
+
 ## Mod Verification
 
 | Setting | Default | Description |
