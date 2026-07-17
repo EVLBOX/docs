@@ -177,6 +177,15 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Schedule I',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/schedule-1' },
+								{ label: 'How to Connect', slug: 'game-servers/schedule-1/how-to-connect' },
+								{ label: 'Server Settings', slug: 'game-servers/schedule-1/server-settings' },
+							],
+						},
+						{
 							label: 'Enshrouded',
 							collapsed: true,
 							items: [
