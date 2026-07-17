@@ -50,7 +50,8 @@ The S1 DedicatedServerMod adds dedicated server support to your game client.
 1. Launch Schedule I
 2. From the main menu, select **Servers** → **Direct Connect**
 3. Enter your server's IP address and port
-   - Find these in the Nitro Panel **Network** tab under the server's primary allocation (e.g. `192.168.1.100:15637`)
+   - From the Nitro Panel, your server's IP and port are displayed on the main server page. Click the address to copy it.
+   - ![Copy Server Address](/docs/foundry/copy-address.jpg)
 4. Click **Connect**
 
 :::tip
