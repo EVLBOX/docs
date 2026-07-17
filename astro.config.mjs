@@ -182,6 +182,7 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'game-servers/schedule-1' },
 								{ label: 'How to Connect', slug: 'game-servers/schedule-1/how-to-connect' },
+								{ label: 'Server Privacy', slug: 'game-servers/schedule-1/server-privacy' },
 								{ label: 'Server Settings', slug: 'game-servers/schedule-1/server-settings' },
 							],
 						},

@@ -50,7 +50,7 @@ The S1 DedicatedServerMod adds dedicated server support to your game client.
 1. Launch Schedule I
 2. From the main menu, select **Servers** → **Direct Connect**
 3. Enter your server's IP address and port
-   - Find this in the Nitro Panel **Console** tab — look for `Server running on port XXXX`
+   - Find these in the Nitro Panel **Network** tab under the server's primary allocation (e.g. `192.168.1.100:15637`)
 4. Click **Connect**
 
 :::tip
