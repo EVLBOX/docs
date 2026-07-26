@@ -16,6 +16,8 @@ All Game Servers, Discord Bots, and applications use the Nitro Control Panel to 
  [**Adding Ports**](/docs/getting-started/nitro-panel/port-configuration) - Add ports to your game server for third party applications like dynmap/bluemap etc. 
 
  [**Creating Backups**](/docs/getting-started/nitro-panel/creating-backups) - Create a backup snapshot of your entire game server to our off-site remote storage
+
+ [**GameSwap**](/docs/getting-started/nitro-panel/gameswap) - Change which game your server runs. Freeze your current game into a slot so you can restore it later, exactly as you left it.
  
   [**Setup a Subdomain**](/docs/getting-started/nitro-panel/using-subdomains) - Create a custom subdomain `*.evlbox.io` to connect to your game server instead of needing to use the default name, or IP address. 
  

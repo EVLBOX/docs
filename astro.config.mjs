@@ -135,6 +135,7 @@ export default defineConfig({
 								{ label: 'Overview', slug: 'getting-started/nitro-panel' },
 								{ label: 'Adding Ports', slug: 'getting-started/nitro-panel/port-configuration' },
 								{ label: 'Creating Backups', slug: 'getting-started/nitro-panel/creating-backups' },
+								{ label: 'GameSwap', slug: 'getting-started/nitro-panel/gameswap' },
 								{ label: 'Server Settings', slug: 'getting-started/nitro-panel/server-settings' },
 								{ label: 'Setup a Subdomain', slug: 'getting-started/nitro-panel/using-subdomains' },
 								{ label: 'Share Access (Subusers)', slug: 'getting-started/nitro-panel/subusers' },
