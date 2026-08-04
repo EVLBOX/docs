@@ -297,6 +297,16 @@ export default defineConfig({
 								{ label: 'World & Save Management', slug: 'game-servers/windrose/world-save-management' },
 							],
 						},
+						{
+							label: '7 Days to Die',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/7-days-to-die' },
+								{ label: 'How to Connect', slug: 'game-servers/7-days-to-die/how-to-connect' },
+								{ label: 'Install Mods', slug: 'game-servers/7-days-to-die/install-mods' },
+								{ label: 'Server Settings', slug: 'game-servers/7-days-to-die/server-settings' },
+							],
+						},
 					],
 				},
 				{
