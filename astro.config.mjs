@@ -178,6 +178,16 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Schedule I',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/schedule-1' },
+								{ label: 'How to Connect', slug: 'game-servers/schedule-1/how-to-connect' },
+								{ label: 'Server Privacy', slug: 'game-servers/schedule-1/server-privacy' },
+								{ label: 'Server Settings', slug: 'game-servers/schedule-1/server-settings' },
+							],
+						},
+						{
 							label: 'Enshrouded',
 							collapsed: true,
 							items: [
@@ -246,7 +256,7 @@ export default defineConfig({
 								{ label: 'Overview', slug: 'game-servers/factorio' },
 								{ label: 'Connect to Server', slug: 'game-servers/factorio/connect-to-server' },
 								{ label: 'Admin Access', slug: 'game-servers/factorio/admin' },
-								{ label: 'Install Mods', slug: 'game-servers/factorio/intall-mods' },
+								{ label: 'Install Mods', slug: 'game-servers/factorio/install-mods' },
 								{ label: 'Upload Save', slug: 'game-servers/factorio/upload-save' },
 							],
 						},

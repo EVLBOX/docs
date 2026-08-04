@@ -5,7 +5,7 @@ description: "How to Set a Password and Connect to Enshrouded"
 
 
 ## How to Set the Server Name and Password
-1. Log in to the Nitro Panel and stop you server. Once your server is offline, click the startup tab. Here you can set or change your server Name and Password. 
+1. Log in to the Nitro Panel and stop your server. Once your server is offline, click the startup tab. Here you can set or change your Server Name and Password. 
 
 ![server_name_and_pass.png](/docs/enshrouded/server_name_and_pass.png)
 
@@ -27,23 +27,23 @@ description: "How to Set a Password and Connect to Enshrouded"
 
 ## How to Connect to your Server via IP in Steam
 
-1. Got to the Nitro Panel to find you server IP address in the console tab (i.e. lunar.evlbox.com).  Then Click on the startup tab to find the query port number. 
+1. Go to the Nitro Panel to find your server IP address in the console tab (i.e. lunar.evlbox.com).  Then click on the Startup tab to find the Query Port Number. 
 
 ![server_query_port.png](/docs/enshrouded/server_query_port.png)
 
-2. Then, in steam click view at the top and select Game Servers
+2. Then, in Steam, click view at the top and select Game Servers
 
 ![steam_game_servers.png](/docs/enshrouded/steam_game_servers.png)
 
-3. In this pop up window, click on the favorites tab, and then the + icon at the bottom. Here you can enter in your server IP and query port number. Then Click Ok. 
+3. In this pop up window, click on the Favorites tab, and then the + icon at the bottom. Here you can enter in your Server IP and Query Port Number. Then Click Ok. 
 
 ![add_server_by_ip.png](/docs/enshrouded/add_server_by_ip.png)
 
-4. The server name, game and player information will display in this window. Click connect to join. 
+4. The server name, game, and player information will display in this window. Click connect to join. 
 
 ![connect_to_server_steam.png](/docs/enshrouded/connect_to_server_steam.png)
 
-5. This will launch the game and the server you entered will now appear at the top with a star for favorites each time you launch the game and select join online. 
+5. This will launch the game. The server you entered will now appear at the top with a star. It will show in Favorites each time you launch the game and select join online. 
 
 ![favorited_server.png](/docs/enshrouded/favorited_server.png)
 

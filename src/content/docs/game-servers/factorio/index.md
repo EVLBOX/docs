@@ -9,7 +9,7 @@ description: "Dedicated Factorio server game guides"
 ## Hosting Guides
 [Article - How to Connect to Your Server](/docs/game-servers/factorio/connect-to-server)
 [Article - How to Grant Admin Access](/docs/game-servers/factorio/admin)
-[Article - How to Intall Mods](/docs/game-servers/factorio/intall-mods)
+[Article - How to Install Mods](/docs/game-servers/factorio/install-mods)
 [Article - How to Upload a game save](/docs/game-servers/factorio/upload-save)
 
 ## Updates
