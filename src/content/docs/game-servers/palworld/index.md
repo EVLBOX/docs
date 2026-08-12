@@ -68,6 +68,7 @@ head:
 - [Change your Server Name and Password](/docs/game-servers/palworld/server-name-and-password/)
 - [Change your Server Settings](/docs/game-servers/palworld/server-settings/)
 - [Admin Commands](/docs/game-servers/palworld/admin-commands/)
+- [Install Mods](/docs/game-servers/palworld/install-mods/)
 - [Delete and Archive Save Data](/docs/game-servers/palworld/delete-and-archive-saves/)
 - [Change your Server RAM and CPU](/docs/game-servers/palworld/change-server-specs/)
 - [Migrate Save Data](/docs/game-servers/palworld/migrate-save-data/)
