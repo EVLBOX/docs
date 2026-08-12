@@ -167,6 +167,7 @@ export default defineConfig({
 								{ label: 'Server Name & Password', slug: 'game-servers/palworld/server-name-and-password' },
 								{ label: 'Server Settings', slug: 'game-servers/palworld/server-settings' },
 								{ label: 'Admin Commands', slug: 'game-servers/palworld/admin-commands' },
+								{ label: 'Install Mods', slug: 'game-servers/palworld/install-mods' },
 								{ label: 'Delete & Archive Saves', slug: 'game-servers/palworld/delete-and-archive-saves' },
 								{ label: 'Change Server Specs', slug: 'game-servers/palworld/change-server-specs' },
 								{ label: 'Migrate Save Data', slug: 'game-servers/palworld/migrate-save-data' },
