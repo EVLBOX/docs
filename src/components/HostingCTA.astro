@@ -16,6 +16,8 @@
  *              switch  → troubleshooting / error pages
  *              upgrade → performance, RAM and save-management pages
  *              start   → getting-started / first-time-setup pages
+ *   compact  — one-line version for the TOP of a page. The full block stays
+ *              at the bottom; a page can carry both.
  *   heading  — optional override for the headline
  *
  * The default slot overrides the hook paragraph, for a page-specific problem:
@@ -23,9 +25,9 @@
  *     Workshop downloads retry automatically here.
  *   </HostingCTA>
  */
-import { plans, formatPrice } from '../data/plans.js';
+import { plans, formatPrice, REFUND_DAYS } from '../data/plans.js';
 
-const { game, variant = 'start', heading } = Astro.props;
+const { game, variant = 'start', compact = false, heading } = Astro.props;
 
 const plan = plans[game];
 if (!plan) {
@@ -58,6 +60,13 @@ if (!copy) {
 const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 ---
 
+{compact ? (
+	<a class="hosting-cta hosting-cta--compact" href={plan.url}>
+		<strong>{heading ?? `Need a ${plan.name} server?`}</strong> EVLBOX hosts it from{' '}
+		<strong>{formatPrice(plan.price)}</strong> — {plan.ram} GB RAM, {plan.slots} slots,
+		{' '}{REFUND_DAYS}-day refund guarantee <span class="hosting-cta__arrow">→</span>
+	</a>
+) : (
 <aside class="hosting-cta" aria-label={`${plan.name} hosting`}>
 	<p class="hosting-cta__heading">{heading ?? copy.heading}</p>
 
@@ -72,6 +81,7 @@ const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 
 	<a class="hosting-cta__link" href={plan.url}>See plans →</a>
 </aside>
+)}
 
 <style>
 	.hosting-cta {
@@ -112,5 +122,38 @@ const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 
 	.hosting-cta__link:hover {
 		text-decoration: underline;
+	}
+
+	/* One-line version for the top of a page. The whole line is the link, and
+	   it stays quieter than the full block so it reads as a signpost rather
+	   than an interruption. */
+	.hosting-cta--compact {
+		display: block;
+		margin: 0 0 1.5rem;
+		padding: 0.65rem 1rem;
+		font-size: var(--sl-text-sm);
+		border-width: 1px;
+		border-left-width: 3px;
+		color: var(--sl-color-gray-2);
+		text-decoration: none;
+	}
+
+	.hosting-cta--compact strong {
+		color: var(--sl-color-white);
+	}
+
+	.hosting-cta--compact:hover {
+		background: var(--sl-color-accent-low);
+		border-color: var(--sl-color-accent-high);
+	}
+
+	.hosting-cta--compact:hover strong {
+		color: var(--sl-color-accent-high);
+	}
+
+	.hosting-cta__arrow {
+		color: var(--sl-color-accent-high);
+		font-weight: 600;
+		white-space: nowrap;
 	}
 </style>

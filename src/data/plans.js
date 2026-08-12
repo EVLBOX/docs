@@ -12,6 +12,9 @@
  * Anything rendered by HostingCTA reads from here, so a price can only ever
  * be wrong in one place.
  */
+/** Company-wide, not per-game. */
+export const REFUND_DAYS = 7;
+
 export const plans = {
 	'project-zomboid': {
 		name: 'Project Zomboid',
@@ -20,6 +23,9 @@ export const plans = {
 		vcpu: 2,
 		disk: 25,
 		maxRam: 16,
+		// Project Zomboid has no hard player cap — RAM is the constraint.
+		// Games that do cap (Palworld at 32, say) should carry the number.
+		slots: 'unlimited',
 		url: 'https://evlbox.com/games/project-zomboid',
 	},
 };
