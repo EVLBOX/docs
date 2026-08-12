@@ -11,6 +11,12 @@ dist/
 # staff docs (not for public repo)
 STAFF-*.md
 
+# agent config (not for public repo)
+CLAUDE.md
+AGENTS.md
+.claude/
+.codex/
+
 # dependencies
 node_modules/
 
