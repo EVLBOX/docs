@@ -16,6 +16,7 @@ CLAUDE.md
 AGENTS.md
 .claude/
 .codex/
+.github/copilot-instructions.md
 
 # dependencies
 node_modules/
