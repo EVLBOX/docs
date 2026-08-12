@@ -1,0 +1,116 @@
+---
+/**
+ * Hosting call-to-action for docs pages.
+ *
+ *   <HostingCTA game="project-zomboid" variant="switch" />
+ *
+ * Every plan fact comes from src/data/plans.js — never hand-write a price,
+ * a spec, or a product link into a markdown page. Place the CTA immediately
+ * after the final fix step and BEFORE any "Need More Help?" section, so the
+ * page resolves the reader's problem first and closes with support options
+ * for existing customers.
+ *
+ * Props:
+ *   game     — key in src/data/plans.js (required)
+ *   variant  — 'switch' | 'upgrade' | 'start' (default 'start')
+ *              switch  → troubleshooting / error pages
+ *              upgrade → performance, RAM and save-management pages
+ *              start   → getting-started / first-time-setup pages
+ *   heading  — optional override for the headline
+ *
+ * The default slot overrides the hook paragraph, for a page-specific problem:
+ *   <HostingCTA game="project-zomboid" variant="switch">
+ *     Workshop downloads retry automatically here.
+ *   </HostingCTA>
+ */
+import { plans, formatPrice } from '../data/plans.js';
+
+const { game, variant = 'start', heading } = Astro.props;
+
+const plan = plans[game];
+if (!plan) {
+	throw new Error(
+		`HostingCTA: no plan data for game "${game}". Add it to src/data/plans.js.`
+	);
+}
+
+const copy = {
+	switch: {
+		heading: `Hosting ${plan.name} somewhere else?`,
+		hook: `We'll migrate your existing world across for free — no downtime, no re-uploading saves.`,
+	},
+	upgrade: {
+		heading: 'Running out of headroom?',
+		hook: `Add RAM any time without a restart, and without moving your world.`,
+	},
+	start: {
+		heading: `Want a ${plan.name} server without the setup?`,
+		hook: `Your server is online in minutes, managed from the Nitro panel.`,
+	},
+}[variant];
+
+if (!copy) {
+	throw new Error(
+		`HostingCTA: unknown variant "${variant}". Use 'switch', 'upgrade' or 'start'.`
+	);
+}
+
+const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
+---
+
+<aside class="hosting-cta" aria-label={`${plan.name} hosting`}>
+	<p class="hosting-cta__heading">{heading ?? copy.heading}</p>
+
+	<p class="hosting-cta__hook">
+		<slot>{copy.hook}</slot>
+	</p>
+
+	<p class="hosting-cta__plan">
+		{plan.name} servers from <strong>{formatPrice(plan.price)}</strong> ({specs})
+		— add RAM any time without a restart, up to {plan.maxRam} GB.
+	</p>
+
+	<a class="hosting-cta__link" href={plan.url}>See plans →</a>
+</aside>
+
+<style>
+	.hosting-cta {
+		margin: 2rem 0;
+		padding: 1.25rem 1.5rem;
+		border: 1px solid var(--sl-color-accent);
+		border-left-width: 4px;
+		border-radius: 0.5rem;
+		background: var(--sl-color-accent-low);
+	}
+
+	.hosting-cta__heading {
+		margin: 0 0 0.5rem;
+		font-weight: 600;
+		font-size: var(--sl-text-h5);
+		color: var(--sl-color-white);
+		line-height: 1.3;
+	}
+
+	.hosting-cta p {
+		margin: 0 0 0.5rem;
+	}
+
+	.hosting-cta__plan {
+		font-size: var(--sl-text-sm);
+		color: var(--sl-color-gray-2);
+	}
+
+	.hosting-cta__plan strong {
+		color: var(--sl-color-white);
+	}
+
+	.hosting-cta__link {
+		display: inline-block;
+		font-weight: 600;
+		text-decoration: none;
+	}
+
+	.hosting-cta__link:hover {
+		text-decoration: underline;
+	}
+</style>

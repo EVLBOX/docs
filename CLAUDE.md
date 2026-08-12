@@ -27,6 +27,24 @@ There are no tests or lint scripts. Build success is the gate.
 - **Styling**: `src/styles/custom.css` for theme overrides. `src/components/EmptyThemeSelect.astro` replaces Starlight's theme toggle (site is dark-only).
 - **SEO/social**: OG + Twitter card meta is injected via the `head` array in `astro.config.mjs` and points at `/docs/twitter-card.png`.
 
+## Hosting CTAs
+
+Never hand-write a price, spec, or product link into a content page — that is how a stale `$4.99` survived on the site's best-performing page. Use the component:
+
+```mdx
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="project-zomboid" variant="switch" heading="Optional headline">
+  Optional page-specific hook paragraph.
+</HostingCTA>
+```
+
+- Plan facts live in **`src/data/plans.js`** only. Adding a CTA for a new game means adding a `plans` entry first.
+- Variants: `switch` (troubleshooting/error pages), `upgrade` (performance, RAM, saves), `start` (getting-started). For games whose docs audience already runs a server elsewhere, `switch` is the right default.
+- **Placement**: immediately after the final fix step, *before* any "Need More Help?" section.
+- **Never publish upgrade prices or location-specific totals.** Prices are Dallas "from" prices; upgrade pricing lives at checkout. Selling capability ("add RAM without a restart") is fine.
+- A page using the component must be `.mdx`. Renaming `.md` → `.mdx` does not change the URL or the sidebar `slug`.
+
 ## Writing conventions
 
 See `src/content/docs/formatting-guide.mdx` (rendered at `/docs/formatting-guide/`) for the canonical reference on admonitions, tabs, cards, badges, and icons available via Starlight. Prefer those over raw HTML.

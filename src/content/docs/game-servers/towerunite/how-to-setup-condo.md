@@ -57,7 +57,7 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Set Up Your Tower Unite Condo Server | EVLBOX Guide","description":"Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo.","url":"https://evlbox.com/docs/game-servers/towerunite/how-to-setup-condo/","image":"https://evlbox.com/docs/towerunite/gslt.png","imageAlt":"Steam GSLT Token Creation Page","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2025-07-22"}
 ---
 
-# **How to Set Up Your Tower Unite Condo Server**
+## How to Set Up Your Tower Unite Condo Server
 
 If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTail’s official guide](https://towerunite.com/guides/condo_dedicated.html).
 
