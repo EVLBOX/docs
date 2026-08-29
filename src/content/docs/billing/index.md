@@ -1,6 +1,6 @@
 ﻿---
 title: "Billing"
-description: "Learn how to upgrade or downgrade your hosting services."
+description: "Learn How to Upgrade or Downgrade your Hosting Services."
 ---
 
 # Change Games
@@ -9,7 +9,7 @@ description: "Learn how to upgrade or downgrade your hosting services."
 :::caution
 Switching games will delete your files and backups. Please download your backups, or download server files before proceeding. This action can not be reversed by our support team!
 :::
-At any time you may swap the game your server is running! At EVLBOX some of the prices between games vary. During the switching process you will be given credit (if switching to a lower cost service), or asked to pay the cost difference. 
+At any time, you may swap the game your server is running! At EVLBOX, some of the prices between games vary. During the switching process, you will be given credit (if switching to a lower cost service), or asked to pay the cost difference. 
 
 
 ### Submitting a game change Order
@@ -23,10 +23,10 @@ At any time you may swap the game your server is running! At EVLBOX some of the 
 4. Select which game / packages you'd like to switch to. 
 5. Submit the change order and pay the difference if needed. 
 
-If a payment is due, the upgrade will occur immedietly after the payment is collected. 
+If a payment is due, the upgrade will occur immediatetly after the payment is collected. 
 
 :::tip
-Not all games are eligible for automatic game changing. Currently game location can not be changed automatically. For assistance please contact [support](https://evlbox.com/help)
+Not all games are eligible for automatic game changing. Game location can not be changed automatically at this moment. For assistance, please contact [support](https://evlbox.com/help)
 :::
 ### Cancel a Service
 
