@@ -289,6 +289,17 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'StarRupture',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/starrupture' },
+								{ label: 'How to Connect', slug: 'game-servers/starrupture/how-to-connect' },
+								{ label: 'Manage Server', slug: 'game-servers/starrupture/manage-server' },
+								{ label: 'Install Mods', slug: 'game-servers/starrupture/install-mods' },
+								{ label: 'Server Settings', slug: 'game-servers/starrupture/server-settings' },
+							],
+						},
+						{
 							label: 'Windrose',
 							collapsed: true,
 							items: [
