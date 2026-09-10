@@ -242,6 +242,7 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'game-servers/project-zomboid' },
 								{ label: 'How to Connect', slug: 'game-servers/project-zomboid/how-to-connect' },
+								{ label: 'Build 41 vs Build 42', slug: 'game-servers/project-zomboid/build-41-vs-build-42' },
 								{ label: 'Set Server Password', slug: 'game-servers/project-zomboid/set-server-password' },
 								{ label: 'Admin Permissions', slug: 'game-servers/project-zomboid/admin-permissions' },
 								{ label: 'Admin Panel', slug: 'game-servers/project-zomboid/admin-panel' },

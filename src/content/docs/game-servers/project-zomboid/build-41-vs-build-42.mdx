@@ -1,0 +1,176 @@
+---
+title: "Build 41 vs Build 42: Switching Your Server's Version"
+description: "Build 41 and Build 42 saves are not compatible. How to run your Project Zomboid server on the legacy41 branch, switch back to Build 42, and keep both worlds using GameSwap."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Project Zomboid Build 42, Project Zomboid Build 41, legacy41 branch, PZ B41 server, PZ B42 saves, Project Zomboid server version, Project Zomboid beta branch"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Build 41 vs Build 42 | EVLBOX Project Zomboid Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Build 41 and Build 42 saves are not compatible. How to run your Project Zomboid server on the legacy41 branch, switch back to Build 42, and keep both worlds using GameSwap."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/zomboid/steam.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/project-zomboid/build-41-vs-build-42/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/zomboid/steam.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="project-zomboid" variant="switch" heading="Want to run Build 41 and Build 42 at once?">
+  Every EVLBOX server includes GameSwap and a free freeze slot, so you can keep a whole second server on ice and flip between builds whenever you like.
+</HostingCTA>
+
+Build 42 went stable on **29 July 2026**. Build 41 didn't go anywhere — it lives on as a Steam branch called `legacy41`, and plenty of servers are still happily running it.
+
+This guide covers which one you want, how to move your server between them, and how to keep both without giving one up.
+
+## The one rule that matters
+
+:::danger
+**Build 41 and Build 42 saves are not compatible, in either direction.**
+
+A Build 41 world will not load on Build 42. A Build 42 world will not load on Build 41. There is no converter, and the developers have been clear there won't be one — the crafting system, item definitions and terrain data changed too deeply to bridge.
+
+Switching your server's build does **not** carry your world across. It gives you a fresh start on the other build.
+:::
+
+Your old world isn't destroyed by switching, though. It's still on disk until something overwrites it — which is exactly why the safe way to move between builds is to keep a copy of each. [GameSwap does that for you](#keep-both-builds-with-gameswap).
+
+## Which build should you run?
+
+There's no wrong answer here, only trade-offs.
+
+**Stay on Build 41 if:**
+
+- You have a long-running world your group cares about. It cannot come with you.
+- Your mod list matters more than new features. The Workshop's Build 42 catalogue is still filling in, and a mod that hasn't been updated will not work on 42.
+- Your players want the version they already know.
+
+**Move to Build 42 if:**
+
+- You're starting a new world anyway.
+- You want the overhauled map, animals, the rebuilt crafting system and the rest of what 42 added.
+- Your must-have mods have Build 42 releases.
+
+:::tip
+Check your mod list before you commit. On the Workshop, a mod's description or its tags will tell you which builds it supports — many now ship separate B41 and B42 versions. Switching build with an incompatible mod list is the fastest way to a server that won't start.
+:::
+
+## How to switch your server's build
+
+The setting is **Steam Beta Branch** on the **Startup** tab in the [Nitro Panel](https://nitro.evlbox.com).
+
+| Build you want | What goes in the field |
+|---|---|
+| **Build 42** (current) | Leave it **blank** |
+| **Build 41** (legacy) | `legacy41` |
+
+![Nitro Panel Startup tab showing the Steam Beta Branch field set to legacy41](/docs/zomboid/steam-beta-branch.png)
+
+Changing that field on its own does nothing — it takes a reinstall, and the reinstall needs a clean slate first.
+
+:::caution
+**Delete the server files before reinstalling.** Project Zomboid does not reliably validate or replace files that are already there, so a reinstall over the top of the other build leaves a mix of the two. That produces a server that won't start, or worse, one that starts and behaves strangely.
+:::
+
+### The procedure
+
+1. **Save anything you want to keep.** Download your world from `.cache/Saves/Multiplayer` — see [uploading a singleplayer world](/docs/game-servers/project-zomboid/singleplayer-copy) for how to get at the files. Once you go past this step it's gone.
+2. **Stop the server.**
+3. On the **Startup** tab, set **Steam Beta Branch** — `legacy41` for Build 41, blank for Build 42. Save.
+4. Go to the **Files** tab, tick the checkbox at the top to select everything, and **delete** it all.
+5. Go to **Settings** and click **Reinstall Server**.
+
+   ![Reinstall Server panel on the Settings tab](/docs/nitro/reinstall-server.png)
+
+6. Wait for the install to finish, then start the server. Check the console for the version it reports.
+
+:::note
+Reinstalling redownloads the game from Steam, so give it a few minutes. The console will look idle while it works.
+:::
+
+## Keep both builds with GameSwap
+
+Here's the part most hosts can't do.
+
+**GameSwap** is included free with every EVLBOX game server, along with a freeze slot to use it with. It's normally how you'd turn a Minecraft server into a Palworld one — but it works just as well on the *same* game, which makes it the cleanest way to run both builds of Project Zomboid without one costing you the other.
+
+Freeze your Build 42 server, install a fresh one for Build 41, and your Build 42 world sits safely off-server, untouched, ready to come back whenever you want it. Two complete servers — files, saves, settings, mod lists — kept entirely independent. Flip between them at will.
+
+No re-uploading worlds. No juggling zip files on your desktop. No paying for a second server.
+
+:::caution
+**Grab any saves you want before you freeze.** A frozen game is sealed — you can restore it, but you can't reach inside it to pull out a single file. Getting a file out means restoring the freeze, which needs a free slot for whatever is running at the time.
+
+With one slot, that's a corner worth not painting yourself into. Download the saves you care about first.
+:::
+
+### Doing it
+
+1. Open your server in the panel and choose **GameSwap** in the sidebar.
+2. In the catalog, pick **Project Zomboid** — the one marked **RUNNING NOW**. Choosing your current game means a **Fresh install**: a clean copy with default settings.
+
+   ![GameSwap catalog with Project Zomboid marked RUNNING NOW](/docs/zomboid/gameswap-catalog.png)
+
+3. **Step 1 — protect what's running now.** Choose **Freeze**. This is the whole point: your current server is archived into a freeze slot so you can restore it exactly as it is today. (**Wipe** erases it instead and uses no slot.)
+
+   ![GameSwap step 1 offering Freeze or Wipe for the current game](/docs/zomboid/gameswap-freeze-or-wipe.png)
+
+4. **Step 2 — name the freeze.** Optional, but do it. `zomboid-b42` beats guessing in three months' time. Tick **Email me when it's finished** if you don't want to watch.
+
+   ![GameSwap step 2 with the freeze named zomboid-b42](/docs/zomboid/gameswap-name-freeze.png)
+
+5. Click **Freeze & swap**. Your server goes offline and you get a progress screen — you can close the page, it keeps running.
+
+   ![GameSwap progress screen showing the install phases](/docs/zomboid/gameswap-progress.png)
+
+6. When it's done you have a clean Project Zomboid install. Now set the build you want, following [the procedure above](#the-procedure) — the fresh install resets startup settings to defaults, so the branch has to be set **after** the swap, not before.
+
+### Going back
+
+Open **GameSwap**, find your frozen server under **Frozen games**, and choose **Restore**. You'll be asked what to do with whatever is running at that moment — freeze it too if you want to keep it, wipe it if you don't.
+
+Restoring brings back everything: the build, the world, the mods, the settings, exactly as you left them.
+
+:::note
+Deleting a frozen game frees its slot immediately, but the copy stays **recoverable for 48 hours** before it's removed for good. The clock is anchored — recovering or restoring again doesn't reset it.
+:::
+
+Full detail on slots, cooldowns and tiers is in the [GameSwap guide](/docs/getting-started/nitro-panel/gameswap).
+
+## Troubleshooting
+
+| Issue | What to check |
+|---|---|
+| Server won't start after switching build | Files from the other build are still present. Stop, delete everything on the **Files** tab, and reinstall again. |
+| World is gone after switching | Expected — builds don't share saves. Restore your freeze, or re-upload the world you downloaded. |
+| Set the branch but nothing changed | The field needs a reinstall to take effect, and files must be deleted first. |
+| Mods fail to load after moving to Build 42 | Those mods have no Build 42 version yet. Check each on the Workshop — see [Mod Installation Errors](/docs/game-servers/project-zomboid/troubleshooting-mods). |
+| Startup settings reset themselves | A GameSwap fresh install returns startup variables to defaults. Set your branch and settings after the swap. |
+| Can't reach a file inside a frozen game | Freezes are sealed. Restore it to get at the files, which needs a free slot for the current game. |
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).
