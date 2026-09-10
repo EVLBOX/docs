@@ -257,6 +257,7 @@ export default defineConfig({
 								{ label: 'Overview', slug: 'game-servers/valheim' },
 								{ label: 'How to Connect', slug: 'game-servers/valheim/how-to-connect' },
 								{ label: 'Server Settings', slug: 'game-servers/valheim/server-settings' },
+								{ label: 'Move a Singleplayer World', slug: 'game-servers/valheim/import-singleplayer-world' },
 								{ label: 'Switch to BepInEx', slug: 'game-servers/valheim/switch-to-bepinex' },
 							],
 						},

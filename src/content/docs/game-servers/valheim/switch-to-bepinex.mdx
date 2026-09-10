@@ -52,9 +52,9 @@ If you want to keep playing your current world, download it first.
 
 1. Stop your server.
 2. Open the **Files** tab and go to `.config/unity3d/IronGate/Valheim/worlds_local`.
-3. Download **both** files for your world — the `.db` and the `.fwl`, for example `Dedicated.db` and `Dedicated.fwl`.
+3. Download the **whole folder** named after your world — `Dedicated`, for example.
 
-A `.db` without its matching `.fwl` is not a restorable world. Take the pair, keep the filenames exactly as they are.
+Since Valheim 1.0 a world is a folder, not a pair of files: `_main.N.*` plus one `.chunk` file per region anyone has explored. Take all of it and don't pick files out of it. Leave the `*_backup_auto-*` folders behind.
 
 :::tip
 A panel backup is worth taking as well, but download the two world files to your own machine regardless. Ten seconds now versus a world you can't get back.
@@ -96,9 +96,9 @@ Once the swap finishes you have a fresh BepInEx server with a brand new world. T
 
 1. Leave the server stopped.
 2. Open the **Files** tab and go to `.config/unity3d/IronGate/Valheim/worlds_local`. Create the folders if they aren't there yet.
-3. Upload your `.db` and `.fwl` pair.
-4. On the **Startup** tab, set **World Name** to match the filenames — `Dedicated.db` and `Dedicated.fwl` mean a World Name of `Dedicated`.
-5. Start the server.
+3. Upload your world folder. Full detail on both upload routes is in [Move a Singleplayer World to your Valheim Server](/docs/game-servers/valheim/import-singleplayer-world#4-upload-the-world) — the procedure is identical.
+4. On the **Startup** tab, set **World Name** to match the folder name exactly. It's case-sensitive, and a name that doesn't match generates a brand new world instead of erroring.
+5. Start the server, and check the console for `ZNet.LoadWorld: <name>` to confirm which world came up.
 
 Valheim world saves are the same on both builds, so a world made on vanilla loads on BepInEx and vice versa. Mods can add things to a world that vanilla then doesn't understand, though — see the caution below before you plan on going back and forth.
 
@@ -156,7 +156,7 @@ A world played on a heavily modded server may not load cleanly on vanilla. Mods 
 | Modpack field changed, nothing happened | The field only applies on a reinstall. Download your world files, then reinstall. |
 | A specific mod isn't loading | Check the console for its line. Most often the `.dll` is nested inside a subfolder in the zip — it has to sit directly in `BepInEx/plugins`. |
 | Players get kicked or see missing items | Mod mismatch. Everyone needs the same mods at the same versions. |
-| Empty world after the swap | Expected — a swap installs fresh. Upload your `.db` and `.fwl` pair and set **World Name** to match. |
+| Empty world after the swap | Expected — a swap installs fresh. Upload your world folder and set **World Name** to match it exactly. |
 | Server won't start after adding mods | Remove the last mod you added and start again. Mod conflicts show up in the console before the server finishes loading. |
 
 ---
