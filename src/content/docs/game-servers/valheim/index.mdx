@@ -1,0 +1,92 @@
+---
+title: "Valheim Guides"
+description: "Host your Valheim server with EVLBOX. Guides for joining your server, configuring world modifiers and passwords, and switching to the BepInEx build for mods."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Valheim hosting, EVLBOX Valheim server, Valheim dedicated server, Valheim BepInEx server, Valheim crossplay server, Valheim modded server hosting"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Valheim Server Hosting | Viking Survival with EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Host your Valheim server with EVLBOX. Guides for joining your server, configuring world modifiers and passwords, and switching to the BepInEx build for mods."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      property: "og:image:alt"
+      content: "Valheim Game Header"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/valheim/"
+  - tag: meta
+    attrs:
+      property: "og:type"
+      content: "article"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:title"
+      content: "Valheim Server Hosting | Viking Survival with EVLBOX"
+  - tag: meta
+    attrs:
+      name: "twitter:description"
+      content: "Host your Valheim server with EVLBOX. Guides for joining your server, configuring world modifiers and passwords, and switching to the BepInEx build for mods."
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      name: "twitter:image:alt"
+      content: "Valheim Game Header"
+  - tag: script
+    attrs:
+      type: "application/ld+json"
+    content: |
+      {"@context":"http://schema.org","@type":"Article","headline":"Valheim Server Hosting | Viking Survival with EVLBOX","description":"Host your Valheim server with EVLBOX. Guides for joining your server, configuring world modifiers and passwords, and switching to the BepInEx build for mods.","url":"https://evlbox.com/docs/game-servers/valheim/","image":"https://evlbox.com/docs/valheim/header.webp","imageAlt":"Valheim Game Header","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}}}
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+Valheim is a brutal exploration and survival game for up to 10 players, set in a procedurally generated Norse purgatory. Build a longhouse, raise a longship, and go and get killed by something with antlers.
+
+![Valheim key art](/docs/valheim/header.webp)
+
+## Before You Start
+
+Four things about Valheim servers catch people out. All four are worth knowing before you touch a setting.
+
+**Leave crossplay on.** It's on by default and it should stay that way. Turning it off currently produces a server that looks perfectly healthy — it appears in the browser and answers queries — but that nobody can actually join, Steam players included. See [Crossplay](/docs/game-servers/valheim/server-settings#crossplay) for the detail.
+
+**Public needs a password.** Valheim refuses to list a password-free server in the public browser. If you clear the password and leave **Public Server** on, your server starts unlisted rather than failing — players join by address or join code instead. See [Password and visibility](/docs/game-servers/valheim/server-settings#password-and-visibility).
+
+**Your password must not appear inside your server name.** Valheim will not start at all if it does. Naming your server `Odins Hall` and setting the password to `hall` is enough to trigger it.
+
+**World modifiers stick to the world, not the setting.** Changing a modifier back to `default` doesn't undo it — `default` means "send no flag", which leaves whatever the world already has saved. To genuinely reset them, apply a **World Preset**.
+
+## Hosting Guides
+
+[Article - How to Connect to your Valheim Server](/docs/game-servers/valheim/how-to-connect)
+
+[Article - Server Settings, Passwords and World Modifiers](/docs/game-servers/valheim/server-settings)
+
+[Article - Switch to the BepInEx Build for Mods](/docs/game-servers/valheim/switch-to-bepinex)
+
+<HostingCTA game="valheim" variant="start">
+  Crossplay, world modifiers and BepInEx are all switches in the panel — no config files to hand-edit.
+</HostingCTA>
+
+---
+
+Ready to raise a longhouse? [Grab a server here](https://evlbox.com/games/valheim).

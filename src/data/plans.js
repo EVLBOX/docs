@@ -28,6 +28,18 @@ export const plans = {
 		slots: 'unlimited',
 		url: 'https://evlbox.com/games/project-zomboid',
 	},
+	valheim: {
+		name: 'Valheim',
+		price: 16.0,
+		ram: 6,
+		vcpu: 2,
+		disk: 20,
+		maxRam: 16,
+		// Valheim itself caps a dedicated server at 10 players. We add no cap
+		// on top of that, so this is the game's number, not a billing tier.
+		slots: 10,
+		url: 'https://evlbox.com/games/valheim',
+	},
 };
 
 /** Formats a price as a "from" price — `8.99` becomes `$8.99/mo`. */

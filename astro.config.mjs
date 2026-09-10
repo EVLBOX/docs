@@ -251,6 +251,16 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Valheim',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/valheim' },
+								{ label: 'How to Connect', slug: 'game-servers/valheim/how-to-connect' },
+								{ label: 'Server Settings', slug: 'game-servers/valheim/server-settings' },
+								{ label: 'Switch to BepInEx', slug: 'game-servers/valheim/switch-to-bepinex' },
+							],
+						},
+						{
 							label: 'Factorio',
 							collapsed: true,
 							items: [

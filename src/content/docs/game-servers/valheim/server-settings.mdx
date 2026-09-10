@@ -1,0 +1,175 @@
+---
+title: "Valheim Server Settings"
+description: "Every Valheim setting on the Startup tab explained — passwords and public visibility, crossplay, world presets, the five world modifiers, and world save intervals."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Server Settings | EVLBOX Valheim Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Every Valheim setting on the Startup tab explained — passwords and public visibility, crossplay, world presets, the five world modifiers, and world save intervals."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/valheim/server-settings/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="valheim" tiny />
+
+Everything on this page lives on the **Startup** tab of your server in the [Nitro Panel](https://nitro.evlbox.com). Changes apply on the next start, so stop the server, edit, then start it again.
+
+## The basics
+
+| Setting | What it does |
+|---|---|
+| **Server Name** | The name shown in the public browser. Up to 60 characters. |
+| **Server Password** | What players type to join. 5–20 characters, letters, numbers, dashes and underscores only. |
+| **World Name** | Which world save to load. |
+| **Public Server** | Whether the server appears in the public browser. |
+| **Enable Crossplay** | Lets console and Microsoft Store players join alongside Steam. Leave it on. |
+| **Auto Update** | Checks Steam for a newer server build on every start. Leave it on. |
+
+:::danger
+Your password must not appear anywhere inside your server name. Valheim refuses to start when it does, and the failure looks like nothing at all. A server called `Odins Hall` with the password `hall` will not boot. If this happens, your console prints an `[EVLBOX]` warning naming the problem.
+:::
+
+### World Name
+
+**World Name** picks a save, it doesn't rename one. Type a name that doesn't exist yet and Valheim generates a brand new world under it. Type the old name back in and your original world loads exactly as it was — nothing was deleted, it was just sitting on disk while you played somewhere else.
+
+This makes it a clean way to run a second world without touching the first. It also makes it the most common reason someone logs in to an empty beach.
+
+### Auto Update
+
+Valheim clients refuse to join a server running a different version, so a server that hasn't updated is a server nobody can play on. Leave **Auto Update** on and every restart pulls the current build.
+
+## Password and visibility
+
+These two settings interact, and the interaction surprises people.
+
+Valheim itself will not list a password-free server in the public browser. That's the game's rule, not ours. So:
+
+| Password | Public Server | Result |
+|---|---|---|
+| Set | On | Listed in the public browser. Normal setup. |
+| Set | Off | Not listed. Players join by address or invite code. |
+| Blank | On | **Starts unlisted.** The console prints an `[EVLBOX]` notice explaining why. Players join by address or invite code. |
+| Blank | Off | Starts with no password at all. Anyone with your address can walk in. |
+
+The blank-password-plus-public case is the one worth understanding. Rather than refusing to start, your server comes up unlisted and tells you so in the console. Set a password of 5 or more characters and restart to appear in the browser.
+
+:::caution
+A server with no password and no listing is still reachable by anyone who has the address. "Unlisted" is not "private".
+:::
+
+## Crossplay
+
+**Enable Crossplay** runs your server on Valheim's crossplay backend, so Xbox, PlayStation, Switch and Microsoft Store players can join alongside Steam. It's on by default.
+
+:::danger
+**Leave crossplay on.** Turning it off currently produces a server that appears online, shows in the browser and answers queries — but that nobody can join, Steam players included. Connection attempts fail after about twenty seconds with nothing in the server log to explain it.
+
+This is a fault in the game's Steam-only path, not your server or your settings. There is no configuration that works around it. If you have crossplay off and players can't connect, turn it back on and restart.
+:::
+
+**Crossplay Instance ID** is an advanced field you can ignore. It only matters if two crossplay servers end up sharing an identity on the crossplay backend — setting a unique value on one of them separates them. Leave it blank otherwise.
+
+## World presets and modifiers
+
+Valheim's difficulty settings come in two layers, and they overwrite each other in a specific order.
+
+**World Preset** applies a full set of modifiers at once: `normal`, `casual`, `easy`, `hard`, `hardcore`, `immersive` or `hammer`.
+
+**The five individual modifiers** set one thing each:
+
+| Modifier | Options | What it changes |
+|---|---|---|
+| **Combat Difficulty** | `veryeasy`, `easy`, `hard`, `veryhard` | How hard enemies hit and how much damage they take. |
+| **Death Penalty** | `casual`, `veryeasy`, `easy`, `hard`, `hardcore` | What you lose when you die. `casual` keeps gear and skills. |
+| **Resource Rate** | `muchless`, `less`, `more`, `muchmore`, `most` | How much material drops from gathering and enemies. |
+| **Raids** | `none`, `muchless`, `less`, `more`, `muchmore` | How often base raids fire. `none` disables them. |
+| **Portals** | `casual`, `hard`, `veryhard` | `casual` lets you carry ore through portals. `veryhard` disables portals entirely. |
+
+:::caution
+**A preset overwrites every individual modifier.** Use a preset *or* the individual settings, not both — if you set a preset and also set Combat Difficulty, the preset wins.
+:::
+
+### What `default` actually means
+
+Every one of these settings defaults to `default`, and `default` does **not** mean "normal". It means *don't send this setting at all*, which leaves whatever the world already has saved.
+
+This matters because modifiers are stored in the world, not in your panel settings. Set Combat Difficulty to `veryhard`, play for a week, then set it back to `default` — your world is still on `veryhard`. Nothing was undone; you just stopped sending an instruction.
+
+To genuinely reset the world's modifiers, apply a **World Preset**. That writes a complete set and clears what was there.
+
+You can confirm what took effect from the **Console** tab on start. The server logs a line per modifier, like `Setting world modifier: combat->veryhard`.
+
+### The four toggles
+
+**No Build Cost**, **Player Events**, **Passive Mobs** and **No Map** are on/off switches:
+
+- **No Build Cost** — build and craft without spending materials.
+- **Player Events** — raids trigger on player progress rather than only at your base.
+- **Passive Mobs** — creatures never attack players.
+- **No Map** — play with no map and no minimap.
+
+:::caution
+Valheim can only switch these **on**. Turning one back off may not clear it from a world that already has it. Applying a **World Preset** resets them along with everything else.
+
+Unlike the modifiers above, these four produce no console output, so there's nothing to confirm them by on start.
+:::
+
+## World saves
+
+These four settings control Valheim's own in-world save and backup behaviour, which is separate from the off-site backups your server takes.
+
+| Setting | Default | What it does |
+|---|---|---|
+| **Backup Interval** | `1800` (30 min) | How often the world is written to disk. |
+| **Backup Count** | `4` | How many of Valheim's own world backups to keep. |
+| **Backup Shorttime** | `7200` (2 hrs) | How long before the first one is taken. |
+| **Backup Longtime** | `43200` (12 hrs) | The gap between the later ones. |
+
+All are in seconds. Lowering **Backup Interval** means losing less progress to a crash, at the cost of a brief hitch each time the world saves — 30 minutes is a reasonable middle. Setting it very low on a large world is not free.
+
+:::tip
+Stopping your server from the panel sends Valheim a clean shutdown signal, so the world is saved before it exits. You don't need to save manually first.
+:::
+
+### These aren't your off-site backups
+
+The four settings above are Valheim's own, and everything they produce sits on your server. Your EVLBOX backups are separate: they run on a schedule, they're stored off-site, and they survive things that happen to the server itself.
+
+To change how often those run, or to exclude folders from them, see [Backup settings](/docs/getting-started/nitro-panel/server-settings#backup-settings). Taking and restoring one is covered in [Backups](/docs/getting-started/nitro-panel/creating-backups).
+
+:::caution
+Backups only run while the server is running. A server that's been stopped for a week hasn't been backed up for a week.
+:::
+
+## Beta branches
+
+**Beta Branch** and **Beta Password** install a Steam beta build instead of the live one — a public test branch, for instance. Leave both blank unless you have a specific reason and know the branch name.
+
+:::caution
+A server on a beta branch can only be joined by clients on the same branch. Everyone playing has to opt in through Steam.
+:::
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).

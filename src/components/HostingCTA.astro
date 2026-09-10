@@ -18,6 +18,9 @@
  *              start   → getting-started / first-time-setup pages
  *   compact  — one-line version for the TOP of a page. The full block stays
  *              at the bottom; a page can carry both.
+ *   tiny     — smallest form: one line of small text with an inline icon and
+ *              no box at all, for the very top of a page. Carries no price
+ *              and no specs on purpose — it is a signpost, not a pitch.
  *   heading  — optional override for the headline
  *
  * The default slot overrides the hook paragraph, for a page-specific problem:
@@ -27,7 +30,7 @@
  */
 import { plans, formatPrice, REFUND_DAYS } from '../data/plans.js';
 
-const { game, variant = 'start', compact = false, heading } = Astro.props;
+const { game, variant = 'start', compact = false, tiny = false, heading } = Astro.props;
 
 const plan = plans[game];
 if (!plan) {
@@ -60,7 +63,21 @@ if (!copy) {
 const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 ---
 
-{compact ? (
+{tiny ? (
+	<p class="hosting-cta-tiny">
+		<a href={plan.url}>
+			<svg class="hosting-cta-tiny__icon" viewBox="0 0 16 16" width="14" height="14"
+				fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+				stroke-linejoin="round" aria-hidden="true">
+				<rect x="1.5" y="2" width="13" height="5" rx="1.3" />
+				<rect x="1.5" y="9" width="13" height="5" rx="1.3" />
+				<path d="M4 4.5h.01M4 11.5h.01" />
+			</svg>
+			{heading ?? `Need a ${plan.name} server? Spin one up with EVLBOX`}
+			<span class="hosting-cta-tiny__arrow"> →</span>
+		</a>
+	</p>
+) : compact ? (
 	<a class="hosting-cta hosting-cta--compact" href={plan.url}>
 		<strong>{heading ?? `Need a ${plan.name} server?`}</strong> EVLBOX hosts it from{' '}
 		<strong>{formatPrice(plan.price)}</strong> — {plan.ram} GB RAM, {plan.slots} slots,
@@ -154,6 +171,37 @@ const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 	.hosting-cta__arrow {
 		color: var(--sl-color-accent-high);
 		font-weight: 600;
+		white-space: nowrap;
+	}
+
+	/* Smallest form: a signpost line above the article body. No box, no
+	   background, no border — it should read as a caption, not a banner. */
+	.hosting-cta-tiny {
+		margin: 0 0 1.25rem;
+		font-size: var(--sl-text-xs);
+		line-height: 1.4;
+	}
+
+	.hosting-cta-tiny a {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4em;
+		color: var(--sl-color-gray-3);
+		text-decoration: none;
+	}
+
+	.hosting-cta-tiny a:hover {
+		color: var(--sl-color-accent-high);
+		text-decoration: underline;
+	}
+
+	.hosting-cta-tiny__icon {
+		flex: none;
+		color: var(--sl-color-accent-high);
+	}
+
+	.hosting-cta-tiny__arrow {
+		color: var(--sl-color-accent-high);
 		white-space: nowrap;
 	}
 </style>

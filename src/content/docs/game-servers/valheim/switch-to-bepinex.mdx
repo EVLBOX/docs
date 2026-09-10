@@ -1,0 +1,164 @@
+---
+title: "Switch your Valheim Server to BepInEx"
+description: "Use GameSwap to move your Valheim server onto the BepInEx build for mods — freeze or wipe your current game, carry your world across, and install Thunderstore mods."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Switch to BepInEx | EVLBOX Valheim Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Use GameSwap to move your Valheim server onto the BepInEx build for mods — freeze or wipe your current game, carry your world across, and install Thunderstore mods."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/valheim/switch-to-bepinex/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="valheim" tiny />
+
+Mods need BepInEx, and BepInEx has to load before the game does — which is why it's a separate build rather than something you drop into a folder. Moving your server onto it takes a few minutes through **GameSwap**, and it costs nothing.
+
+## What you get
+
+**Valheim (BepInEx)** is the same Valheim server with the BepInEx plugin framework preloaded. Every setting from the vanilla build is still there — password, crossplay, world modifiers, all of it — plus:
+
+- A `BepInEx/plugins` folder that mods are loaded from.
+- A `BepInEx/config` folder for their settings files.
+- A **Thunderstore Modpack** field on the **Startup** tab, if you'd rather install a pack than upload plugins yourself.
+
+## Before you swap: save your world
+
+:::danger
+A GameSwap installs the new game fresh. Your world does **not** come across on its own, even if you freeze the current game — freezing stores your vanilla server so you can go back to it later, it doesn't copy anything onto the BepInEx server.
+
+If you want to keep playing your current world, download it first.
+:::
+
+1. Stop your server.
+2. Open the **Files** tab and go to `.config/unity3d/IronGate/Valheim/worlds_local`.
+3. Download **both** files for your world — the `.db` and the `.fwl`, for example `Dedicated.db` and `Dedicated.fwl`.
+
+A `.db` without its matching `.fwl` is not a restorable world. Take the pair, keep the filenames exactly as they are.
+
+:::tip
+A panel backup is worth taking as well, but download the two world files to your own machine regardless. Ten seconds now versus a world you can't get back.
+:::
+
+## Freeze or wipe
+
+GameSwap asks what should happen to the Valheim server you have now. Both options cost nothing.
+
+- **Freeze** — your current server is archived into a freeze slot, off your server and not using your disk. You can restore it later exactly as it is. Every server has one free slot.
+- **Wipe** — your current server is erased permanently. Uses no slot.
+
+**Freeze is the safer choice**, and it's the one to take if you're not sure the modded server will work out. It's your whole vanilla setup on ice, and restoring it puts everything back.
+
+Wipe if you already have your world files downloaded and you're not planning to come back — or if your free slot is holding something you'd rather keep.
+
+:::caution
+Freezing is not a way to park a world while you cancel a server. If a server is terminated, its freeze slots and everything in them go with it.
+:::
+
+## Do the swap
+
+1. Open your server in the [Nitro Panel](https://nitro.evlbox.com) and choose **GameSwap** in the sidebar — the swap-arrows icon.
+2. Find **Valheim (BepInEx)** in the catalog and select it. Your current game is marked **RUNNING NOW**, so vanilla Valheim and the BepInEx build are easy to tell apart.
+
+   ![GameSwap catalog with Valheim and Valheim BepInEx listed](/docs/valheim/gameswap-bepinex.png)
+
+3. Choose **Freeze** or **Wipe** for the game running now.
+4. Confirm. Name the freeze if you froze — something like `valheim-vanilla-before-mods` — and tick **Email me when it's finished** if you'd rather not watch.
+5. Start it. The progress page shows the current phase; you can close it and the swap keeps running.
+
+Your server is offline while the swap runs, and the panel shows a progress screen instead of the usual server view. That's expected.
+
+Full detail on slots, cooldowns and restoring is in the [GameSwap guide](/docs/getting-started/nitro-panel/gameswap).
+
+## Put your world back
+
+Once the swap finishes you have a fresh BepInEx server with a brand new world. To carry your old one over:
+
+1. Leave the server stopped.
+2. Open the **Files** tab and go to `.config/unity3d/IronGate/Valheim/worlds_local`. Create the folders if they aren't there yet.
+3. Upload your `.db` and `.fwl` pair.
+4. On the **Startup** tab, set **World Name** to match the filenames — `Dedicated.db` and `Dedicated.fwl` mean a World Name of `Dedicated`.
+5. Start the server.
+
+Valheim world saves are the same on both builds, so a world made on vanilla loads on BepInEx and vice versa. Mods can add things to a world that vanilla then doesn't understand, though — see the caution below before you plan on going back and forth.
+
+## Install mods
+
+### Option A — a Thunderstore modpack
+
+On the **Startup** tab, put a pinned Thunderstore dependency string into **Thunderstore Modpack**:
+
+```
+AuthorName-ModpackName-1.2.3
+```
+
+The version is part of it on purpose — a pack that updates can't change your server without you deciding to.
+
+:::caution
+**Changing this field needs a reinstall to take effect**, and a reinstall replaces your server files. Download your world files first, same as before a swap.
+
+Only plugin `.dll` files are installed from a pack. Mods that ship their own asset or config files need those uploaded by hand into `BepInEx/config`.
+:::
+
+### Option B — upload plugins yourself
+
+Leave **Thunderstore Modpack** blank and you get an empty BepInEx to fill.
+
+1. Stop the server.
+2. Download the mod from [Thunderstore](https://thunderstore.io/c/valheim/) or Nexus.
+3. Open the `.zip` and put the `.dll` files into `BepInEx/plugins` on the **Files** tab.
+4. Anything the mod says belongs in a config folder goes into `BepInEx/config`.
+5. Start the server and watch the **Console** tab.
+
+`Chainloader startup complete` means BepInEx loaded. Each plugin logs its own line as it loads, so the console tells you what actually came up — check there first if a mod doesn't seem to be doing anything.
+
+:::caution
+**Every player needs the same mods you do.** Most Valheim mods are client-and-server, and a player without them is usually rejected or breaks in odd ways. Share your mod list, or point everyone at the same Thunderstore modpack.
+:::
+
+## Going back to vanilla
+
+Two routes, depending on what you did on the way in.
+
+**If you froze**, open **GameSwap**, find your frozen game under **Frozen games**, and choose **Restore**. Your vanilla server comes back exactly as it was — but it comes back with *its* world, the one that was on it when you froze. Any progress made on the modded server lives in that server's world files, so download those before you restore.
+
+**If you wiped**, swap to plain **Valheim** from the catalog and upload your world files afterwards.
+
+:::caution
+A world played on a heavily modded server may not load cleanly on vanilla. Mods that add items, structures or biomes leave data behind that vanilla Valheim doesn't recognise. Keep a copy of the pre-mod world if going back matters to you.
+:::
+
+## Troubleshooting
+
+| Issue | What to check |
+|---|---|
+| Server started but no mods loaded | Look for `Chainloader startup complete` in the console. If it's missing, you're on the vanilla build — check the catalog says **Valheim (BepInEx)**. |
+| Modpack field changed, nothing happened | The field only applies on a reinstall. Download your world files, then reinstall. |
+| A specific mod isn't loading | Check the console for its line. Most often the `.dll` is nested inside a subfolder in the zip — it has to sit directly in `BepInEx/plugins`. |
+| Players get kicked or see missing items | Mod mismatch. Everyone needs the same mods at the same versions. |
+| Empty world after the swap | Expected — a swap installs fresh. Upload your `.db` and `.fwl` pair and set **World Name** to match. |
+| Server won't start after adding mods | Remove the last mod you added and start again. Mod conflicts show up in the console before the server finishes loading. |
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).

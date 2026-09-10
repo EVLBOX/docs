@@ -1,0 +1,109 @@
+---
+title: "How to Connect to your Valheim Server"
+description: "Copy your Valheim server address from the Nitro Panel and join it with Add server, an invite code, or the public server browser."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Connect | EVLBOX Valheim Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Copy your Valheim server address from the Nitro Panel and join it with Add server, an invite code, or the public server browser."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/valheim/how-to-connect/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="valheim" tiny />
+
+There are three ways into your Valheim server: the address from your panel, an invite code, or the public server browser. The address works in every case, so start there.
+
+:::note
+On first start your server downloads the game files and generates the world. Give it a few minutes. The console line `Game server connected` is your signal that it's up.
+:::
+
+## 1. Copy your server address
+
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com) and click your Valheim server.
+2. You land on the **Console** tab. Your **Server address** sits just under the Start / Restart / Stop buttons.
+3. Click it. The whole address, port included, is copied to your clipboard.
+
+![Nitro Panel console showing the Server address below the Start, Restart and Stop buttons](/docs/valheim/copy-server-address.png)
+
+:::tip
+Copy the address rather than retyping it. The port is not always the default `2456` — your server gets its own, and it's part of what you click.
+:::
+
+## 2. Add the server in game
+
+1. Launch Valheim and choose **Start Game**.
+2. Pick your character and click **Start**.
+3. If Valheim prompts you to create a new world, click **Cancel** — you're joining one, not making one.
+4. Choose **Join Game**, then click **Add server**.
+
+![Valheim Select Server screen with the Add server button at the bottom right](/docs/valheim/select-server-add-server.png)
+
+## 3. Paste the address
+
+Paste the address you copied into the **Enter IP or invite code** box, then click **Add server**.
+
+![Valheim Enter IP or invite code box with a server address pasted in](/docs/valheim/enter-ip-or-invite-code.png)
+
+This same box takes an invite code instead, if you have one:
+
+- **From a player already in game** — anyone in the world can share the join code from the in-game menu.
+- **From the console** — when a crossplay server finishes starting, it prints a line to the **Console** tab registering the session with a join code.
+
+## 4. Connect
+
+Your server now shows in the list on the **Favorite** tab. Select it and click **Connect**.
+
+![Valheim Select Server screen with the server listed and the Connect button](/docs/valheim/server-listed-connect.png)
+
+It stays in this list, so every session after this one is two clicks.
+
+## 5. Enter the password
+
+If your server has a password, Valheim asks for it while connecting. This is the **Server Password** from the **Startup** tab in your panel.
+
+![Valheim Enter Password prompt shown while connecting](/docs/valheim/enter-password.png)
+
+## Joining from the public browser
+
+The **Community** tab lists public servers, and you can find yours by name there — but only if both of these are true:
+
+- **Public Server** is on.
+- A **Server Password** is set.
+
+Valheim will not list a password-free server publicly. If you clear the password with **Public Server** still on, your server starts unlisted instead and the console says so. Everything above still works; only the Community listing goes away. See [Password and visibility](/docs/game-servers/valheim/server-settings#password-and-visibility).
+
+## Troubleshooting
+
+| Issue | What to check |
+|---|---|
+| Server shows as online but every join fails | Check whether **Enable Crossplay** was turned off. A Steam-only server currently lists and answers queries but cannot be joined. Turn crossplay back on and restart — see [Crossplay](/docs/game-servers/valheim/server-settings#crossplay). |
+| Server isn't in the Community browser | Confirm **Public Server** is on *and* a password is set. A password-free server is always unlisted. Use the address instead. |
+| Server won't start at all | Check the console for the `[EVLBOX]` warning about your password appearing inside your server name. Valheim refuses to start when it does. Change one of the two. |
+| Wrong password with the correct password | Passwords are letters, numbers, dashes and underscores only, 5 to 20 characters. Retype it on the **Startup** tab and restart. |
+| Kicked for a version mismatch | Your client updated before the server did. Restart the server to pull the latest build. Leave **Auto Update** on so this fixes itself. |
+| Joined an empty world you didn't expect | The **World Name** on the **Startup** tab changed. Setting it to a name that doesn't exist creates a brand new world; changing it back loads the old one. Nothing is deleted. |
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).
