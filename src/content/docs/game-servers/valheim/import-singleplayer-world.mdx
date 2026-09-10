@@ -1,0 +1,217 @@
+---
+title: "Move a Singleplayer World to your Valheim Server"
+description: "Upload an existing Valheim world to your server — where the save files live, how to upload them by SFTP or the file manager, and why your character comes with you automatically."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Move a Singleplayer World | EVLBOX Valheim Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Upload an existing Valheim world to your server — where the save files live, how to upload them by SFTP or the file manager, and why your character comes with you automatically."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/valheim/import-singleplayer-world/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/valheim/header.webp"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="valheim" tiny />
+
+Already have a world you've put a hundred hours into? You can move it onto your server. It's a folder copy, and the whole job is five steps.
+
+## Your character isn't part of this
+
+:::tip
+**Only the world moves. Your character stays on your own PC.**
+
+Valheim keeps your character — skills, inventory, appearance — in a file on your computer, and it comes with you to every server you join automatically. There's nothing to upload, and no character folder on the server at all.
+
+So when you connect to your server after the import, you're the same Viking you always were, standing in the world you just uploaded.
+:::
+
+This catches out nearly everyone who imports a world, so it's worth saying plainly: if your character looks wrong after joining, you picked the wrong character at the menu. Nothing was lost.
+
+## 1. Find your world on your PC
+
+Valheim keeps singleplayer worlds in a `worlds_local` folder:
+
+| OS | Where to look |
+|---|---|
+| **Windows** | `%USERPROFILE%\AppData\LocalLow\IronGate\Valheim\worlds_local\` |
+| **Linux** | `~/.config/unity3d/IronGate/Valheim/worlds_local/` |
+
+Paste the Windows path straight into the File Explorer address bar — `AppData` is hidden, so browsing to it by hand doesn't work unless you've turned hidden folders on.
+
+Inside, each world is a **folder** named after the world.
+
+:::caution
+**Can't see your world on disk, but it's there in game?** It's a Steam Cloud save that hasn't come down yet. Launch Valheim, load the world once, quit properly, and check again — or turn off Steam Cloud for Valheim in its Steam properties. There's nothing to copy until the files exist locally.
+:::
+
+## 2. Know what you're copying
+
+Valheim 1.0 changed how worlds are stored. A world is now a folder that looks like this:
+
+```
+MyWorld/
+├── _main.7.fwl2      world metadata — seed and world modifiers
+├── _main.7.db2       the main world database
+├── _main.7.chunks    chunk index
+├── _main.7.ok        integrity marker
+├── 00_00__0_3.chunk  terrain, one file per region you've explored
+├── 1e_20__1_1.chunk
+└── ...
+```
+
+**Copy the entire folder.** Don't pick files out of it.
+
+That number in `_main.7` is a save counter that goes up every time the world saves — a brand new world is `_main.0`, a well-played one might be `_main.34`. Yours will not be `7`. It doesn't matter what the number is, as long as you move the whole folder and leave every file in it alone.
+
+:::note
+Older guides tell you to copy a `WorldName.db` and `WorldName.fwl` pair. That was the pre-1.0 layout. If that's what you have, see [Bringing a pre-1.0 world](#bringing-a-pre-10-world) below.
+:::
+
+**Size:** a fresh world is a couple of megabytes. A world you've explored properly can run to hundreds, because every region you've visited is its own `.chunk` file. Budget some time for the upload.
+
+## 3. Stop the server
+
+Stop it from the **Console** tab in the [Nitro Panel](https://nitro.evlbox.com). **Stop, not restart.**
+
+:::danger
+This is the step people skip, and skipping it quietly destroys the import.
+
+A running Valheim server holds the world in memory and writes it back to disk on its next autosave — every 30 minutes by default. Upload onto a running server and the server will happily overwrite everything you just sent, with no error and no warning. It just looks like the import didn't work.
+:::
+
+If your server already has a world you care about, [take a backup](/docs/getting-started/nitro-panel/creating-backups) before you go any further.
+
+## 4. Upload the world
+
+Your world folder goes here on the server:
+
+```
+/.config/unity3d/IronGate/Valheim/worlds_local/
+```
+
+![Nitro Panel file manager showing the worlds_local folder with a world folder and its automatic backups](/docs/valheim/file-manager-worlds-local.png)
+
+Pick whichever route suits you.
+
+### Option A — SFTP
+
+Best for large worlds, and the only comfortable way to move a folder full of chunk files. We suggest [Cyberduck](https://cyberduck.io/download/) or [FileZilla](https://filezilla-project.org/download.php?type=client) — both are free.
+
+Your details are on the **Settings** tab of your server:
+
+![Nitro Panel SFTP details showing the server address on port 2022 and the username](/docs/nitro/sftp-details.png)
+
+| Field | What to enter |
+|---|---|
+| **Server / host** | The address shown, on port **2022** — for example `wolfhound.evlbox.com` port `2022` |
+| **Username** | The full string shown, including the dot and everything after it |
+| **Password** | Your Nitro Panel password — the one you log in to the panel with |
+| **Protocol** | SFTP |
+
+:::note
+**The username looks strange on purpose.** It's your panel username, a dot, then that specific server's ID — something like `yourname.9febe798`.
+
+The part after the dot is what tells us which server you're connecting to, so it's different for every server on your account. Copy the whole thing exactly as the panel shows it. Leaving off the ID is the single most common reason an SFTP login gets rejected.
+
+Your password is *not* different — it's the same one you use for the panel. There's no separate SFTP password to find or set.
+:::
+
+1. Click **Launch SFTP** in the panel to open the connection in your installed client, or enter the details above by hand.
+2. Accept the fingerprint prompt the first time you connect — that's your client noting the server it hasn't seen before.
+3. Navigate to `.config/unity3d/IronGate/Valheim/worlds_local/`.
+4. Drag your whole world folder in.
+
+:::caution
+If you're on a subuser account rather than the server owner's, SFTP access is a permission that has to be granted to you. See [Share Control Panel Access](/docs/getting-started/nitro-panel/subusers).
+:::
+
+### Option B — the panel file manager
+
+No extra software, but the file manager can't upload a folder — so send it as a zip.
+
+1. On your PC, zip the world folder itself. You want the folder inside the archive, not a pile of loose files.
+2. In the panel, go to the **Files** tab and into `.config/unity3d/IronGate/Valheim/worlds_local/`.
+3. Click **Upload** and send the zip.
+4. Click the **⋯** menu at the end of the zip's row and choose **Unarchive**.
+5. Check that you now have a folder named after your world, with the `_main.*` files inside it. Delete the zip once you're happy.
+
+:::note
+Two things you don't need to upload, and shouldn't:
+
+- Any `*_backup_auto-*` folders — those are the server's own automatic backups.
+- Anything in `cache/`. The `_biomedatacache.bin` file is around 20 MB and the server rebuilds it on its own.
+:::
+
+## 5. Set the World Name and start
+
+The **World Name** on the **Startup** tab has to match your world's folder name **exactly**.
+
+A folder called `MyWorld` means a World Name of `MyWorld` — not `myworld`, not `MyWorld.db`. It's case-sensitive, and it's capped at 20 characters, so rename the folder before you upload if yours is longer.
+
+Then start the server and watch the **Console** tab for:
+
+```
+ZNet.LoadWorld: MyWorld
+...
+Game server connected
+```
+
+That first line is the confirmation you want — it's the server telling you which world it actually loaded.
+
+:::danger
+**A World Name that doesn't match any folder does not produce an error.** Valheim generates a brand new world under that name and starts it, which looks exactly like your save being wiped.
+
+If you join and find yourself on an empty beach, don't panic and don't play. Stop the server, check the spelling and capitalisation of the World Name against the folder in `worlds_local/`, and start again. Your uploaded world is still sitting there untouched.
+:::
+
+## Bringing a pre-1.0 world
+
+If your world is a `WorldName.db` and `WorldName.fwl` pair rather than a folder, it's from before Valheim 1.0. Upload the two files into `worlds_local/` and set the World Name to the filename without its extension — Valheim converts it to the 1.0 format when it loads.
+
+:::caution
+**That conversion is one-way.** Once a world has been opened by 1.0 it can't go back. Keep a copy of the original pair somewhere safe before you load it the first time — that copy is your only way back if anything goes sideways.
+:::
+
+## Getting a world back off the server
+
+The same trip in reverse, if you want to keep playing solo.
+
+1. Stop the server.
+2. Download the world folder from `.config/unity3d/IronGate/Valheim/worlds_local/`. Leave the `*_backup_auto-*` folders behind.
+3. Drop it into `worlds_local/` on your PC, using the paths in [step 1](#1-find-your-world-on-your-pc).
+
+It shows up in your singleplayer world list next launch. Your character already works — it never left your machine.
+
+## Troubleshooting
+
+| Issue | What to check |
+|---|---|
+| Joined and got an empty new world | World Name doesn't match the folder name. Case matters. Stop the server and fix it — your upload is fine. |
+| World loaded but progress is missing | The server was running during the upload and overwrote it. Stop the server and upload again. |
+| Console shows a different world name than expected | `ZNet.LoadWorld` tells you what actually loaded. Match the Startup tab to your folder. |
+| Unarchive left loose files, not a folder | The zip was made from the folder's *contents*. Create a folder in `worlds_local/` named after your world and move the files into it. |
+| World isn't in `worlds_local` on your PC | Steam Cloud save that hasn't synced down. Load it once in game, quit properly, look again. |
+| Upload keeps timing out | Large explored worlds are hundreds of megabytes. Use SFTP rather than the file manager. |
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).
