@@ -107,7 +107,7 @@ Ensure your configuration file is properly set up. In Nitro panel click "Files" 
 If the file is empty, paste in the official example configuration (you may add this manually).
 
 
-```[/Script/TowerNetworking.DedicatedServerOptions]
+```ini
 [/Script/TowerNetworking.DedicatedServerOptions]
 ServerTitle=My Dedicated Condo
 MaxPlayers=32
