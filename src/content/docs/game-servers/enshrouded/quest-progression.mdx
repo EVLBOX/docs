@@ -1,0 +1,87 @@
+---
+title: "Quest Progression in Multiplayer"
+description: "How quest progress works on an Enshrouded server, what stays shared, and how each player turns on personal progression from their own journal."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Quest Progression in Multiplayer | EVLBOX Enshrouded Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "How quest progress works on an Enshrouded server, what stays shared, and how each player turns on personal progression from their own journal."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/enshrouded/quest-progression/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="enshrouded" tiny />
+
+By default, quest progress on an Enshrouded server is shared. Join a world your friends have been playing for a month and the big story beats are already done. Enshrouded's fix for that is **personal progression**, and it is something each player turns on for themselves in the game. There is no server setting for it and nothing to change in the panel.
+
+## How progression works by default
+
+Progress is tracked on the world and on each character at the same time.
+
+- When a quest step is completed, every character **in range** gets credit for it. If you can see the other player's nameplate, you are in range.
+- Characters elsewhere on the map get the step marked as **missed** in their journal instead.
+- Joining a server where the story is already underway means most of the early quests show as missed. You can still play, but you did not earn those rewards.
+
+This is why a group that always plays together rarely notices, and a group with mixed schedules does.
+
+## Turn on personal progression
+
+Each player does this for themselves, in their own game.
+
+1. Open your **Journal** and go to the quests page.
+2. Scroll down to **Missed Embervale Quests**.
+3. Activate personal progression from that section.
+
+From then on you can pick up quests the server has already finished, including rescuing NPCs and fighting bosses, and earn the rewards and experience for them yourself. You can switch back to following the server's progress from the same place.
+
+:::caution
+The missed quests list shows everything the server has done. If you care about spoilers, turn personal progression on early rather than reading through the list first.
+:::
+
+:::note
+The server owner enabling personal progression does nothing for anyone else. It is per character, so each player who wants it has to switch it on.
+:::
+
+## What stays shared
+
+Personal progression covers quests. The world itself is still one world.
+
+| Shared by the whole server | Credited per player |
+|---|---|
+| Flame Altar level and how far the Shroud has been pushed back | Shroud roots, which need you present to count |
+| Bases, chests, terrain and everything built | Elixir Wells, same rule |
+| The current state of NPCs and the world map | Elder Night Sanctums, which need you in the final room |
+
+The Flame Altar level at which the Shroud recedes is a server setting, so if your group wants the Shroud to clear earlier or later for everyone, that one is set in the panel. See [Server Settings](/docs/game-servers/enshrouded/server-settings#world-and-time).
+
+:::tip
+Characters are yours, not the server's. Your level, items and skills travel with you between singleplayer and any server. Only the world-bound things in the left column stay behind.
+:::
+
+<HostingCTA game="enshrouded" variant="switch">
+  Want a world where the whole group starts the story together? A fresh server deploys in minutes, on the 1.0 build, with every setting in the panel.
+</HostingCTA>
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).

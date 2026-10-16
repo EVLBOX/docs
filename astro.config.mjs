@@ -194,6 +194,8 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'game-servers/enshrouded' },
 								{ label: 'How to Connect', slug: 'game-servers/enshrouded/how-to-connect' },
+								{ label: 'Server Settings', slug: 'game-servers/enshrouded/server-settings' },
+								{ label: 'Admin, Friend and Guest Roles', slug: 'game-servers/enshrouded/server-roles' },
 								{ label: 'Quest Progression', slug: 'game-servers/enshrouded/quest-progression' },
 							],
 						},

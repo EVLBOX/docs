@@ -1,0 +1,65 @@
+---
+title: "Enshrouded Guides"
+description: "Host your Enshrouded 1.0 server with EVLBOX. Connecting, every server setting in the panel, the Admin, Friend and Guest roles, and how quest progression works in multiplayer."
+head:
+  - tag: meta
+    attrs:
+      name: "keywords"
+      content: "Enshrouded hosting, EVLBOX Enshrouded server, Enshrouded dedicated server, Enshrouded 1.0 server, Enshrouded server settings, Enshrouded multiplayer"
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Enshrouded Server Guides | EVLBOX"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Host your Enshrouded 1.0 server with EVLBOX. Connecting, server settings, roles and quest progression."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/enshrouded/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+Enshrouded is a co-op survival action RPG for up to 16 players, set in a voxel world you dig, build and terraform. You wake as a Flameborn, push back the Shroud, and rebuild Embervale with your friends.
+
+![Enshrouded key art](/docs/enshrouded/header.jpg)
+
+## Before You Start
+
+Four things about Enshrouded servers catch people out. All four are worth knowing before you share your server with anyone.
+
+**There are three passwords, not one.** Enshrouded has no single server password. Your server has an **Admin**, a **Friend** and a **Guest** password, and the one you hand someone decides what they can do. Leave the Guest password empty and the server is public. See [Admin, Friend and Guest Roles](/docs/game-servers/enshrouded/server-roles).
+
+**Password changes apply through a reinstall.** Changing a role password or a reserved-slot count takes effect via **Settings**, then **Reinstall Server**. That keeps your world, saves and files. Every other setting applies on a normal restart.
+
+**Custom difficulty settings only count when the preset is Custom.** Default, Relaxed, Hard and Survival use the game's built-in profiles and ignore every slider under them. See [Server Settings](/docs/game-servers/enshrouded/server-settings#difficulty-preset).
+
+**Personal quest progression is a player setting, not a server setting.** Each player turns it on in their own journal. There is nothing to configure in the panel. See [Quest Progression](/docs/game-servers/enshrouded/quest-progression).
+
+## Hosting Guides
+
+[Article - How to Connect to your Enshrouded Server](/docs/game-servers/enshrouded/how-to-connect)
+
+[Article - Server Settings: Presets, Sliders, Chat and Ports](/docs/game-servers/enshrouded/server-settings)
+
+[Article - Admin, Friend and Guest Roles](/docs/game-servers/enshrouded/server-roles)
+
+[Article - Quest Progression in Multiplayer](/docs/game-servers/enshrouded/quest-progression)
+
+<HostingCTA game="enshrouded" variant="start">
+  Every Enshrouded setting is a field in the panel, the three role passwords included. No JSON to edit by hand.
+</HostingCTA>

@@ -28,6 +28,18 @@ export const plans = {
 		slots: 'unlimited',
 		url: 'https://evlbox.com/games/project-zomboid',
 	},
+	enshrouded: {
+		name: 'Enshrouded',
+		price: 15.99,
+		ram: 6,
+		vcpu: 2,
+		disk: 25,
+		maxRam: 16,
+		// Keen caps a dedicated server at 16 players. We add no cap on top of
+		// that, so this is the game's number, not a billing tier.
+		slots: 16,
+		url: 'https://evlbox.com/games/enshrouded',
+	},
 	valheim: {
 		name: 'Valheim',
 		price: 16.0,
