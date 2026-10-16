@@ -132,7 +132,7 @@ Inside the archive, you should find:
 
 ## **Need Help or Want More Storage?**
 
-EVLBOX support is always here to help. You can also request **more backup slots** if needed for larger or more frequent campaigns.
+[EVLBOX support](https://evlbox.com/help) is always here to help. You can also request **more backup slots** if needed for larger or more frequent campaigns.
 
 Check out other [**Foundry Hosting Guides**](/docs/game-servers/foundry) for more tips and support.
 
