@@ -1,0 +1,175 @@
+---
+title: "Enshrouded Server Settings"
+description: "Every Enshrouded setting on the Startup tab explained: server name and chat, the five difficulty presets, all 38 custom sliders with their ranges, auto update, and how ports are handled."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Server Settings | EVLBOX Enshrouded Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Every Enshrouded setting on the Startup tab explained: server name and chat, the five difficulty presets, all 38 custom sliders with their ranges, auto update, and how ports are handled."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/enshrouded/server-settings/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="enshrouded" tiny />
+
+Everything on this page lives on the **Startup** tab of your server in the [Nitro Panel](https://nitro.evlbox.com). Stop the server, change the field, start the server. The panel writes your values into the game's config for you.
+
+:::caution
+Use the Startup tab, not `enshrouded_server.json`. The panel owns that file and rewrites it from the Startup tab values on start, so a hand edit looks like it works and then disappears.
+:::
+
+:::note
+Role passwords and reserved slots are the exception. Those apply via **Settings**, then **Reinstall Server**, which keeps your world and files. They are covered in [Admin, Friend and Guest Roles](/docs/game-servers/enshrouded/server-roles).
+:::
+
+## Server identity and chat
+
+| Setting | Default | What it does |
+|---|---|---|
+| **Server Name** | My Server | The name players search for in the game's browser. Up to 64 characters. |
+| **Max Players** | 16 | The game's hard cap is 16. The panel will not accept more. Each connected player adds roughly 100 MB of RAM on top of the server's idle use. |
+| **Voice Chat** | Off | Turns in-game voice on. |
+| **Voice Chat Mode** | Proximity | `Proximity` is heard by players nearby, `Global` by the whole server. |
+| **Text Chat** | Off | Turns in-game text chat on. |
+
+## Difficulty preset
+
+**Difficulty Preset** has five options: `Default`, `Relaxed`, `Hard`, `Survival` and `Custom`. The first four are the game's own built-in profiles.
+
+:::caution
+Every setting in the Custom sections below is **ignored unless the preset is `Custom`**. Pick Relaxed and change Enemy Damage, and nothing happens. Set the preset to Custom first, then tune.
+:::
+
+A good way to work: pick the built-in preset closest to what you want, play a session, then switch to Custom and change only the handful of things that bothered you.
+
+## Custom settings
+
+All multipliers use `1` as the game's normal value. `0.5` is half, `2` is double.
+
+### Player
+
+| Setting | Default | Range | What it does |
+|---|---|---|---|
+| **Player Health** | 1 | 0.25 to 4 | Health multiplier. |
+| **Player Mana** | 1 | 0.25 to 4 | Mana multiplier. |
+| **Player Stamina** | 1 | 0.25 to 4 | Stamina multiplier. |
+| **Body Heat** | 1 | 0.5 to 2 | Cold resistance. Higher lets you stay longer in cold areas. |
+| **Diving Time** | 1 | 0.5 to 2 | Oxygen supply underwater. |
+| **Time in Shroud** | 1 | 0.5 to 2 | How long you can stay in the Shroud before it kills you. |
+| **Weapon Durability** | On | On or Off | Off means weapons never break. |
+| **Starvation Debuff** | Off | On or Off | On means hunger can kill you. |
+| **Food Buff Duration** | 1 | 0.5 to 2 | How long food buffs last. |
+| **Hunger to Starving** | 10 minutes | 5, 8, 10, 12, 15 or 20 minutes | How long after you get hungry you start starving. See the time values note below. |
+
+### Death and curse
+
+| Setting | Default | Options | What it does |
+|---|---|---|---|
+| **Death Drop** | AddBackpackMaterials | `AddBackpackMaterials`, `Everything`, `NoTombstone` | What you drop on death. Materials only, everything in the backpack, or nothing at all. |
+| **Shroud Curse Chance** | Normal | `Easy`, `Normal`, `Hard` | `Easy` turns the curse off. `Hard` doubles the chance. |
+
+### World and time
+
+| Setting | Default | Options | What it does |
+|---|---|---|---|
+| **Day Length** | 30 minutes | 2, 5, 8, 10, 12, 15, 20, 30, 45 or 60 minutes | How long daytime lasts. |
+| **Night Length** | 12 minutes | 2, 5, 8, 10, 12, 15, 20, 30, 45 or 60 minutes | How long night lasts. |
+| **Weather Frequency** | Normal | `Disabled`, `Rare`, `Normal`, `Often` | How often weather events happen. |
+| **Flame Level: Shroud Removal** | 11 | 1 to 20 | The Flame Altar level at which the Shroud is pushed back for the whole server. The game's default is 11. Keen has not published the full range, so treat values far from the default as an experiment. |
+
+:::note[Time values]
+The game stores time settings in nanoseconds, so the dropdowns for **Day Length**, **Night Length** and **Hunger to Starving** show large numbers rather than minutes. The conversion is the same for all three.
+
+| Minutes | Value |
+|---|---|
+| 2 | 120000000000 |
+| 5 | 300000000000 |
+| 8 | 480000000000 |
+| 10 | 600000000000 |
+| 12 | 720000000000 |
+| 15 | 900000000000 |
+| 20 | 1200000000000 |
+| 30 | 1800000000000 |
+| 45 | 2700000000000 |
+| 60 | 3600000000000 |
+:::
+
+### Progression and economy
+
+| Setting | Default | Range | What it does |
+|---|---|---|---|
+| **Mining Damage** | 1 | 0.5 to 2 | Resources gathered per hit. |
+| **Plant Growth Speed** | 1 | 0.25 to 2 | How fast crops grow. |
+| **Loot Stack Amount** | 1 | 0.25 to 2 | Size of resource drops from chests and enemies. |
+| **Workstation Speed** | 1 | 0.25 to 2 | Crafting and production speed. |
+| **Upgrade Rune Cost** | 1 | 0.25 to 2 | Runes needed to upgrade a weapon. |
+| **Salvage Rune Refund** | 0.5 | 0 to 1 | Fraction of runes returned when you salvage an upgraded weapon. |
+| **XP: Combat** | 1 | 0.25 to 2 | Experience from combat. |
+| **XP: Mining** | 1 | 0 to 2 | Experience from mining. `0` turns mining XP off entirely. |
+| **XP: Exploration and Quests** | 1 | 0.25 to 2 | Experience from discovery and quests. |
+
+### Enemies
+
+| Setting | Default | Range or options | What it does |
+|---|---|---|---|
+| **Enemy Spawn Amount** | Automatic | `Few`, `Normal`, `Many`, `Extreme`, `Automatic` | How many enemies exist in the world. `Automatic`, the 1.0 default, scales each encounter to the players nearby. |
+| **Aggro Pool** | Normal | `Few`, `Normal`, `Many`, `Extreme` | How many enemies can attack you at once. |
+| **Enemy Damage** | 1 | 0.25 to 5 | Non-boss damage. 1.0 reworked the underlying values, so retune this after upgrading an older world. |
+| **Enemy Health** | 1 | 0.25 to 4 | Non-boss health. |
+| **Enemy Stamina** | 1 | 0.5 to 2 | Higher makes enemies harder to stun. |
+| **Enemy Perception Range** | 1 | 0.5 to 2 | How far enemies see and hear you. |
+| **Enemy Attack Frequency** | 1 | 0.25 to 4 | How often enemies attack. |
+| **Boss Damage** | 1 | 0.2 to 5 | Tuned separately from regular enemies. |
+| **Boss Health** | 1 | 0.2 to 5 | Tuned separately from regular enemies. |
+| **Pacify Enemies** | Off | On or Off | On means non-boss enemies leave you alone until you hit them. |
+
+### Other
+
+| Setting | Default | Options | What it does |
+|---|---|---|---|
+| **Fishing Difficulty** | Normal | `VeryEasy`, `Easy`, `Normal`, `Hard`, `VeryHard` | How hard the fishing minigame is. |
+| **Glider Turbulence** | On | On or Off | Off restores the older, smoother glider behaviour. |
+| **Taming Startle Penalty** | LoseSomeProgress | `KeepProgress`, `LoseSomeProgress`, `LoseAllProgress` | What happens to taming progress when you startle the animal. |
+
+## System
+
+| Setting | Default | What it does |
+|---|---|---|
+| **Auto Update** | On | Updates the server to the current game build on every start. Leave it on. A player on a newer build cannot join an outdated server. |
+| **Validate** | Off | Re-checks every game file against Steam on the next start. Slow. Turn it on once after a bad update, then turn it off again. |
+
+## Ports
+
+There is nothing to set. Your server's port is assigned when it is created and written into the config for you. It is the port shown with your **Server address** on the **Console** tab, and it is what Steam needs if you add the server as a favourite. See [How to Connect](/docs/game-servers/enshrouded/how-to-connect#3-join-by-address-through-steam).
+
+## Values the panel will not accept
+
+Every field has a range, and the panel checks it when you save. A server name over 64 characters, a password under 4, a player count over 16 or a multiplier outside its range gets an error in the panel instead of a server that silently refuses to start. If a value you want is outside the range, [open a ticket](https://evlbox.com/help) and ask.
+
+<HostingCTA game="enshrouded" variant="switch">
+  All 45 of these are fields in the panel here, with the ranges enforced, and the 1.0 build deploys by default.
+</HostingCTA>
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).

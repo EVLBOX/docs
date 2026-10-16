@@ -1,0 +1,94 @@
+---
+title: "Admin, Friend and Guest Roles"
+description: "Enshrouded has no admin console. Moderation runs on three role passwords in the Nitro Panel: what Admins, Friends and Guests can each do, reserved slots, public servers, and how to change a password."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "Admin, Friend and Guest Roles | EVLBOX Enshrouded Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "What Admins, Friends and Guests can each do on an Enshrouded server, reserved slots, public servers, and how to change a role password."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/enshrouded/server-roles/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="enshrouded" tiny />
+
+Enshrouded does not have admin commands. There is no console to type into and no chat command list. Moderation runs on **roles**: your server has three groups, each with its own password, and the password you give someone decides what they are allowed to do. All three live on the **Startup** tab of your server in the [Nitro Panel](https://nitro.evlbox.com).
+
+## What each role can do
+
+| | Admin | Friend | Guest |
+|---|---|---|---|
+| Kick and ban players | Yes | No | No |
+| Open chests and inventories | Yes | Yes | No |
+| Dig, build and change the world | Yes | Yes | No |
+| Edit existing bases | Yes | Yes | No |
+| Extend bases and change the Flame Altar | Yes | No | No |
+| Reserved slots | 1 by default | 0 by default | None |
+
+**Admin** is for you and anyone you trust with the whole server. **Friend** is the everyday role for your group: they can build, loot and play normally, but cannot grow the base footprint or touch the Flame Altar. **Guest** is for visitors: they can explore and fight, but cannot open containers or build.
+
+## The passwords
+
+| Startup field | Notes |
+|---|---|
+| **Admin Password** | 4 to 64 characters. Required. |
+| **Friend Password** | 4 to 64 characters. Required. |
+| **Guest Password** | Optional. Up to 64 characters. **Empty means anyone can join as a Guest without a password.** |
+
+:::caution
+All three ship with placeholder values. Change them before you share the server with anyone.
+:::
+
+### Making a public server
+
+Leave **Guest Password** empty. Anyone who finds the server in the browser can join as a Guest, which means they can explore but not build or loot. Your Admin and Friend passwords still gate the roles that can change things.
+
+## Reserved slots
+
+**Admin Reserved Slots** and **Friend Reserved Slots** hold back part of your player cap for that group. With **Max Players** at 16 and one admin slot reserved, fifteen players can fill the server and an Admin can still get in. Reserved slots come out of the cap, they do not add to it.
+
+## Changing a password or a slot count
+
+Role passwords and reserved slots are the one kind of setting that does not apply on a plain restart.
+
+1. Open the **Startup** tab and change the field.
+2. Go to **Settings** and click **Reinstall Server**.
+3. Start the server.
+
+The reinstall keeps your world, saves and files. It only rewrites the permissions block in the server config. This is needed because the panel's config editor writes single values, and the role list is a list, so the install step owns it.
+
+:::note
+Changing **Server Name**, **Max Players**, chat toggles or any difficulty setting does not need a reinstall. A normal restart applies those. See [Server Settings](/docs/game-servers/enshrouded/server-settings).
+:::
+
+## Kicking and banning
+
+Players with the Admin password get the kick and ban permission inside the game. There is no server-side ban list to edit, so a ban is applied from the game by an Admin who is online.
+
+<HostingCTA game="enshrouded" variant="switch">
+  All three role passwords and both reserved-slot counts are fields in the panel here. No hand-editing the user groups in a config file.
+</HostingCTA>
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).

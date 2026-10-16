@@ -1,0 +1,110 @@
+---
+title: "How to Connect to your Enshrouded Server"
+description: "Set your Enshrouded server name and the Admin, Friend and Guest passwords in the Nitro Panel, then join from the in-game browser or by address through Steam."
+head:
+  - tag: meta
+    attrs:
+      property: "og:title"
+      content: "How to Connect | EVLBOX Enshrouded Server"
+  - tag: meta
+    attrs:
+      property: "og:description"
+      content: "Set your Enshrouded server name and the Admin, Friend and Guest passwords in the Nitro Panel, then join from the in-game browser or by address through Steam."
+  - tag: meta
+    attrs:
+      property: "og:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+  - tag: meta
+    attrs:
+      property: "og:url"
+      content: "https://evlbox.com/docs/game-servers/enshrouded/how-to-connect/"
+  - tag: meta
+    attrs:
+      name: "twitter:card"
+      content: "summary_large_image"
+  - tag: meta
+    attrs:
+      name: "twitter:image"
+      content: "https://evlbox.com/docs/enshrouded/header.jpg"
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+<HostingCTA game="enshrouded" tiny />
+
+There are two ways into your Enshrouded server: search for it by name in the game's server browser, or add its address as a Steam favourite. Both need a password from you, so set those first.
+
+:::note
+On first start your server downloads the game files, which takes several minutes. Watch the **Console** tab in the panel. The server is ready once the install output stops and the status shows Online.
+:::
+
+## 1. Set your server name and passwords
+
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com), click your Enshrouded server and open the **Startup** tab.
+2. Set **Server Name**. This is what people search for in the game's browser, so make it specific.
+3. Set the **Admin Password**, **Friend Password** and **Guest Password**. There is no single server password in Enshrouded. The password you give someone decides what they can do on your server. See [Admin, Friend and Guest Roles](/docs/game-servers/enshrouded/server-roles).
+4. Start, or restart, the server.
+
+:::caution
+The three passwords ship with placeholder values. Change all three before you share the server. Leaving **Guest Password** empty makes the server public, so anyone who finds it can join as a guest.
+:::
+
+:::tip
+Changing a password later is one extra step. Edit it on the **Startup** tab, then go to **Settings** and click **Reinstall Server**. The reinstall keeps your world, saves and files and only rewrites the permissions. The server name applies on a normal restart.
+:::
+
+## 2. Join from the in-game server browser
+
+1. Launch Enshrouded and choose **Join an Online Game**.
+2. In **Filter Server Names**, type your server name, or part of it.
+
+![Enshrouded server browser with a name typed into Filter Server Names](/docs/enshrouded/search_for_server.jpg)
+
+3. Select your server and join. The game asks for a password. Enter the Admin, Friend or Guest password you were given.
+
+![Enshrouded password prompt shown when joining a server](/docs/enshrouded/password_prompt.jpg)
+
+## 3. Join by address through Steam
+
+Use this if the browser is slow to list your server, or you want it saved for next time.
+
+1. In the [Nitro Panel](https://nitro.evlbox.com), open your server's **Console** tab. Your **Server address** sits just under the Start, Restart and Stop buttons. Click it to copy the address and port together.
+2. In Steam, click **View** at the top and choose **Game Servers**.
+
+![Steam View menu with Game Servers highlighted](/docs/enshrouded/steam_game_servers.png)
+
+3. Open the **Favorites** tab and click the **+** at the bottom. Paste the address, then click **OK**.
+
+![Steam Add Server dialog with an address and port entered](/docs/enshrouded/add_server_by_ip.png)
+
+4. Your server appears with its name, game and player count. Click **Connect**.
+
+![Steam Favorites tab listing the server with the Connect button](/docs/enshrouded/connect_to_server_steam.png)
+
+5. The game launches with your server pinned at the top of the online list with a star. It stays there for every session after this one.
+
+![Enshrouded online list with the favourited server at the top](/docs/enshrouded/favorited_server.png)
+
+:::tip
+Copy the address from the panel rather than retyping it. Your server has its own port, and that port is what Steam needs. It is written into the server config for you, so there is nothing to look up or match.
+:::
+
+## Troubleshooting
+
+| Issue | What to check |
+|---|---|
+| Server isn't in the browser yet | On first start the game files are still downloading. Give it a few minutes and check the **Console** tab. Searching by the exact name helps once it is up. |
+| Password rejected | You may have the wrong group's password. Check which one you were given. If a password was recently changed on the **Startup** tab, it only applies after **Settings**, then **Reinstall Server**. |
+| Kicked for a version mismatch | Your game updated before the server did. Restart the server to pull the latest build. Leave **Auto Update** on so this fixes itself. |
+| Server shows full with free slots | Reserved slots are held back for the Admin and Friend groups. See [Reserved slots](/docs/game-servers/enshrouded/server-roles#reserved-slots). |
+| Can't open chests or build after joining | You joined with the Guest password. Guests can explore but not build or open containers. Rejoin with the Friend or Admin password. |
+
+<HostingCTA game="enshrouded" variant="switch">
+  Three role passwords, reserved slots and every world setting are fields in the panel here, and the 1.0 build is what deploys.
+</HostingCTA>
+
+![A Flameborn resting at a campfire in Enshrouded](/docs/enshrouded/fire.jpg)
+
+---
+
+Questions? Reach out on the [support Discord](https://discord.com/invite/rWF4hJhbaM) or [create a ticket](https://evlbox.com/help).
