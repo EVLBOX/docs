@@ -118,4 +118,4 @@ This method allows you to browse public servers, including yours—but it may be
 
 ### 💡 Need More Help?
 
-If you’re still having trouble connecting, check out our other helpful guides or reach out to our support team. [**Get a FOUNDRY server today**](https://evlbox.com/games/foundry) and enjoy reliable hosting with built-in support from EVLBOX!
+If you’re still having trouble connecting, check out our other helpful guides or [contact our support team](https://evlbox.com/help) . [**Get a FOUNDRY server today**](https://evlbox.com/games/foundry) and enjoy reliable hosting with built-in support from EVLBOX!
