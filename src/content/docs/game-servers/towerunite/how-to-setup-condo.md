@@ -1,11 +1,11 @@
-﻿---
+---
 title: "First Time Setup - Tower Unite Condo Server"
-description: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
+description: "Step-by-step guide to get your Tower Unite condo server online with EVLBOX: Steam and Tower login tokens, admins, choosing a condo map, and uploading the condo you built in single player."
 head:
   - tag: meta
     attrs:
       name: "keywords"
-      content: "Tower Unite condo server setup, EVLBOX condo guide, Tower Unite GSLT, Tower Unite dedicated condo, condo map export, condo admin SteamID, TowerServer.ini"
+      content: "Tower Unite condo server setup, EVLBOX condo guide, Tower Unite GSLT, Tower Unite dedicated condo, condo map export, condo admin SteamID, TowerServer.ini, Tower/Condos"
   - tag: meta
     attrs:
       property: "og:title"
@@ -13,7 +13,7 @@ head:
   - tag: meta
     attrs:
       property: "og:description"
-      content: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
+      content: "Step-by-step guide to get your Tower Unite condo server online with EVLBOX: Steam and Tower login tokens, admins, choosing a condo map, and uploading the condo you built in single player."
   - tag: meta
     attrs:
       property: "og:image"
@@ -41,7 +41,7 @@ head:
   - tag: meta
     attrs:
       name: "twitter:description"
-      content: "Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo."
+      content: "Step-by-step guide to get your Tower Unite condo server online with EVLBOX: Steam and Tower login tokens, admins, choosing a condo map, and uploading the condo you built in single player."
   - tag: meta
     attrs:
       name: "twitter:image"
@@ -54,108 +54,147 @@ head:
     attrs:
       type: "application/ld+json"
     content: |
-      {"@context":"http://schema.org","@type":"Article","headline":"How to Set Up Your Tower Unite Condo Server | EVLBOX Guide","description":"Step-by-step guide to get your Tower Unite condo server running. Includes token setup, admin configuration, and uploading your single-player condo.","url":"https://evlbox.com/docs/game-servers/towerunite/how-to-setup-condo/","image":"https://evlbox.com/docs/towerunite/gslt.png","imageAlt":"Steam GSLT Token Creation Page","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2025-07-22"}
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Set Up Your Tower Unite Condo Server | EVLBOX Guide","description":"Step-by-step guide to get your Tower Unite condo server online with EVLBOX: Steam and Tower login tokens, admins, choosing a condo map, and uploading the condo you built in single player.","url":"https://evlbox.com/docs/game-servers/towerunite/how-to-setup-condo/","image":"https://evlbox.com/docs/towerunite/gslt.png","imageAlt":"Steam GSLT Token Creation Page","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2026-10-24"}
 ---
 
-## How to Set Up Your Tower Unite Condo Server
+If you've just picked up a **Tower Unite Condo Server** from EVLBOX, this is your first stop. Your server is installed and will boot straight away, but it will not show up in the in-game condo list until you give it two login tokens. Everything on this page is done from the **Startup** tab in [Nitro Panel](https://nitro.evlbox.com).
 
-If you've just purchased a **Tower Unite Condo Server** from EVLBOX, this is your first stop! These steps will also work for most other hosting providers. If you're planning to host your condo on your own machine, we recommend following [PixelTail’s official guide](https://towerunite.com/guides/condo_dedicated.html).
+:::tip[What you get out of the box]
+A fresh EVLBOX condo server already has its config file (`TowerServer.ini`) filled in from your Startup settings and a save folder for **every** condo map under `Tower/Condos/`. You only need to add tokens and admins.
+:::
 
+## Step 1: Create a Steam Game Server Login Token (GSLT)
 
-## **Step-by-Step Setup Instructions**
+Visit [Steam Game Server Token Management](https://steamcommunity.com/dev/managegameservers).
 
-### **Step 1: Create a Steam Game Server Login Token (GSLT)**
-
-Visit [Steam Game Server Token Management](https://steamcommunity.com/dev/managegameservers)
-
-- Use **App ID: 394690**
-- Add a short memo (e.g. "Tower Condo")
-- Submit to get your GSLT
-
-This token is tied to your **Steam account**. EVLBOX cannot provide this for you.
+- Use **App ID: 394690** (that is Tower Unite's game App ID, not the server download).
+- Add a short memo, e.g. "EVLBOX Condo".
+- Click **Create** and copy the 32-character token.
 
 ![GSLT Creation](/docs/towerunite/gslt.png)
 
-Save your token—you'll use it in Step 3.
+The token is tied to **your** Steam account, so EVLBOX cannot generate it for you. Each dedicated condo needs its own token.
 
+## Step 2: Generate a Tower Unite Server Token
 
-### **Step 2: Generate a Tower Unite Server Token**
+Visit [Tower Unite Server Management](https://moderation.towerunite.com/manage_game_servers.php) and sign in through Steam.
 
-Visit [Tower Unite Server Management](https://moderation.towerunite.com/manage_game_servers.php) and sign in via Steam.
+- Click **Add Server** and copy the token it gives you.
 
-- Click **Add Server** to generate your server token.
+:::danger[Treat both tokens like passwords]
+Anyone with your tokens can run a server that pretends to be yours. If a token leaks, click **Regenerate** on the page that issued it and update your server.
+:::
 
-Copy the token for use in Step 3.
+## Step 3: Enter the tokens in Nitro Panel
 
+1. Open your server in [Nitro Panel](https://nitro.evlbox.com) and go to the **Startup** tab.
+2. Paste the GSLT from Step 1 into **Steam Login Token**.
+3. Paste the token from Step 2 into **Tower Unite Login Token**.
+4. Set **Condo Title** to the name you want in the condo list. Add `18+` to the title if you host mature content, PixelTail delists unlabeled mature condos.
+5. **Restart** the server. Startup settings are written into `TowerServer.ini` on every start.
 
-### **Step 3: Apply Server Tokens in Nitro Panel**
+Until both tokens are set the console shows this reminder each start, and the server runs as an unlisted condo:
 
-1. Go to [**Nitro Control Panel**](https://nitro.evlbox.com)
-2. Click your Tower Unite server
-3. **Stop** the server if it is running
-4. Go to the **Startup** tab
-5. Paste your:
-   - **Steam Login Token** (from Step 1)
-   - **Tower Unite Login Token** (from Step 2)
-6. Click **Start** to launch your server
+```text
+[EVLBOX] WARNING: Steam Login Token / Tower Login Token are not set. The condo will run but will NOT appear in the Tower Unite condo list.
+```
 
+:::caution[Paste the real token or leave the field empty]
+With an empty token the server starts and simply stays off the list. With a **wrong** token (a typo, a token from another server, or a placeholder) the server waits for Steam forever and never gets past *Starting*. If your server hangs on start, check the two token fields first.
+:::
 
-### **Step 4: Add an Admin Steam ID**
+## Step 4: Give yourself admin
 
-To enable in-game admin tools, you need your **Steam64 ID**:
+Admins can edit the condo, change settings, kick and ban. You need your **SteamID64**, the 17-digit number for your account:
 
-1. Visit [SteamID Finder](https://www.steamidfinder.com)
-2. Paste your Steam profile link
-3. Copy the **SteamID64 (Dec)** value
-4. In Nitro click Files and browse to Tower/Saved/Config/LinuxServer -- Click on TowerServer.ini
-5. Paste in your SteamID 64 (DEC) value from SteamID finder into the `AdminSteamID=` section
-6. *(optional)* If you want multiple admins just add multiple lines of `AdminSteamID=` you can have as many as you like. 
-![GSLT Creation](/docs/towerunite/admins.png)
+1. Open [steamid.io](https://steamid.io) (or [steamidfinder.com](https://www.steamidfinder.com)), paste your profile link, and copy the **steamID64** value.
+2. On the **Startup** tab, paste it into **Admin SteamIDs**. Several admins? Separate the IDs with commas: `76561198000000001, 76561198000000002`.
+3. Restart the server. Each ID is added to the `[Administration]` section of `TowerServer.ini` and the console confirms it:
 
+```text
+[EVLBOX] Added admin 76561198000000001 to TowerServer.ini
+```
 
-### **Step 6: Launch and Access Your Condo**
+IDs are only ever **added**, never removed, so you can also manage the list by hand: open **Files → Tower/Saved/Config/LinuxServer/TowerServer.ini** and add one `AdminSteamID=` line per admin under `[Administration]`. Delete a line to remove that admin.
 
-Once setup is complete, **start your server**. In-game, press **Tab**, then click the **gear icon** at the top right of the scoreboard labeled **"My Condo"** to access condo settings.
+![Admin lines in TowerServer.ini](/docs/towerunite/admins.png)
 
+Once you are an admin, press **Tab** in your condo and open **Settings → Player Permissions** to hand out finer-grained permissions (build, move, moderator tag) to individual players without making them full admins.
 
-## **Importing an Existing Condo from Single Player**
+## Step 5: Pick your condo map
 
-If you've built a condo in single player and want to move it to your server, follow these steps:
+The **Condo Map** dropdown on the **Startup** tab chooses which condo the server runs: Condo, House, Smooth Dirt, Suite, Resort, Smooth Autumn, Underwater, Highrise, Art Studio, Theatre, Courtyard or Ice Moon. The list shows the game's internal names (`C_Condo`, `C_House`, …); the full translation table is on the [Condo Maps & Save Files](/docs/game-servers/towerunite/condo-maps/) page.
 
-### **Export the Condo from Tower Unite**
+If you have not uploaded a save yet, the map starts as a fresh, empty condo. On that first start the console prints `FAILED TO LOAD CONDO DATA: ../../../Tower/Condos/C_Condo/C_Condo.map` once; that is expected when the file does not exist yet. Anything built on the server is saved into `Tower/Condos/<Map>/<Map>.map` from then on.
 
-1. Launch your condo in Tower Unite
-2. Open **Saves > Export Condo** from the scoreboard menu (Tab key)
-3. This saves a `.map` file to:  
-`Tower Unite/Workshop/Condo Exports/`
+## Step 6: Start and find your condo
 
+Start the server and wait for the console to print `Engine Initialization`. In Tower Unite, open the condo browser; your condo appears under the title you chose. Press **Tab** in the condo for the scoreboard, where the gear icon gives you the condo settings and the **Saves** menu.
 
-### **Upload to Your Server**
+## Importing an existing condo from single player
 
-1. Create a folder in your server files at:  
-`Tower/Condos/C_Condo/` (or the name of the map)
-2. Upload the `.map` file to this folder
+Built something in single player that you want online? Move the save over.
 
-> Example path:  
-> `Tower/Condos/C_Condo/C_Condo.map`
+### Export the condo in-game
 
-Make sure the file name and folder match the map name exactly.
+1. Load your condo in Tower Unite.
+2. Press **Tab**, then **Saves → Export Condo**.
+3. The game writes a `.map` file to `Tower Unite/Workshop/Condo Exports/` inside your Steam library (usually `C:\Program Files (x86)\Steam\steamapps\common\Tower Unite\Workshop\Condo Exports\`).
+
+:::note
+Your export must come from the **same condo map** you select on the server. A House export will not load on the Condo map.
+:::
+
+### Upload it to the server
+
+1. In Nitro Panel open **Files → Tower → Condos** and enter the folder for your map, e.g. `C_Condo`.
+2. Upload the exported file and rename it to exactly `<MapName>.map`, e.g. `C_Condo.map`.
+
+```text
+Tower/Condos/C_Condo/C_Condo.map
+```
 
 ![Condo Map Folder Example](/docs/towerunite/condo-map.png)
 
+3. On the **Startup** tab set **Condo Map** to the same map (`C_Condo`).
+4. Restart the server. The console should show `LOADING CONDO DATA: ../../../Tower/Condos/C_Condo/C_Condo.map`.
 
-### **Set the Condo Map in Nitro**
+Prefer to keep your own file name? Set `CondoFile=` in `TowerServer.ini` instead of renaming, see [Using a different file name](/docs/game-servers/towerunite/condo-maps/#using-a-different-file-name).
 
-In the **Startup** tab of Nitro:
+:::caution[Stop the server before replacing a save]
+Replacing `C_Condo.map` while the server is running is risky: the next autosave can overwrite your upload with the old build. Stop, upload, start.
+:::
 
-- Set **Map Name** to match the `.map` file name (e.g. `C_Condo`, no extension)
+## Server settings reference
 
+`Tower/Saved/Config/LinuxServer/TowerServer.ini` is the server's only config file. EVLBOX creates it for you and re-creates it if it ever goes missing.
 
-## ✅ Your Condo Server is Ready!
+```ini
+[/Script/TowerNetworking.DedicatedServerOptions]
+ServerTitle=EVLBOX.COM New Condo Server
+MaxPlayers=32
+SteamLoginToken=
+TowerLoginToken=
 
-You’re now hosting your own persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience.
+[DedicatedCondoOptions]
+CondoAutoSave=True
+CondoBackupsEnabled=True
+#CondoFile=
 
-Want more? Check out our [**Tower Unite Condos Hub**](/docs/game-servers/towerunite) for more guides and support.
+[Administration]
+AdminSteamID=76561198000000001
+```
 
----
+| Setting | Where to change it | Notes |
+|---|---|---|
+| `ServerTitle`, `MaxPlayers`, `SteamLoginToken`, `TowerLoginToken` | **Startup** tab | Re-written from the Startup tab on every start, so edit them there, not in the file. Max players is 2-64. Tokens are empty on a new server. |
+| `AdminSteamID` | **Startup** tab (added) or the file (added/removed) | One line per admin. |
+| `CondoAutoSave` | the file | `True` saves the condo periodically after changes. Recommended. |
+| `CondoBackupsEnabled` | the file | `True` keeps a backup copy each time the condo is saved. Turn off if disk space is tight; EVLBOX also takes [scheduled server backups](/docs/getting-started/nitro-panel/server-settings/). |
+| `CondoFile` | the file | Load a save with a different file name from the selected map's folder. |
 
+Bans live in `Tower/Saved/Config/LinuxServer/TowerBans.ini` (one `SteamID=<id>,0` line per ban under `[Bans]`), and the server writes joins, leaves and chat to `Tower/TowerServer_Chat.txt`.
+
+## Your condo server is ready!
+
+You're now hosting a persistent condo online. Invite friends, show off your space, and enjoy your custom condo experience. Something not working? Check [Known Issues](/docs/game-servers/towerunite/known-issues/) or head back to the [Tower Unite hub](/docs/game-servers/towerunite/).

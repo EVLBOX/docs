@@ -299,6 +299,7 @@ export default defineConfig({
 							items: [
 								{ label: 'Overview', slug: 'game-servers/towerunite' },
 								{ label: 'Setup Condo Server', slug: 'game-servers/towerunite/how-to-setup-condo' },
+								{ label: 'Condo Maps & Save Files', slug: 'game-servers/towerunite/condo-maps' },
 								{ label: 'Known Issues', slug: 'game-servers/towerunite/known-issues' },
 							],
 						},
