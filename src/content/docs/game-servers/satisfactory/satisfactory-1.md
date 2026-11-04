@@ -1,19 +1,19 @@
 ﻿---
-title: "Satisfactory 1.0 Information"
-description: "Updates about Satisfactory 1.0 dedicated server compatibility"
+title: "Satisfactory 1.2 and Crossplay on Dedicated Servers"
+description: "Does Satisfactory crossplay work on a dedicated server? What PS5, Xbox and PC players can do, and how to run Satisfactory 1.2 on your EVLBOX server."
 head:
   - tag: meta
     attrs:
       name: "keywords"
-      content: "reset admin password, unclaim server, change server settings, preserve save files, Satisfactory server management"
+      content: "Satisfactory crossplay, Satisfactory dedicated server crossplay, Satisfactory PS5 dedicated server, Satisfactory Xbox dedicated server, Satisfactory 1.2 server"
   - tag: meta
     attrs:
       property: "og:title"
-      content: "How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves"
+      content: "Satisfactory 1.2 and Crossplay on Dedicated Servers"
   - tag: meta
     attrs:
       property: "og:description"
-      content: "Learn how to reset or unclaim your Satisfactory server, change the admin password, and modify settings without wiping your save files. Follow this guide to manage your server safely."
+      content: "Does Satisfactory crossplay work on a dedicated server? What PS5, Xbox and PC players can do, and how to run Satisfactory 1.2 on your EVLBOX server."
   - tag: meta
     attrs:
       property: "og:image"
@@ -37,11 +37,11 @@ head:
   - tag: meta
     attrs:
       name: "twitter:title"
-      content: "How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves"
+      content: "Satisfactory 1.2 and Crossplay on Dedicated Servers"
   - tag: meta
     attrs:
       name: "twitter:description"
-      content: "Learn how to reset or unclaim your Satisfactory server, change the admin password, and modify settings without wiping your save files. Follow this guide to manage your server safely."
+      content: "Does Satisfactory crossplay work on a dedicated server? What PS5, Xbox and PC players can do, and how to run Satisfactory 1.2 on your EVLBOX server."
   - tag: meta
     attrs:
       name: "twitter:image"
@@ -54,100 +54,59 @@ head:
     attrs:
       type: "application/ld+json"
     content: |
-      {"@context":"http://schema.org","@type":"Article","headline":"How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves","description":"Learn how to reset or unclaim your Satisfactory server, change the admin password, and modify settings without wiping your save files. Follow this guide to manage your server safely.","url":"https://evlbox.com/docs/game-servers/satisfactory/satisfactory-1/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Desert Outpost","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2025-05-08"}
+      {"@context":"http://schema.org","@type":"Article","headline":"Satisfactory 1.2 and Crossplay on Dedicated Servers","description":"Does Satisfactory crossplay work on a dedicated server? What PS5, Xbox and PC players can do, and how to run Satisfactory 1.2 on your EVLBOX server.","url":"https://evlbox.com/docs/game-servers/satisfactory/satisfactory-1/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Desert Outpost","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2026-11-04"}
 ---
 
-# **Satisfactory 1.1 Updates: Your Guide to the Latest Experimental Features**
+Satisfactory 1.2 is on the stable branch, so your server doesn't need the experimental branch to run it. Crossplay with PS5 and Xbox arrived in patch 1.2.5.0 on November 4, 2026, but it doesn't work on dedicated servers.
 
-Satisfactory 1.1 is now available on the **experimental branch**, and it brings with it exciting new features, optimizations, and fixes. As always, we recommend that server owners back up their save files before updating to ensure that all progress is safely stored.
+## Does crossplay work on a dedicated server?
 
-Here’s how you can update to **Satisfactory 1.1** and get your server running with the latest features.
+**No. PS5 and Xbox players can't join a dedicated server, including your EVLBOX server.**
 
----
+The new crossplay between PC and console only works in sessions hosted by a player (a listen server). Coffee Stain's patch notes say:
 
-## **How to Update to Satisfactory 1.1 (Experimental Branch)**
+> Dedicated Server is currently only available on PC and therefore not available during Crossplay
 
-Before updating, **server owners** should **download a copy of their save files** for safety, especially if you’re running a custom or heavily modified server. This step ensures that you can always roll back to a previous version if needed.
+Coffee Stain hasn't given a date for changing this.
 
-### **Steps to Update:**
+| Your group | Can you use a dedicated server? |
+|---|---|
+| Everyone plays on PC | Yes |
+| Anyone plays on PS5 or Xbox | No. One player has to host the session in-game. |
 
-1. **Backup Your Save Game**:
-   - We recommend that you **download a copy of your save game file** from your server. Visit the [Manage Saves](https://wiki.evlbox.com/satisfactory/manage-saves) page for detailed instructions on how to back up your saves.
+:::note[Steam and Epic players]
+Steam and Epic players can still play together on your server. Patch 1.2.5.0 didn't change that.
+:::
 
-2. **Log in to the Nitro Control Panel**:
-   - In the **Nitro Control Panel**, navigate to the **Startup** tab.
-   - Choose **“FactoryGame”** as your **startup mode**.
-   - Note: Customers with **new servers (post 9/10/2024)** should not need to follow this step, as the 1.1 update will be automatically set up for you.
+### If someone in your group plays on console
 
-3. **Set the Branch to Experimental**:
-   - In the **Startup tab**, you will need to **set the branch to "experimental"**. This ensures that your server will be updated to the **Satisfactory 1.1 experimental version**.
-   
-4. **Enable Automatic Updates**:
-   - Ensure that **automatic updates** are enabled. This will allow the system to automatically download and apply the latest **Satisfactory 1.1** update when it becomes available.
+One player needs to host the session from their own game. Our [Satisfactory crossplay guide](https://evlbox.com/blog/satisfactory-crossplay) and Coffee Stain's [crossplay FAQ](https://www.satisfactorygame.com/support/) cover the setup. A few rules apply:
 
-5. **Restart Your Server**:
-   - Once the update is enabled, restart your server. This will allow the system to download and apply the latest updates.
+- Crossplay needs a free Epic Games account.
+- Only unmodded sessions can use crossplay.
+- Saves stay on the host's platform. You can't move a console save to PC, or upload one to your EVLBOX server.
 
-6. **Join the Game**:
-   - Once the update is applied, you can connect to the server and enjoy the latest features.
+## Run Satisfactory 1.2 on your server
 
-7. **Stay Updated**:
-   - For the latest updates and patches, be sure to subscribe to notifications in the [EVLBOX Discord](https://evlbox.com/discord). We’ll post frequent updates in the **#rules-and-roles** channel to alert you when new updates are available.
+1. Log in to the [Nitro Panel](https://nitro.evlbox.com) and open your server's **Startup** tab.
+2. Make sure **Automatic Updates** is on and **Game Branch** is set to **public**.
+3. Restart your server. It installs any available update as it starts.
 
----
+:::tip
+When the game updates, restart your server to pick up the new version. Automatic Updates only runs when the server starts.
+:::
 
-## **How to Connect to Your Satisfactory 1.1 Server**
+If your server is still on the experimental branch, [download a copy of your saves](/docs/game-servers/satisfactory/manage-saves) first, then [switch back to public](/docs/game-servers/satisfactory/switch-to-experimental).
 
-To play on the updated server with Satisfactory 1.1, follow these steps:
+## Game Modes
 
-1. **Launch Satisfactory 1.1**:
-   - Start the **Satisfactory 1.1 (Experimental)** version of the game from your launcher.
+Satisfactory 1.2 added Game Modes, which change things like recipe costs, power consumption and resource node placement. They work on dedicated servers, but you can only set them when you create a new game. You can't add them to an existing save.
 
-2. **Access Server Manager**:
-   - In the main menu of the game, go to the **Server Manager** option.
+## Known issues
 
-3. **Add Your Server**:
-   - Click on **“Add Server”** at the bottom of the screen.
-   - Enter your **server address** and **port number** (provided in the Nitro Panel of your server).
+- **Big saves failing to join:** Coffee Stain says patch 1.2.5.0 includes potential fixes, but that some issues remain. If players time out while joining, raise **Join Timeout** on the **Startup** tab and restart your server.
+- **Mods after a game update:** mods can stop working until their authors update them. See [Mod Setup](/docs/game-servers/satisfactory/modsetup).
 
-   ![join_server.png](/docs/satisfactory/join_server.png)
+## Need more help?
 
-4. **Enter Server Details**:
-   - The **address and port** can be found in the **Nitro Panel** for your game server. If you’ve connected to the server before the update, you might need to **update** or **re-enter the port number**.
-
-5. **Server Certificate Warning**:
-   - After confirming your server details, you’ll receive a **Server Certificate Warning**. Click **“Confirm”** to proceed.
-
-   ![certificate_warning.png](/docs/satisfactory/certificate_warning.png)
-
-6. **Authenticate**:
-   - If your server is **password-protected**, you will be prompted to enter the **server password**. Once authenticated, you’ll be able to enjoy the game!
-
-   ![authenticate.png](/docs/satisfactory/authenticate.png)
-
----
-
-## **Known Issues in Satisfactory 1.1 (Experimental)**
-
-While the update brings many exciting changes, there are some **known issues** that we want to highlight:
-
-1. **Max Players Above 4**:
-   - Currently, setting **max players above 4** in the server settings is not functioning as expected. It’s unclear whether this feature has been **removed** or needs to be **configured differently**. We’ll provide an update as soon as this issue is resolved.
-
-2. **Mod Compatibility**:
-   - **Mods** are currently **not compatible** with Satisfactory 1.1 (Experimental). This means that **mods** may **break the game** or **cause issues**. If you have mods installed, they will likely **not work** properly, and could even prevent the game from running correctly. We recommend **removing any mods** until the stable version of 1.1 is released, as mod support is not fully functional yet.
-
----
-
-### **Important Notes**:
-- **Experimental Branch**: Satisfactory 1.1 is currently available on the **experimental branch**. This means that it may contain **bugs** or **unfinished features**. If you prefer a more stable experience, you may want to wait for the full release on the stable branch.
-- **Community Feedback**: We encourage you to provide **feedback** on the latest updates in our **EVLBOX Discord**. Your input helps us improve the service and ensure that your gameplay experience is as smooth as possible.
-
----
-
-### **Conclusion**:
-Updating to **Satisfactory 1.1** on your EVLBOX server is easy and can be done in just a few steps. Whether you’re interested in trying out the latest experimental features or just want to keep your server up to date, the process is simple and well-documented. Make sure to keep an eye on our **Discord channel** for future updates and announcements.
-
----
-
-Let me know if you need any additional changes or further assistance with this article!
+Ask in the [EVLBOX Discord](https://evlbox.com/discord) or open a ticket at [portal.evlbox.com](https://portal.evlbox.com).

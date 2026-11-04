@@ -1,4 +1,4 @@
-﻿---
+---
 title: "How to Upload a Singleplayer Save to EVLBOX Game Server | Satisfactory Save Upload Guide"
 description: "Learn how to upload your Satisfactory singleplayer or multiplayer save to EVLBOX Game Server with this easy step-by-step guide. Get your save up and running quickly!"
 head:
@@ -46,13 +46,19 @@ head:
     attrs:
       type: "application/ld+json"
     content: |
-      {"@context":"http://schema.org","@type":"Article","headline":"How to Upload a Singleplayer Save to EVLBOX Game Server | Satisfactory Save Upload Guide","description":"Learn how to upload your Satisfactory singleplayer or multiplayer save to EVLBOX Game Server with this easy step-by-step guide. Get your save up and running quickly!","url":"https://evlbox.com/docs/game-servers/satisfactory/upload-singleplayer-save/","image":"https://evlbox.com/_next/image?url=%2Fstatic%2Fimages%2Fblog%2Fsatisfactory%2Ftrain.webp&w=1920&q=75","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-05-08","dateModified":"2025-05-08"}
+      {"@context":"http://schema.org","@type":"Article","headline":"How to Upload a Singleplayer Save to EVLBOX Game Server | Satisfactory Save Upload Guide","description":"Learn how to upload your Satisfactory singleplayer or multiplayer save to EVLBOX Game Server with this easy step-by-step guide. Get your save up and running quickly!","url":"https://evlbox.com/docs/game-servers/satisfactory/upload-singleplayer-save/","image":"https://evlbox.com/_next/image?url=%2Fstatic%2Fimages%2Fblog%2Fsatisfactory%2Ftrain.webp&w=1920&q=75","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-05-08","dateModified":"2026-11-04"}
 ---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
 
 #  Satisfactory Save Upload Guide
 
 There are two methods of copying a singleplayer or multiplayer save to your new dedicated server. 
 If your save already exists in your Satisfactory game, it's very easy to copy it over. If you don't have the save, or another person has it, you might find it easier to use the Nitro control panel to manually upload the file. 
+
+:::note
+This only works for PC saves. PS5 and Xbox saves stay on the host's platform, so they can't be moved to your server.
+:::
 
 
 ### In-Game transfer
@@ -79,4 +85,4 @@ If your save already exists in your Satisfactory game, it's very easy to copy it
 5. Restart the server from the Nitro Panel. 
 6. In game, go to the server manager, and select manage saves, then load saves. Your new saves should be listed. 
 
-[**Grab your own Satisfactory Server**](https://evlbox.com/satisfactory)
+<HostingCTA game="satisfactory" variant="switch" />

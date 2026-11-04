@@ -52,6 +52,21 @@ export const plans = {
 		slots: 10,
 		url: 'https://evlbox.com/games/valheim',
 	},
+	satisfactory: {
+		name: 'Satisfactory',
+		price: 16.0,
+		// Optional: the per-month price when paid annually ($120/yr here).
+		// When set, HostingCTA leads with this as an "as low as" price.
+		annualPrice: 10.0,
+		ram: 10,
+		vcpu: 2,
+		disk: 40,
+		maxRam: 16,
+		// We add no slot limit. The game defaults to 4 players, and going
+		// higher is unsupported by the game, not a billing tier.
+		slots: 'unlimited',
+		url: 'https://evlbox.com/games/satisfactory',
+	},
 };
 
 /** Formats a price as a "from" price — `8.99` becomes `$8.99/mo`. */

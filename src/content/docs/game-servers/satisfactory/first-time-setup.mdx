@@ -1,0 +1,84 @@
+---
+title: "How to Set Up a Satisfactory Server for the First Time | EVLBOX"
+description: "Learn how to set up your first Satisfactory server with this step-by-step guide from EVLBOX. Get your server running smoothly with easy instructions and tips."
+---
+
+import HostingCTA from '../../../../components/HostingCTA.astro';
+
+# First time setup
+
+### Starting Tutorial
+
+We've created a tutorial video that covers most of the sections in our Satisfactory documentation.
+
+<iframe width="100%" style="aspect-ratio:16/9;" src="https://www.youtube.com/embed/0UXPOXPJ69I" title="Satisfactory Server Setup Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+### Find your address and port
+
+1. Login to [nitro.evlbox.com](https://nitro.evlbox.com)
+
+   :::caution
+   Can't login? When you created your first server with us an email was sent from nitro@evlbox.com with a link to set your password. If that's not working use the forgot your password link on the login page.
+   :::
+
+2. Click your server and then the **Network** tab. Note the hostname and the port marked **Primary**. This is the address and port you will use to join your server.
+
+   ![Network tab showing the Primary port](/docs/satisfactory/network-ports.png)
+
+:::note
+The second port is your Reliable Port. EVLBOX assigns it to your server, and you never need to enter it in the game. Don't delete it or make it Primary.
+:::
+
+### Satisfactory Server Manager
+
+1. Launch Satisfactory and click the Server Manager from the menu.
+2. Click Add Server and enter your server's address. Do not include the number after the colon.
+3. Enter your Primary port from the section above.
+
+![Server Manager with an address and port entered](/docs/satisfactory/join_server.png)
+
+4. You are prompted to claim the server, set a name, and set an admin password. Do not share the admin password with people you do not trust.
+
+![claim](/docs/satisfactory/claim.png)
+
+![admin](/docs/satisfactory/admin.png)
+
+5. You are then taken to the server settings tab. Adjust as needed.
+
+![settings](/docs/satisfactory/settings.png)
+
+6. Click the "Create Game" tab and choose a starting area and set a session name. Tick the "Join" box to auto join after the server starts up. If you want to use Game Modes, set them now, because you can't add them to an existing save.
+
+![startup](/docs/satisfactory/startup.jpg)
+
+At this point you and your friends are free to join the server!
+
+:::note
+PS5 and Xbox players can't join a dedicated server. See [1.2 and Crossplay](/docs/game-servers/satisfactory/satisfactory-1).
+:::
+
+### Panel settings
+
+These settings are on your server's **Startup** tab in the Nitro Panel. Changes apply the next time your server restarts.
+
+![Startup tab showing the Satisfactory variables](/docs/satisfactory/startup-variables.png)
+
+| Setting | What it does |
+|---|---|
+| Automatic Updates | Updates the game every time the server starts. Leave this on. |
+| Validate Server Files | Repairs game files on start. It's slow, so leave it off unless something is broken. |
+| Max Players | How many players can join. The default is 4. |
+| Rotating Autosaves | How many autosaves to keep before the oldest is replaced. |
+| Join Timeout | Seconds a player has to join. Raise it if big or modded saves time out. |
+| Connection Timeout | Seconds without contact before a player is dropped. |
+| Game Branch | **public** is stable. **experimental** gets new builds early and can break mods. See [Switch to Experimental](/docs/game-servers/satisfactory/switch-to-experimental). |
+| Disable Seasonal Events | Turns off events like FICSMAS. |
+| Reliable Port | Assigned by EVLBOX. You can't change it. |
+
+:::caution
+Going above 4 players is unsupported by the game and can hurt performance. Use **Max Players** instead of editing `Game.ini`, because the game deletes that file every time the server stops gracefully.
+:::
+
+Autosave interval and network quality are set in-game, under **Server Settings** in the Server Manager.
+
+<HostingCTA game="satisfactory" variant="start" />
