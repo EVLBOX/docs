@@ -79,8 +79,8 @@ const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 	</p>
 ) : compact ? (
 	<a class="hosting-cta hosting-cta--compact" href={plan.url}>
-		<strong>{heading ?? `Need a ${plan.name} server?`}</strong> EVLBOX hosts it from{' '}
-		<strong>{formatPrice(plan.price)}</strong> — {plan.ram} GB RAM, {plan.slots} slots,
+		<strong>{heading ?? `Need a ${plan.name} server?`}</strong> EVLBOX hosts it {plan.annualPrice ? 'as low as' : 'from'}{' '}
+		<strong>{formatPrice(plan.annualPrice ?? plan.price)}</strong>{plan.annualPrice && ' paid annually'} — {plan.ram} GB RAM, {plan.slots} slots,
 		{' '}{REFUND_DAYS}-day refund guarantee <span class="hosting-cta__arrow">→</span>
 	</a>
 ) : (
@@ -92,7 +92,7 @@ const specs = `${plan.ram} GB RAM, ${plan.vcpu} vCPU, ${plan.disk} GB NVMe`;
 	</p>
 
 	<p class="hosting-cta__plan">
-		{plan.name} servers from <strong>{formatPrice(plan.price)}</strong> ({specs})
+		{plan.name} servers {plan.annualPrice ? 'as low as' : 'from'} <strong>{formatPrice(plan.annualPrice ?? plan.price)}</strong>{plan.annualPrice && ' paid annually'} ({specs})
 		— add RAM any time without a restart, up to {plan.maxRam} GB.
 	</p>
 

@@ -1,15 +1,15 @@
 ﻿---
-title: "Satisfactory 1.0 Mod Setup"
-description: "A guide to installing the satisfactory mod manager and connecting to your dediccated server"
+title: "Satisfactory Mod Setup"
+description: "A guide to installing the Satisfactory Mod Manager and connecting to your dedicated server"
 head:
   - tag: meta
     attrs:
       name: "keywords"
-      content: "Satisfactory mod setup, install mods, dedicated server, mod manager, add mods to Satisfactory, Satisfactory 1.0 mods, server setup, Nitro Panel, mod installation"
+      content: "Satisfactory mod setup, install mods, dedicated server, mod manager, add mods to Satisfactory, Satisfactory 1.2 mods, server setup, Nitro Panel, mod installation"
   - tag: meta
     attrs:
       property: "og:title"
-      content: "Satisfactory 1.0 Mod Setup Guide | How to Install Mods on Your Dedicated Server"
+      content: "Satisfactory Mod Setup Guide | How to Install Mods on Your Dedicated Server"
   - tag: meta
     attrs:
       property: "og:description"
@@ -37,7 +37,7 @@ head:
   - tag: meta
     attrs:
       name: "twitter:title"
-      content: "Satisfactory 1.0 Mod Setup Guide | How to Install Mods on Your Dedicated Server"
+      content: "Satisfactory Mod Setup Guide | How to Install Mods on Your Dedicated Server"
   - tag: meta
     attrs:
       name: "twitter:description"
@@ -54,12 +54,14 @@ head:
     attrs:
       type: "application/ld+json"
     content: |
-      {"@context":"http://schema.org","@type":"Article","headline":"Satisfactory 1.0 Mod Setup Guide | How to Install Mods on Your Dedicated Server","description":"Step-by-step guide for adding mods to your Satisfactory dedicated server. Learn how to install the Mod Manager, configure your server, and add mods with ease.","url":"https://evlbox.com/docs/game-servers/satisfactory/modsetup/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Mod Setup","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2025-05-08"}
+      {"@context":"http://schema.org","@type":"Article","headline":"Satisfactory Mod Setup Guide | How to Install Mods on Your Dedicated Server","description":"Step-by-step guide for adding mods to your Satisfactory dedicated server. Learn how to install the Mod Manager, configure your server, and add mods with ease.","url":"https://evlbox.com/docs/game-servers/satisfactory/modsetup/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Mod Setup","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2026-11-04"}
 ---
 
-# Satisfactory 1.0 Mod Setup Guide
+# Satisfactory Mod Setup Guide
 
-#### Customers on Satisfactory 1.1 experimental should avoid mods until the 1.1 update hits the stable branch. 
+:::caution
+Mods can stop working after a game update or on the experimental branch. Check that your mods are up to date on [ficsit.app](https://ficsit.app/), and [download a copy of your saves](/docs/game-servers/satisfactory/manage-saves) before you install or update them. Everyone on the server needs the same mods installed.
+:::
 
 If you are wanting to add custom mods to your satisfactory dedicated server, complete the following steps. If you run into any issues or have any questions, check out the EVL Discord Server or create a ticket for additional support. Official Support Documentation can also be found here: https://docs.ficsit.app/satisfactory-modding/latest/ForUsers/DedicatedServerSetup.html#ServerClientConsistency 
 
@@ -79,8 +81,8 @@ If you are wanting to add custom mods to your satisfactory dedicated server, com
 1. Login to the Nitro Panel https://nitro.evlbox.com/ 
 2. You will need your Nitro Panel Password for the Mod Manager. If you do not have a separate password for the Nitro Panel setup, you will need to create one. Do this by logging in with your Billing Account and changing the password in Account Settings or by clicking on Forgot Password. 
 ![login_nitro.png](/docs/satisfactory/login_nitro.png)
-3. Once you are logged in, Go to Manager Server and Stop your Server. 
-4. Then, find the SFTP details, you will need to enter this address and port number into the Mod Manger
+3. Once you are logged in, open your server and stop it. 
+4. Then, find the SFTP details, you will need to enter this address and port number into the Mod Manager
 ![sftp_details.png](/docs/satisfactory/sftp_details.png)
 
 ## Add your dedicated Server to the Mod Manager
@@ -96,6 +98,10 @@ If you are wanting to add custom mods to your satisfactory dedicated server, com
 
 ## Restart your Server and Confirm Installation
 1. Go to the Nitro Panel and Start your Server. 
-2. To view the Mods installed go to the Files Tab. Then navigate to Factory Game/Mods and you will see a list of installed mods. 
+2. To view the Mods installed go to the Files Tab. Then navigate to FactoryGame/Mods and you will see a list of installed mods. 
 ![file_manager.png](/docs/satisfactory/file_manager.png)
 3. Launch the Game, Connect to your Server and Enjoy!
+
+:::tip
+If players time out while joining a modded save, raise **Join Timeout** on the **Startup** tab and restart your server.
+:::

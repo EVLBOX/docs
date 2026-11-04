@@ -220,7 +220,7 @@ export default defineConfig({
 								{ label: 'How to Join', slug: 'game-servers/satisfactory/how-to-join' },
 								{ label: 'Manage Saves', slug: 'game-servers/satisfactory/manage-saves' },
 								{ label: 'Mod Setup', slug: 'game-servers/satisfactory/modsetup' },
-								{ label: 'Satisfactory 1.0', slug: 'game-servers/satisfactory/satisfactory-1' },
+								{ label: '1.2 and Crossplay', slug: 'game-servers/satisfactory/satisfactory-1' },
 								{ label: 'Switch to Experimental', slug: 'game-servers/satisfactory/switch-to-experimental' },
 								{ label: 'Unclaim Server', slug: 'game-servers/satisfactory/unclaim-server' },
 								{ label: 'Upload Singleplayer Save', slug: 'game-servers/satisfactory/upload-singleplayer-save' },
