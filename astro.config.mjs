@@ -178,16 +178,8 @@ export default defineConfig({
 								{ label: 'Xbox Server', slug: 'game-servers/palworld/xbox-server' },
 							],
 						},
-						{
-							label: 'Schedule I',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/schedule-1' },
-								{ label: 'How to Connect', slug: 'game-servers/schedule-1/how-to-connect' },
-								{ label: 'Server Privacy', slug: 'game-servers/schedule-1/server-privacy' },
-								{ label: 'Server Settings', slug: 'game-servers/schedule-1/server-settings' },
-							],
-						},
+						// Schedule I docs are draft: true. They were written for a launch that never happened.
+						// If it ever launches, remove draft from those pages and add a sidebar group here.
 						{
 							label: 'Enshrouded',
 							collapsed: true,

@@ -1,6 +1,7 @@
 ---
 title: "Server Privacy — Schedule I"
 description: "Configure your Schedule I server as public or private, and manage server passwords."
+draft: true
 ---
 
 # Server Privacy

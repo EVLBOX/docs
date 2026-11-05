@@ -1,6 +1,7 @@
 ---
 title: "How to Connect — Schedule I"
 description: "Install MelonLoader and the S1 client mod to connect to your Schedule I dedicated server."
+draft: true
 ---
 
 # How to Connect

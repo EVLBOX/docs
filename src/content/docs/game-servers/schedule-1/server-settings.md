@@ -1,6 +1,7 @@
 ---
 title: "Server Settings — Schedule I"
 description: "Configure your Schedule I dedicated server settings — gameplay, authentication, messaging, and more."
+draft: true
 ---
 
 # Server Settings
