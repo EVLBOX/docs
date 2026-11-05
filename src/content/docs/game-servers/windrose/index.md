@@ -84,4 +84,4 @@ Crew-size recommendations align with the [official Windrose dedicated server gui
 
 ---
 
-Have a crew but no server? [Grab a server here](https://evlbox.com/games/windrose).
+Have a crew but no server? [Grab a server here](https://evlbox.com/games/windrose-server-hosting).

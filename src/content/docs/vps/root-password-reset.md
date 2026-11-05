@@ -27,4 +27,4 @@ To Change the Root Password of your VPS.
 1. Check your email address for your new root password
 
 
-![Manage button](https://evlbox.com/wp-content/uploads/2024/01/manage_button.gif)
+![Manage button](/docs/vps/virtfusion_manage_button.png)

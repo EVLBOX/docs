@@ -1,6 +1,7 @@
 ---
 title: "Schedule I Server Hosting"
 description: "Host your Schedule I multiplayer server with EVLBOX. Setup guides for client mods, server configuration, and connecting to your dedicated server."
+draft: true
 head:
   - tag: meta
     attrs:

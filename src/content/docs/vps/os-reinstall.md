@@ -22,7 +22,7 @@ https://vf.evlbox.com/login
 1. Wait for your server to be installed.
 
 
-![Manage button](https://evlbox.com/wp-content/uploads/2024/01/installos_button.gif)
+![Manage button](/docs/vps/virtfusion_manage_button.png)
 
 
 :::caution
