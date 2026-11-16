@@ -30,6 +30,10 @@ Not all games are eligible for automatic game changing. Currently game location 
 :::
 ### Cancel a Service
 
+:::tip[Taking a break?]
+You don't have to cancel to stop paying for a full server. [Hibernation](/docs/billing/hibernation/) keeps your world, files and server address for a small monthly fee until you want to play again. Hibernate before you request a cancellation: once one is submitted, the Hibernate button is no longer shown for that server.
+:::
+
 :::caution
 Before submitting a cancellation request, please download your backups, or download server files. Once a request is submitted your files will be deleted, and your IP released. This action can not be reversed by our support team!
 :::

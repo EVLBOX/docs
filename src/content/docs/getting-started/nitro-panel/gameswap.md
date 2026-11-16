@@ -106,8 +106,12 @@ If a purchased slot lapses and you end up with more frozen games than slots, **n
 :::
 
 :::danger
-If your server is terminated, its freeze slots are deleted, and the frozen games in them go with them. Freezing a game is not a way to park a world while you cancel a server.
+If your server is terminated, its freeze slots are deleted, and the frozen games in them go with them. Freezing a game is not a way to park a world while you cancel a server. To keep a server while you take a break, use [hibernation](/docs/billing/hibernation/) instead.
 :::
+
+### The Hibernation snapshot card
+
+If your server is hibernating, or woke up in the last week or so, the GameSwap page also shows a **Hibernation snapshot** card marked **Extra slot**. It's the safety backup taken when the server went to sleep, and it doesn't use one of your own slots. It can be restored once the server is awake. See [Server Hibernation](/docs/billing/hibernation/#the-safety-backup).
 
 ## What happens to your stuff
 
