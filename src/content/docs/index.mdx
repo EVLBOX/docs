@@ -1,54 +1,73 @@
-﻿---
+---
 title: EVLBOX Documentation
 description: Official documentation for EVLBOX game server and VPS hosting. Find guides, tutorials, and reference materials for managing your servers.
 template: splash
 hero:
-  tagline: Your guide to game server and VPS hosting with EVLBOX
+  tagline: Guides for your game server, your VPS and your account.
   image:
     file: ../../assets/home.svg
   actions:
     - text: Get Started
       link: /docs/getting-started/
       icon: right-arrow
-    - text: Game Servers
-      link: /docs/game-servers/minecraft/
-      icon: rocket
-      variant: minimal
+      variant: primary
+    - text: Browse game guides
+      link: /docs/game-servers/
+      variant: secondary
 ---
 
-import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import HomeSection from '../../components/HomeSection.astro';
+import LinkTiles from '../../components/LinkTiles.astro';
+import GameGrid from '../../components/GameGrid.astro';
 
-## Quick Links
+<HomeSection title="Browse the docs">
+	<LinkTiles
+		columns={4}
+		items={[
+			{
+				title: 'Getting Started',
+				description: 'Nitro Panel basics: backups, ports, GameSwap, subdomains and sharing access.',
+				href: '/getting-started/',
+			},
+			{
+				title: 'Game Servers',
+				description: 'Setup, mods, saves and settings, game by game.',
+				href: '/game-servers/',
+			},
+			{
+				title: 'VPS Hosting',
+				description: 'OS reinstall, SSH keys, snapshots and MFA.',
+				href: '/vps/',
+			},
+			{
+				title: 'Billing & Account',
+				description: 'Change games, hibernate a server or cancel a service.',
+				href: '/billing/',
+			},
+		]}
+	/>
+</HomeSection>
 
-<CardGrid>
-	<LinkCard title="Getting Started" description="Nitro Panel guides, server infrastructure, and onboarding." href="/docs/getting-started/" />
-	<LinkCard title="Game Servers" description="Setup guides for Minecraft, Palworld, Satisfactory, and more." href="/docs/game-servers/minecraft/" />
-	<LinkCard title="VPS Hosting" description="OS reinstall, SSH keys, snapshots, and MFA setup." href="/docs/vps/" />
-	<LinkCard title="Billing & Account" description="Manage your account, invoices, and billing." href="/docs/billing/" />
-</CardGrid>
+<HomeSection title="Game guides" lead="Pick your game for setup, mods, saves and settings.">
+	<GameGrid />
+</HomeSection>
 
----
-
-## Getting Help
-
-If you need support or assistance, we're always here to help! Below are the available ways to get in touch with us.
-
-### Support Options
-
-- [**Open a Ticket**](https://portal.evlbox.com/index.php?rp=/login) — **Login required** to submit a support ticket for direct assistance.
-- [**Discord Ticket Support**](https://discord.gg/rWF4hJhbaM) — **Login required** to link your Discord account or provide your support pin from **EVLBOX Portal**.
-
-### Support Hours
-**8 AM - 10 PM GMT-7 (AZ Time)**
-Please note that response times may be slower during busy periods or **US National Holidays**. Thank you for your patience!
-
----
-
-## Top Games
-
-Looking for game-specific guides? We've got you covered! Check out our detailed tutorials and setup guides for the most popular games hosted on **EVLBOX**:
-
-- [**Minecraft Hosting Guide**](/docs/game-servers/minecraft/) — Everything you need to get started with your **Minecraft server**, from installation to performance optimization.
-- [**Satisfactory Hosting Guide**](/docs/game-servers/satisfactory/) — Learn how to set up and optimize your **Satisfactory** dedicated server for the best experience.
-- [**Project Zomboid Hosting Guide**](/docs/game-servers/project-zomboid/) — Set up your **Project Zomboid server** and get tips for managing and playing in a post-apocalyptic world.
-
+<HomeSection
+	title="Need a hand?"
+	lead="Support is open 8 AM to 10 PM Arizona time (GMT-7). Replies can be slower during busy periods and US national holidays."
+>
+	<LinkTiles
+		items={[
+			{
+				title: 'Open a ticket',
+				description: 'Log in to your billing area and send us a support ticket.',
+				href: 'https://portal.evlbox.com/index.php?rp=/login',
+			},
+			{
+				title: 'Discord support',
+				description: 'Open a ticket in our Discord. Link your account, or have your support PIN from your billing area ready.',
+				href: 'https://discord.gg/rWF4hJhbaM',
+			},
+		]}
+	/>
+</HomeSection>

@@ -147,6 +147,7 @@ export default defineConfig({
 				{
 					label: 'Game Servers',
 					items: [
+						{ label: 'All Games', slug: 'game-servers' },
 						{
 							label: 'Minecraft',
 							collapsed: true,

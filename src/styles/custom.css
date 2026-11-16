@@ -80,20 +80,20 @@ nav a:hover {
 }
 
 /* ===== BUTTONS / CTA ===== */
-/* Primary CTA — filled cyan */
-.sl-link-button[data-variant="primary"],
-a.sl-link-button:not([data-variant]),
-.hero .sl-link-button:first-of-type {
-  background-color: #00d4ff;
-  color: #090540;
-  border: 1px solid #00d4ff;
+/* Starlight marks the variant with a class: .primary, .secondary, .minimal */
+.sl-link-button {
   font-weight: 600;
   transition: all 0.2s ease;
 }
 
-.sl-link-button[data-variant="primary"]:hover,
-a.sl-link-button:not([data-variant]):hover,
-.hero .sl-link-button:first-of-type:hover {
+/* Primary CTA — filled cyan */
+.sl-link-button.primary {
+  background-color: #00d4ff;
+  color: #090540;
+  border: 1px solid #00d4ff;
+}
+
+.sl-link-button.primary:hover {
   background-color: #33ddff;
   border-color: #33ddff;
   box-shadow: 0 0 20px rgba(0, 212, 255, 0.4);
@@ -101,23 +101,20 @@ a.sl-link-button:not([data-variant]):hover,
 }
 
 /* Secondary CTA — outlined cyan */
-.sl-link-button[data-variant="secondary"],
-.hero .sl-link-button:last-of-type {
+.sl-link-button.secondary {
   background-color: transparent;
   color: #00d4ff;
   border: 1px solid #00d4ff;
-  font-weight: 600;
-  transition: all 0.2s ease;
 }
 
-.sl-link-button[data-variant="secondary"]:hover,
-.hero .sl-link-button:last-of-type:hover {
+.sl-link-button.secondary:hover {
   background-color: rgba(0, 212, 255, 0.1);
   box-shadow: 0 0 15px rgba(0, 212, 255, 0.25);
+  color: #00d4ff;
 }
 
 /* Minimal variant */
-.sl-link-button[data-variant="minimal"] {
+.sl-link-button.minimal {
   color: #00d4ff;
 }
 
@@ -133,6 +130,13 @@ a.sl-link-button:not([data-variant]):hover,
   background: radial-gradient(ellipse at top, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
 }
 
+/* Starlight's default leaves a very tall gap under the hero on desktop */
+@media (min-width: 50rem) {
+  .hero {
+    padding-block: clamp(2.5rem, 8vmin, 6rem) 3rem;
+  }
+}
+
 /* ===== CODE BLOCKS ===== */
 .expressive-code {
   --code-background: #06032d;
@@ -145,6 +149,12 @@ hr,
 }
 
 /* ===== SCROLLBAR ===== */
+/* Firefox */
+:root {
+  scrollbar-color: #282840 #090540;
+}
+
+/* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;

@@ -1,0 +1,44 @@
+---
+/**
+ * A titled block on the landing page. Renders its own heading so the page
+ * doesn't pick up the anchor-link icons that Markdown headings get.
+ *
+ *   <HomeSection title="Game guides" lead="Optional one-line intro.">
+ *     ...
+ *   </HomeSection>
+ */
+const { title, lead } = Astro.props;
+---
+
+<section class="home-section not-content">
+	<header>
+		<h2>{title}</h2>
+		{lead && <p>{lead}</p>}
+	</header>
+	<slot />
+</section>
+
+<style>
+	.home-section {
+		margin-top: 3.5rem;
+	}
+
+	.home-section:first-of-type {
+		margin-top: 1rem;
+	}
+
+	.home-section header {
+		margin-bottom: 1.1rem;
+	}
+
+	.home-section h2 {
+		font-size: var(--sl-text-2xl);
+		line-height: 1.2;
+	}
+
+	.home-section header p {
+		margin-top: 0.35rem;
+		max-width: 60ch;
+		color: var(--sl-color-gray-2);
+	}
+</style>
