@@ -147,6 +147,7 @@ export default defineConfig({
 				{
 					label: 'Game Servers',
 					items: [
+						{ label: 'All Games', slug: 'game-servers' },
 						{
 							label: 'Minecraft',
 							collapsed: true,
@@ -343,6 +344,7 @@ export default defineConfig({
 					label: 'Billing & Account',
 					items: [
 						{ label: 'Overview', slug: 'billing' },
+						{ label: 'Server Hibernation', slug: 'billing/hibernation' },
 					],
 				},
 				{
