@@ -1,0 +1,25 @@
+---
+/**
+ * Links to the panels, billing and support.
+ *
+ * Replaces Starlight's SocialIcons slot, so it renders in two places: the
+ * right side of the desktop header, and the footer of the mobile menu. The
+ * default social icons are kept and rendered after the links.
+ *
+ * Styles live in src/styles/custom.css under "HEADER LINKS", because the
+ * layout depends on which of those two places it is rendered in.
+ */
+import Default from '@astrojs/starlight/components/SocialIcons.astro';
+
+const links = [
+	{ label: 'Game Panel', href: 'https://nitro.evlbox.com' },
+	{ label: 'VPS Panel', href: 'https://vf.evlbox.com' },
+	{ label: 'Billing', href: 'https://portal.evlbox.com/clientarea.php' },
+	{ label: 'Support', href: 'https://evlbox.com/help' },
+];
+---
+
+<nav class="site-links" aria-label="EVLBOX">
+	{links.map((link) => <a href={link.href} target="_blank" rel="noopener">{link.label}</a>)}
+</nav>
+<span class="site-links__social"><Default /></span>

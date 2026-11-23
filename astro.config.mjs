@@ -38,6 +38,7 @@ export default defineConfig({
 			components: {
 				ThemeSelect: './src/components/EmptyThemeSelect.astro',
 				ThemeProvider: './src/components/DarkThemeProvider.astro',
+				SocialIcons: './src/components/HeaderLinks.astro',
 			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/evlbox/docs' },
@@ -48,6 +49,11 @@ export default defineConfig({
 				baseUrl: 'https://github.com/evlbox/docs/edit/main/',
 			},
 			customCss: [
+				'@fontsource/poppins/400.css',
+				'@fontsource/poppins/500.css',
+				'@fontsource/poppins/600.css',
+				'@fontsource/poppins/700.css',
+				'@fontsource-variable/jetbrains-mono',
 				'./src/styles/custom.css',
 			],
 			favicon: '/favicon.ico',
@@ -118,14 +124,6 @@ export default defineConfig({
 			],
 			sidebar: [
 				{
-					label: 'Quick Links',
-					items: [
-						{ label: 'Game Panel (Nitro)', link: 'https://nitro.evlbox.com', attrs: { target: '_blank' } },
-						{ label: 'VPS Panel (VirtFusion)', link: 'https://vf.evlbox.com', attrs: { target: '_blank' } },
-						{ label: 'Help & Support', link: 'https://evlbox.com/help', attrs: { target: '_blank' } },
-					],
-				},
-				{
 					label: 'Getting Started',
 					items: [
 						{ label: 'Overview', slug: 'getting-started' },
@@ -149,6 +147,59 @@ export default defineConfig({
 					label: 'Game Servers',
 					items: [
 						{ label: 'All Games', slug: 'game-servers' },
+						// Keep the games in alphabetical order.
+						{
+							label: '7 Days to Die',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/7-days-to-die' },
+								{ label: 'How to Connect', slug: 'game-servers/7-days-to-die/how-to-connect' },
+								{ label: 'Install Mods', slug: 'game-servers/7-days-to-die/install-mods' },
+								{ label: 'Server Settings', slug: 'game-servers/7-days-to-die/server-settings' },
+							],
+						},
+						{
+							label: 'Enshrouded',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/enshrouded' },
+								{ label: 'How to Connect', slug: 'game-servers/enshrouded/how-to-connect' },
+								{ label: 'Server Settings', slug: 'game-servers/enshrouded/server-settings' },
+								{ label: 'Admin, Friend and Guest Roles', slug: 'game-servers/enshrouded/server-roles' },
+								{ label: 'Quest Progression', slug: 'game-servers/enshrouded/quest-progression' },
+							],
+						},
+						{
+							label: 'Factorio',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/factorio' },
+								{ label: 'Connect to Server', slug: 'game-servers/factorio/connect-to-server' },
+								{ label: 'Admin Access', slug: 'game-servers/factorio/admin' },
+								{ label: 'Install Mods', slug: 'game-servers/factorio/install-mods' },
+								{ label: 'Upload Save', slug: 'game-servers/factorio/upload-save' },
+							],
+						},
+						{
+							label: 'Foundry',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/foundry' },
+								{ label: 'How to Connect', slug: 'game-servers/foundry/how-to-connect-to-foundry' },
+								{ label: 'Add Mods', slug: 'game-servers/foundry/how-to-add-mods' },
+								{ label: 'Mod Syncing Collections', slug: 'game-servers/foundry/create-collection-for-mod-syncing' },
+								{ label: 'Manage Backups', slug: 'game-servers/foundry/manage-automated-backups' },
+								{ label: 'Transfer Singleplayer Save', slug: 'game-servers/foundry/transfer-singleplayer-save' },
+							],
+						},
+						{
+							label: 'Hytale',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/hytale' },
+								{ label: 'Download & Install', slug: 'game-servers/hytale/download-install-hytale-server' },
+							],
+						},
 						{
 							label: 'Minecraft',
 							collapsed: true,
@@ -180,29 +231,19 @@ export default defineConfig({
 								{ label: 'Xbox Server', slug: 'game-servers/palworld/xbox-server' },
 							],
 						},
-						// Schedule I docs are draft: true. They were written for a launch that never happened.
-						// If it ever launches, remove draft from those pages and add a sidebar group here.
 						{
-							label: 'Enshrouded',
+							label: 'Project Zomboid',
 							collapsed: true,
 							items: [
-								{ label: 'Overview', slug: 'game-servers/enshrouded' },
-								{ label: 'How to Connect', slug: 'game-servers/enshrouded/how-to-connect' },
-								{ label: 'Server Settings', slug: 'game-servers/enshrouded/server-settings' },
-								{ label: 'Admin, Friend and Guest Roles', slug: 'game-servers/enshrouded/server-roles' },
-								{ label: 'Quest Progression', slug: 'game-servers/enshrouded/quest-progression' },
-							],
-						},
-						{
-							label: 'Foundry',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/foundry' },
-								{ label: 'How to Connect', slug: 'game-servers/foundry/how-to-connect-to-foundry' },
-								{ label: 'Add Mods', slug: 'game-servers/foundry/how-to-add-mods' },
-								{ label: 'Mod Syncing Collections', slug: 'game-servers/foundry/create-collection-for-mod-syncing' },
-								{ label: 'Manage Backups', slug: 'game-servers/foundry/manage-automated-backups' },
-								{ label: 'Transfer Singleplayer Save', slug: 'game-servers/foundry/transfer-singleplayer-save' },
+								{ label: 'Overview', slug: 'game-servers/project-zomboid' },
+								{ label: 'How to Connect', slug: 'game-servers/project-zomboid/how-to-connect' },
+								{ label: 'Build 41 vs Build 42', slug: 'game-servers/project-zomboid/build-41-vs-build-42' },
+								{ label: 'Set Server Password', slug: 'game-servers/project-zomboid/set-server-password' },
+								{ label: 'Admin Permissions', slug: 'game-servers/project-zomboid/admin-permissions' },
+								{ label: 'Admin Panel', slug: 'game-servers/project-zomboid/admin-panel' },
+								{ label: 'Install Mods', slug: 'game-servers/project-zomboid/mod-installation' },
+								{ label: 'Troubleshooting Mods', slug: 'game-servers/project-zomboid/troubleshooting-mods' },
+								{ label: 'Upload Singleplayer World', slug: 'game-servers/project-zomboid/singleplayer-copy' },
 							],
 						},
 						{
@@ -221,55 +262,6 @@ export default defineConfig({
 							],
 						},
 						{
-							label: 'Vintage Story',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/vintage-story' },
-								{ label: 'Getting Started', slug: 'game-servers/vintage-story/getting-started' },
-								{ label: 'Server Configuration', slug: 'game-servers/vintage-story/server-configuration' },
-								{ label: 'Mods', slug: 'game-servers/vintage-story/mods' },
-								{ label: 'World Management', slug: 'game-servers/vintage-story/world-management' },
-								{ label: 'Maintenance', slug: 'game-servers/vintage-story/maintenance' },
-							],
-						},
-						{
-							label: 'Project Zomboid',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/project-zomboid' },
-								{ label: 'How to Connect', slug: 'game-servers/project-zomboid/how-to-connect' },
-								{ label: 'Build 41 vs Build 42', slug: 'game-servers/project-zomboid/build-41-vs-build-42' },
-								{ label: 'Set Server Password', slug: 'game-servers/project-zomboid/set-server-password' },
-								{ label: 'Admin Permissions', slug: 'game-servers/project-zomboid/admin-permissions' },
-								{ label: 'Admin Panel', slug: 'game-servers/project-zomboid/admin-panel' },
-								{ label: 'Install Mods', slug: 'game-servers/project-zomboid/mod-installation' },
-								{ label: 'Troubleshooting Mods', slug: 'game-servers/project-zomboid/troubleshooting-mods' },
-								{ label: 'Upload Singleplayer World', slug: 'game-servers/project-zomboid/singleplayer-copy' },
-							],
-						},
-						{
-							label: 'Valheim',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/valheim' },
-								{ label: 'How to Connect', slug: 'game-servers/valheim/how-to-connect' },
-								{ label: 'Server Settings', slug: 'game-servers/valheim/server-settings' },
-								{ label: 'Move a Singleplayer World', slug: 'game-servers/valheim/import-singleplayer-world' },
-								{ label: 'Switch to BepInEx', slug: 'game-servers/valheim/switch-to-bepinex' },
-							],
-						},
-						{
-							label: 'Factorio',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/factorio' },
-								{ label: 'Connect to Server', slug: 'game-servers/factorio/connect-to-server' },
-								{ label: 'Admin Access', slug: 'game-servers/factorio/admin' },
-								{ label: 'Install Mods', slug: 'game-servers/factorio/install-mods' },
-								{ label: 'Upload Save', slug: 'game-servers/factorio/upload-save' },
-							],
-						},
-						{
 							label: 'Sons of the Forest',
 							collapsed: true,
 							items: [
@@ -277,24 +269,6 @@ export default defineConfig({
 								{ label: 'Connect to Server', slug: 'game-servers/sons-of-the-forest/connect-to-server' },
 								{ label: 'Manage Admins', slug: 'game-servers/sons-of-the-forest/manage-admins' },
 								{ label: 'Upload Saves', slug: 'game-servers/sons-of-the-forest/upload-saves' },
-							],
-						},
-						{
-							label: 'Hytale',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/hytale' },
-								{ label: 'Download & Install', slug: 'game-servers/hytale/download-install-hytale-server' },
-							],
-						},
-						{
-							label: 'Tower Unite',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/towerunite' },
-								{ label: 'Setup Condo Server', slug: 'game-servers/towerunite/how-to-setup-condo' },
-								{ label: 'Condo Maps & Save Files', slug: 'game-servers/towerunite/condo-maps' },
-								{ label: 'Known Issues', slug: 'game-servers/towerunite/known-issues' },
 							],
 						},
 						{
@@ -309,6 +283,39 @@ export default defineConfig({
 							],
 						},
 						{
+							label: 'Tower Unite',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/towerunite' },
+								{ label: 'Setup Condo Server', slug: 'game-servers/towerunite/how-to-setup-condo' },
+								{ label: 'Condo Maps & Save Files', slug: 'game-servers/towerunite/condo-maps' },
+								{ label: 'Known Issues', slug: 'game-servers/towerunite/known-issues' },
+							],
+						},
+						{
+							label: 'Valheim',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/valheim' },
+								{ label: 'How to Connect', slug: 'game-servers/valheim/how-to-connect' },
+								{ label: 'Server Settings', slug: 'game-servers/valheim/server-settings' },
+								{ label: 'Move a Singleplayer World', slug: 'game-servers/valheim/import-singleplayer-world' },
+								{ label: 'Switch to BepInEx', slug: 'game-servers/valheim/switch-to-bepinex' },
+							],
+						},
+						{
+							label: 'Vintage Story',
+							collapsed: true,
+							items: [
+								{ label: 'Overview', slug: 'game-servers/vintage-story' },
+								{ label: 'Getting Started', slug: 'game-servers/vintage-story/getting-started' },
+								{ label: 'Server Configuration', slug: 'game-servers/vintage-story/server-configuration' },
+								{ label: 'Mods', slug: 'game-servers/vintage-story/mods' },
+								{ label: 'World Management', slug: 'game-servers/vintage-story/world-management' },
+								{ label: 'Maintenance', slug: 'game-servers/vintage-story/maintenance' },
+							],
+						},
+						{
 							label: 'Windrose',
 							collapsed: true,
 							items: [
@@ -318,16 +325,8 @@ export default defineConfig({
 								{ label: 'World & Save Management', slug: 'game-servers/windrose/world-save-management' },
 							],
 						},
-						{
-							label: '7 Days to Die',
-							collapsed: true,
-							items: [
-								{ label: 'Overview', slug: 'game-servers/7-days-to-die' },
-								{ label: 'How to Connect', slug: 'game-servers/7-days-to-die/how-to-connect' },
-								{ label: 'Install Mods', slug: 'game-servers/7-days-to-die/install-mods' },
-								{ label: 'Server Settings', slug: 'game-servers/7-days-to-die/server-settings' },
-							],
-						},
+						// Schedule I docs are draft: true. They were written for a launch that never happened.
+						// If it ever launches, remove draft from those pages and add a sidebar group here.
 					],
 				},
 				{
@@ -346,12 +345,6 @@ export default defineConfig({
 					items: [
 						{ label: 'Overview', slug: 'billing' },
 						{ label: 'Server Hibernation', slug: 'billing/hibernation' },
-					],
-				},
-				{
-					label: 'Resources',
-					items: [
-						{ label: 'Formatting Guide', slug: 'formatting-guide' },
 					],
 				},
 			],

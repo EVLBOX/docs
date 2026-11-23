@@ -1,7 +1,9 @@
 ﻿---
-title: "How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves"
+title: "How to Unclaim or Reset Your Satisfactory Server"
 description: "Learn how to reset or unclaim your Satisfactory server, change the admin password, and modify settings without wiping your save files. Follow this guide to manage your server safely."
 head:
+  - tag: title
+    content: "How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves | EVLBOX Docs"
   - tag: meta
     attrs:
       name: "keywords"

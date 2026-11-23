@@ -1,7 +1,9 @@
 ---
-title: "How to Manage Satisfactory Saves | Set Autosave Intervals and Save Settings | EVLBOX"
+title: "How to Manage Satisfactory Saves"
 description: "Learn how to manage your Satisfactory saves and configure autosave intervals on EVLBOX Game Server. Follow these simple steps to optimize your save settings."
 head:
+  - tag: title
+    content: "How to Manage Satisfactory Saves | Set Autosave Intervals and Save Settings | EVLBOX | EVLBOX Docs"
   - tag: meta
     attrs:
       name: "keywords"

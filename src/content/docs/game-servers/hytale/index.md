@@ -1,5 +1,5 @@
 ﻿---
-title: "Hytale Sever Guide"
+title: "Hytale Server Guide"
 description: "A guide for helping EVLBOX customers with their hytale server"
 ---
 
