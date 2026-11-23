@@ -3,8 +3,6 @@ title: Getting Started
 description: Learn the basics of using your EVLBOX game server or VPS, from initial setup to daily management.
 ---
 
-# Getting Started with EVLBOX
-
 Welcome to EVLBOX! This section covers everything you need to know to get up and running with your game server or VPS.
 
 ## What's Covered

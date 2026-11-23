@@ -1,0 +1,10 @@
+---
+// The site is dark-only. Starlight's default provider switches to its light
+// theme for visitors whose system is set to light. Our background stays dark,
+// but note and warning boxes turn cream with pale text and become unreadable.
+// Always use the dark theme instead.
+---
+
+<script is:inline>
+	document.documentElement.dataset.theme = 'dark';
+</script>

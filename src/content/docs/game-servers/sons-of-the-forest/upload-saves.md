@@ -3,12 +3,10 @@ title: "Upload SOTF Save to a server"
 description: "Discover how to upload your singleplayer sons of the forest save to a dedicated server so that you can play online with your friends"
 ---
 
-# Upload an existing save file
-
 :::caution
 If you've been playing peer-to-peer with others, you'll need to ask the host to send you their save. While all players have a copy of their inventory, only the host player has the complete save files. If you skip this part you may lose your buildings and structures.
 :::
-### Upload your local save via SFTP to Save Slot 2
+## Upload your local save via SFTP to Save Slot 2
 
 We suggest using [Cyberduck](https://cyberduck.io/download/ "Cyberduck Download page") (it's free) for this tutorial. The built in file manager in nitro panel can't upload multiple files at a time or folders. 
 
@@ -45,7 +43,7 @@ We suggest using [Cyberduck](https://cyberduck.io/download/ "Cyberduck Download 
 
 ![finish](/docs/sotf/finished.jpg)
 
-### Update your dedicatedserver.cfg 
+## Update your dedicatedserver.cfg 
 
 You must now tell your dedicated server to use Save slot 2 with your existing save data. 
 

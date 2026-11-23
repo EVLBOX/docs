@@ -3,8 +3,6 @@ title: "Reset Root Password"
 description: "How to reset root password on a virtfusion VPS"
 ---
 
-# Changing the Root Password
-
 ## Login To The Panel
 
 Below is the client login URL for the VPS Panel

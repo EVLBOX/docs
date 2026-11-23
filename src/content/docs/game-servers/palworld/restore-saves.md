@@ -3,7 +3,6 @@ title: "How to Restore Saves from the Server Backup"
 description: "How to Restore Save Data from Server Backups"
 ---
 
-# How to Restore Saves from Server Backups
 If your save game data ever gets lost or corrupted due to the server crashing, you can restore your data from the automated server backups.
 
 :::caution

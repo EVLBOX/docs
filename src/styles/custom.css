@@ -179,3 +179,43 @@ hr,
   font-size: 0.75em;
   opacity: 0.6;
 }
+
+/* ===== HEADING SCALE ===== */
+/* Starlight's defaults put an h2 almost as large as the page title, so long
+   section headings ran to three lines. Keep a clear step between levels. */
+:root {
+  --sl-text-h1: 1.875rem;
+  --sl-text-h2: 1.5rem;
+  --sl-text-h3: 1.25rem;
+  --sl-text-h4: 1.0625rem;
+  --sl-text-h5: 1rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --sl-text-h1: 2.25rem;
+    --sl-text-h2: 1.625rem;
+    --sl-text-h3: 1.3125rem;
+    --sl-text-h4: 1.125rem;
+    --sl-text-h5: 1rem;
+  }
+}
+
+/* Heading anchor icons: only shown on hover on desktop, always shown on touch
+   screens. Keep them grey so they don't compete with the heading. */
+.sl-markdown-content .sl-anchor-link {
+  color: var(--sl-color-gray-3);
+}
+
+.sl-markdown-content .sl-anchor-link:hover {
+  color: var(--sl-color-accent);
+}
+
+/* ===== SCREENSHOTS ===== */
+/* Frame content images so dark screenshots don't bleed into the page.
+   Skipped for logos (any file with "logo" in its name), SVGs, and anything
+   given class="no-frame". */
+.sl-markdown-content img:not(:where(.not-content *, .no-frame, [src*="logo" i], [src$=".svg"])) {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+}

@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"WebPage","headline":"Tower Unite Condo Hosting | EVLBOX Server Hub","description":"Set up your Tower Unite Condo server with EVLBOX. Learn how to host, export, and manage your condo online with helpful guides and tools like Condovault.org.","url":"https://evlbox.com/docs/game-servers/towerunite/","image":"https://evlbox.com/docs/towerunite/condo_banner.jpg","imageAlt":"Tower Unite Condo Banner - EVLBOX Hosting","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-07-22","dateModified":"2026-10-24"}
 ---
 
-# **Tower Unite Condo Servers by EVLBOX**
-
 ![Tower Unite Condos Banner](/docs/towerunite/logo2.png)
 
 Welcome to our Tower Unite - Condo Hosting Wiki. Every EVLBOX condo server comes with its config file pre-filled and a save folder ready for all twelve condo maps, so the only setup left is your login tokens and admins. These guides walk you through that and through moving your single-player condo online.

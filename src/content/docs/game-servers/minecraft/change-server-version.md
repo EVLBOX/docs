@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Change Minecraft Version on Your Server | EVLBOX Hosting Guide","description":"Learn how to change the Minecraft version on your EVLBOX server. Step-by-step guide to selecting the Minecraft and Java versions, and reinstalling the server.","url":"https://evlbox.com/docs/game-servers/minecraft/change-server-version/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Minecraft Version Setup","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-03-06","dateModified":"2025-05-08"}
 ---
 
-# **How to Change Minecraft Version on Your Server**
-
 By default, your Minecraft server is set up with the latest version of **Paper**, a high-performance Minecraft server jar designed to improve game performance. Paper is an excellent choice for enhancing your server's capabilities.
 
 For the latest updates and downloads for Paper, visit the official site: [PaperMC Downloads](https://papermc.io/downloads/paper).

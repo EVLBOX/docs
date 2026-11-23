@@ -3,8 +3,6 @@ title: "Use Steam Collections to Sync Mods"
 description: "Learn how to create a Steam Collection in Foundry to sync mods with your friends. A step-by-step tutorial to ensure everyone uses the same mods on multiplayer servers."
 ---
 
-# **How to Create a Mod Collection in Foundry to Sync Mods with Friends**
-
 **Foundry** currently does not support automatically sending mods to players who join a server. This means all players must manually install and enable the same mods to ensure compatibility. If players have mods the server does not, they will be prompted to disable them (which is fine). However, if the server has mods a player lacks, they won't be able to connect.
 
 To make this easier, you can use **Steam Collections** to sync your mod list across players. Here’s how:

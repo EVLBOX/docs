@@ -3,8 +3,6 @@ title: "Create a Subdomain"
 description: "Map your game server IP to a subdomain in the Nitro Control Panel. This will make it easier for your players to join"
 ---
 
-# Using Subdomains
-
 Subdomains are a simple way to get a vanity name for your game server. Instead of players connecting with the IP address and port, they can connect with just a name like stevecraft.evlbox.io. Subdomains use SRV type DNS records so even if you don't have the default game port players won't need to enter a port number (currently only supported by minecraft)
 
 ![minecraft-join-screen-example](/docs/nitro/join.png)

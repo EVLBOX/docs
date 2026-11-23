@@ -3,7 +3,6 @@ title: "Factorio - How to Connect to Server"
 description: "How to Connect to Your Factorio Server"
 ---
 
-# How to Connect to your Factorio Server
 ## Find your Server IP Addresss
 1. In the [Nitro Panel](https://nitro.evlbox.com/) find your Factorio server and click Manage Server. 
 2. Make sure your server is running and online, then copy the full hostname.

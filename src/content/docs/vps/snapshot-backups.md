@@ -3,8 +3,6 @@ title: "Creating Snapshot Backups"
 description: "How to take snapshot backups in virtfusion"
 ---
 
-# Snapshot Backups
-
 Snapshot backups capture an image of the state of your VPS's hard drive. EVLBOX stores snapshot backups off-site on remote storage to increase the possibility of restoring VPS's should a catastophic event occur. 
 
 ## Login To The Panel

@@ -3,7 +3,6 @@ title: "How to Install Factorio Mods"
 description: "How to Install Mods on Your Factorio Server"
 ---
 
-# How to Install Mods on your Factorio Server
 There are tons of free mods available directly through Factorio. Add some to customize your factory playthrough!
 
 ## Install Mods

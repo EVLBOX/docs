@@ -5,8 +5,6 @@ description: "Create and manage a MySQL database for your game server through th
 
 import { Aside } from '@astrojs/starlight/components';
 
-# MySQL Databases
-
 Some EVLBOX game server plans (including **Minecraft** and **TF2**) include access to a **MySQL database** powered by MariaDB. You can create and manage your database directly from the Nitro Control Panel, and access it through our web-based database manager.
 
 ---

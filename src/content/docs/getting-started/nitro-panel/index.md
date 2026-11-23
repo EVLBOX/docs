@@ -4,15 +4,15 @@ description: "View our user-friendly and powerful game server interface, deliver
 ---
 
 <p align="center">
-  <img src="https://wiki.evlbox.com/nitro/nitro-panel-text.png.webp" width="371" height="71" alt="Nitro Control Panel Logo"/><br><br>
-  <img src="https://wiki.evlbox.com/nitro/nitro-panel.png.webp" width="600" height="365" alt="Nitro Control Panel Logo"/>
+  <img class="no-frame" src="/docs/nitro/nitro-panel-text.png.webp" width="371" height="71" alt="Nitro Control Panel Logo"/><br><br>
+  <img src="/docs/nitro/nitro-panel.png.webp" width="600" height="365" alt="Nitro Control Panel Logo"/>
 </p>
 
 The Nitro Control Panel, crafted by EVLBOX, stands as a user-friendly and robust game server control interface. Engineered for exceptional performance, it seamlessly integrates intuitive features, ensuring effortless management of your game server.
 
 All Game Servers, Discord Bots, and applications use the Nitro Control Panel to give you access to quickly manage your game server. 
 
-# Articles
+## Articles
  [**Adding Ports**](/docs/getting-started/nitro-panel/port-configuration) - Add ports to your game server for third party applications like dynmap/bluemap etc. 
 
  [**Creating Backups**](/docs/getting-started/nitro-panel/creating-backups) - Create a backup snapshot of your entire game server to our off-site remote storage

@@ -37,6 +37,7 @@ export default defineConfig({
 			disable404Route: false,
 			components: {
 				ThemeSelect: './src/components/EmptyThemeSelect.astro',
+				ThemeProvider: './src/components/DarkThemeProvider.astro',
 			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/evlbox/docs' },

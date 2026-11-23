@@ -3,8 +3,6 @@ title: "Add SSH keys to VPS on creation"
 description: "Automatically add SSH keys to your VPS upon creation."
 ---
 
-# Adding an SSH key
-
 ## Login To The Panel
 
 Below is the client login for the VPS Panel

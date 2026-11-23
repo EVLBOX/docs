@@ -3,7 +3,6 @@ title: "How to Upload a Game Save"
 description: "Upload a Save to your factorio server"
 ---
 
-# How to Upload a game save to your Factorio Server
 Play your favorite factory with friends!
 
 ## Find your Save Game File and Upload it

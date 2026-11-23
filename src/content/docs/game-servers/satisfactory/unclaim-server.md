@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Unclaim or Reset Your Satisfactory Server | Change Admin Password and Settings Without Wiping Saves","description":"Learn how to reset or unclaim your Satisfactory server, change the admin password, and modify settings without wiping your save files. Follow this guide to manage your server safely.","url":"https://evlbox.com/docs/game-servers/satisfactory/unclaim-server/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Desert Outpost","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2025-05-08"}
 ---
 
-#  Unclaim - Reset Admin Password -- Satisfactory
-
 When you first join the server, you set an admin password and choose a server name. To undo this and be able to create a new server, you will need to unclaim the server. This will not delete any save files on the server. 
 
 1. Login to [nitro.evlbox.com](https://nitro.evlbox.com) and find your server. 

@@ -57,11 +57,9 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Install Minecraft Modpacks on Your Server | EVLBOX Guide","description":"Learn how to easily install modpacks on your EVLBOX Minecraft server. Step-by-step guide to customize your server with the latest mods and modpacks.","url":"https://evlbox.com/docs/game-servers/minecraft/modpacks/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"EVLBOX Minecraft Server Logo - Modpack Installation","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-03-06","dateModified":"2025-05-08"}
 ---
 
-# **How to Install Minecraft Modpacks on Your Server**
-
 Installing modpacks on your **EVLBOX Minecraft server** is a simple and straightforward process. Follow the steps below to enhance your Minecraft experience by customizing your server with the modpacks of your choice.
 
-### **Step-by-Step Guide to Install Modpacks**
+## **Step-by-Step Guide to Install Modpacks**
 
 1. **Log in to the Nitro Panel**:
    - Start by logging into the **[EVLBOX Nitro Panel](https://nitro.evlbox.com)** with your account credentials.
@@ -95,7 +93,7 @@ Installing modpacks on your **EVLBOX Minecraft server** is a simple and straight
 
 ---
 
-### **Why Install Modpacks?**
+## **Why Install Modpacks?**
 Modpacks allow you to significantly enhance your Minecraft server by adding new gameplay features, mechanics, and customization options. Whether you want to improve the performance, add new items, or change the entire playstyle, modpacks give you the flexibility to do so.
 
 ---

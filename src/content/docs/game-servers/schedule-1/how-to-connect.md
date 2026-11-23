@@ -4,8 +4,6 @@ description: "Install MelonLoader and the S1 client mod to connect to your Sched
 draft: true
 ---
 
-# How to Connect
-
 To join a Schedule I dedicated server, you need two things installed on your game client:
 
 1. **[MelonLoader](https://github.com/LavaGang/MelonLoader)** — the mod loader that injects mods into Schedule I

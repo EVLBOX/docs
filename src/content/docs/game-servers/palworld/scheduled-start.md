@@ -3,7 +3,6 @@ title: "How to Schedule Automatic Server Start"
 description: "How to setup automatic server start on your palworld server"
 ---
 
-# How to Schedule Automatic Server Starts
 Several people have been experiencing issues from memory leaks, one potential fix for this is to create a schedule to automatically start the server every 8-12 hours. 
 If patches or new versions are released, your server will need to be restarted. You can also schedule automatic restarts to run at a specific time each day. 
 

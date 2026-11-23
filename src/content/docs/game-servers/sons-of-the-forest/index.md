@@ -3,8 +3,6 @@ title: "SOTF-Dedicated Server Guide"
 description: "The Ultimate guide on how to setup and manage a Sons of the Forest Dedicated server"
 ---
 
-# Sons of the Forest Dedicated Server Guide
-
 ![puff.jpg](/docs/sotf/puff.jpg)
 
 Embark on a thrilling quest to locate a vanished billionaire on an isolated island, where you'll navigate a perilous landscape teeming with cannibals. Challenge yourself to craft, build, and endure in a chilling open-world survival horror simulator, whether you brave the journey solo or team up with friends. Unleash your survival instincts in this harrowing adventure!
