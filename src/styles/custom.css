@@ -326,9 +326,17 @@ hr,
 }
 
 .sidebar-content ul ul summary .large {
-  font-size: var(--sl-text-sm);
+  font-size: var(--sl-text-base);
   font-weight: 500;
   color: var(--sl-color-gray-1);
+}
+
+/* Match the size of the page links beside them: larger in the mobile menu,
+   smaller in the desktop sidebar. */
+@media (min-width: 50rem) {
+  .sidebar-content ul ul summary .large {
+    font-size: var(--sl-text-sm);
+  }
 }
 
 .sidebar-content ul ul summary:hover .large {
@@ -399,4 +407,21 @@ starlight-toc a[aria-current='true'] {
   .pagination-links [rel='next'] {
     grid-column: 2;
   }
+}
+
+/* ===== MOBILE MENU BUTTON ===== */
+/* Starlight's default is a solid white circle, the brightest thing on the
+   page. Match the dark, thin-bordered controls used elsewhere. */
+.sl-menu-button {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--sl-color-white);
+  box-shadow: none;
+}
+
+.sl-menu-button:has(~ :popover-open) {
+  border-color: var(--sl-color-accent);
+  background-color: rgba(0, 212, 255, 0.1);
+  color: var(--sl-color-accent);
 }
