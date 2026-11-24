@@ -3,8 +3,6 @@ title: "Creating Backups"
 description: "How to create backups in the Nitro Control Panel"
 ---
 
-# Backups
-
 It's important to backup your hard work! Use our backups feature to store multiple copies of your game server so that you can quickly recover or revert back to an older version.
 
 ## Backup Slots

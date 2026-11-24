@@ -3,7 +3,7 @@ title: "Billing"
 description: "Learn how to upgrade or downgrade your hosting services."
 ---
 
-# Change Games
+## Change Games
 
 
 :::caution
@@ -28,7 +28,7 @@ If a payment is due, the upgrade will occur immedietly after the payment is coll
 :::tip
 Not all games are eligible for automatic game changing. Currently game location can not be changed automatically. For assistance please contact [support](https://evlbox.com/help)
 :::
-### Cancel a Service
+## Cancel a Service
 
 :::tip[Taking a break?]
 You don't have to cancel to stop paying for a full server. [Hibernation](/docs/billing/hibernation/) keeps your world, files and server address for a small monthly fee until you want to play again. Hibernate before you request a cancellation: once one is submitted, the Hibernate button is no longer shown for that server.

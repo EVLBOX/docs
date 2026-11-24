@@ -3,8 +3,6 @@ title: "Secure your VPS Control Panel account with MFA"
 description: "Add MFA to your virtualizor account for additional security"
 ---
 
-# MFA VPS
-
 ## Login To The Panel
 
 Below is the client login for the VPS Panel

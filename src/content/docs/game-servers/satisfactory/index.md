@@ -3,7 +3,6 @@ title: "Satisfactory Game Server Hosting"
 description: "Guides on how to run a successful Satisfactory server"
 ---
 
-# **Satisfactory Hosting with EVLBOX**
 ![Satisfactory Game Logo](/docs/satisfactory/satisfactory_logo.webp)
 
 **Satisfactory** is an open-world, first-person game that combines **factory construction** with exploration and combat. Whether you're playing solo or with friends, dive into an **alien planet**, build massive factories, and master the art of **conveyor belt engineering**!

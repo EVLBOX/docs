@@ -3,12 +3,10 @@ title: "Download & Install Hytale Server"
 description: "LEarn how to download and install the Hytale server"
 ---
 
-# Download and Install Hytale Server
-
 :::caution
 You must own a copy of Hytale in order to setup and use an EVLBOX Hytale server. Visit the [Hytale Store](https://store.hytale.com/) to purchase a copy.
 :::
-### Authenticate the Installer and Download Server
+## Authenticate the Installer and Download Server
 
 After [ordering](https://evlbox.com/games/hytale) your Hytale server, sign into the EVLBOX Nitro Panel
 
@@ -27,7 +25,7 @@ After [ordering](https://evlbox.com/games/hytale) your Hytale server, sign into 
 
 ![hytale-booted](/docs/hytale/booted.png)
 
-### Authenticate your Hytale Server
+## Authenticate your Hytale Server
 
 This binds your Hytale account to your game server as required by [Hytale's server documentation](https://support.hytale.com/hc/en-us/articles/45326769420827-Hytale-Server-Manual). 
 
@@ -50,7 +48,7 @@ This step is critically important! If you skip this step you will have to authen
 
 ![hytale-store](/docs/hytale/store.png)
 
-### Connect to your server
+## Connect to your server
 
 1. In the Nitro panel, click into your servers' terminal screen. 
 2. On the right side you'll see `Address` click on it to copy

@@ -1,7 +1,9 @@
 ---
-title: "How to Manage Satisfactory Saves | Set Autosave Intervals and Save Settings | EVLBOX"
+title: "How to Manage Satisfactory Saves"
 description: "Learn how to manage your Satisfactory saves and configure autosave intervals on EVLBOX Game Server. Follow these simple steps to optimize your save settings."
 head:
+  - tag: title
+    content: "How to Manage Satisfactory Saves | Set Autosave Intervals and Save Settings | EVLBOX | EVLBOX Docs"
   - tag: meta
     attrs:
       name: "keywords"
@@ -49,8 +51,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Manage Satisfactory Saves | Set Autosave Intervals and Save Settings | EVLBOX","description":"Learn how to manage your Satisfactory saves and configure autosave intervals on EVLBOX Game Server. Follow these simple steps to optimize your save settings.","url":"https://evlbox.com/docs/game-servers/satisfactory/manage-saves/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2026-11-04"}
 ---
 
-#  Save File Management
-
 
 The admin of the server can use the in-game Server Manager to load and create save games with ease.
 
@@ -65,7 +65,7 @@ The admin of the server can use the in-game Server Manager to load and create sa
 Need to upload your singleplayer save? Check out our [singleplayer upload guide](/docs/game-servers/satisfactory/upload-singleplayer-save)
 :::
 
-### Download a save
+## Download a save
 
 1. Login to the [Nitro Panel](https://nitro.evlbox.com), choose your server and click **Files**.
 2. Browse to `.config/Epic/FactoryGame/Saved/SaveGames/server/`
@@ -73,7 +73,7 @@ Need to upload your singleplayer save? Check out our [singleplayer upload guide]
 
 Your server also takes automatic backups. You can control them with the [`.evlbox.toml` settings file](/docs/getting-started/nitro-panel/server-settings).
 
-### Change auto save interval
+## Change auto save interval
 
 1. From the Server Manager, choose your server and open **Server Settings**.
 2. Change **Autosave Interval**. The default is 5 minutes.
@@ -86,7 +86,7 @@ You can also set this from the console:
 
 ![console](/docs/satisfactory/console.jpg)
 
-### Change how many autosaves are kept
+## Change how many autosaves are kept
 
 1. In the Nitro Panel, open your server's **Startup** tab.
 2. Change **Rotating Autosaves**. The default is 3.

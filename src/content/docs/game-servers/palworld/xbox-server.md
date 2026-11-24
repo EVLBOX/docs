@@ -3,7 +3,6 @@ title: "Console Crossplay: Xbox and PS5"
 description: "Enable crossplay so Xbox and PS5 players can join your Palworld server"
 ---
 
-# How to Enable Console Crossplay (Xbox and PS5)
 Palworld dedicated servers now support full crossplay between Steam, Xbox, PS5, and Mac. Console players cannot type in an IP address — they can only join servers listed in the in-game **Community Servers** browser, so your server must be set as a community server for them to connect.
 
 :::caution

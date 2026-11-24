@@ -4,8 +4,6 @@ description: "Configure your Schedule I dedicated server settings — gameplay, 
 draft: true
 ---
 
-# Server Settings
-
 All server settings are managed from the **Startup** tab in the Nitro control panel. Changes are applied automatically every time your server starts — no file editing required.
 
 :::caution

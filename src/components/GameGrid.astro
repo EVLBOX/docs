@@ -11,22 +11,23 @@
  */
 import { getCollection } from 'astro:content';
 
+// Keep in alphabetical order, the same as the sidebar.
 const games = [
-	{ slug: 'satisfactory', name: 'Satisfactory' },
+	{ slug: '7-days-to-die', name: '7 Days to Die' },
+	{ slug: 'enshrouded', name: 'Enshrouded' },
+	{ slug: 'factorio', name: 'Factorio' },
+	{ slug: 'foundry', name: 'Foundry' },
+	{ slug: 'hytale', name: 'Hytale' },
 	{ slug: 'minecraft', name: 'Minecraft' },
 	{ slug: 'palworld', name: 'Palworld' },
-	{ slug: 'enshrouded', name: 'Enshrouded' },
-	{ slug: 'valheim', name: 'Valheim' },
 	{ slug: 'project-zomboid', name: 'Project Zomboid' },
-	{ slug: '7-days-to-die', name: '7 Days to Die' },
-	{ slug: 'factorio', name: 'Factorio' },
+	{ slug: 'satisfactory', name: 'Satisfactory' },
 	{ slug: 'sons-of-the-forest', name: 'Sons of the Forest' },
-	{ slug: 'vintage-story', name: 'Vintage Story' },
-	{ slug: 'foundry', name: 'Foundry' },
-	{ slug: 'windrose', name: 'Windrose' },
 	{ slug: 'starrupture', name: 'StarRupture' },
 	{ slug: 'towerunite', name: 'Tower Unite' },
-	{ slug: 'hytale', name: 'Hytale' },
+	{ slug: 'valheim', name: 'Valheim' },
+	{ slug: 'vintage-story', name: 'Vintage Story' },
+	{ slug: 'windrose', name: 'Windrose' },
 ];
 
 const docs = await getCollection('docs', ({ data }) => !data.draft);

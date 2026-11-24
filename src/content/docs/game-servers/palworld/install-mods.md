@@ -3,8 +3,6 @@ title: "How to Install Mods"
 description: "Switch your Palworld server to the Proton egg to run UE4SS mods, and where to upload Lua and .pak mods once you have."
 ---
 
-# How to Use Mods on Your Palworld Server
-
 Palworld mods are built for the **Windows** dedicated server, because the mod framework the community uses — **UE4SS** — only exists for Windows. The standard Linux server can't load them at all.
 
 To run mods, switch your server to the **Palworld Proton** egg. That runs the Windows build of the dedicated server on our Linux hardware through a compatibility layer called Proton. Same game, same saves, same performance profile — it just gains the ability to load Windows mods.

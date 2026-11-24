@@ -3,7 +3,6 @@ title: "How to Change Server Settings"
 description: "How to configure your Palworld server settings from the Nitro Panel"
 ---
 
-# Server Settings
 Palworld allows players to adjust several World Settings. This can be done in game for a single player game, but for your dedicated server these are all managed from the **Startup** tab in the Nitro control panel.
 
 [How to Use the Configuration Builder](#how-to-use-the-configuration-builder)

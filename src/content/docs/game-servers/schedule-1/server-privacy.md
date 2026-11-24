@@ -4,8 +4,6 @@ description: "Configure your Schedule I server as public or private, and manage 
 draft: true
 ---
 
-# Server Privacy
-
 Schedule I servers can run in two modes. Both support setting a server password.
 
 :::tip

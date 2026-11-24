@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Manage Automated Backups in Foundry | EVLBOX Hosting Guide","description":"Understand and control your Foundry VTT server backups hosted on EVLBOX. Includes steps to verify schedules, disable backups, and download .tar.gz files.","url":"https://evlbox.com/docs/game-servers/foundry/manage-automated-backups/","image":"https://evlbox.com/docs/foundry/schedules.jpg","imageAlt":"Foundry Backup Job Schedule Screenshot","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-17","dateModified":"2025-06-17"}
 ---
 
-# **How to Check and Manage Automated Backups in Foundry**
-
 
 EVLBOX provides **automated backups** for your Foundry VTT server to help ensure your campaigns and configurations are safe, even in the event of hardware failure. These backups are created and managed with minimal user input, but knowing how they work—and how to verify or manage them—can give you greater peace of mind.
 

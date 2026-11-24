@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"How to Connect to Your FOUNDRY Server | EVLBOX Hosting Guide","description":"Learn how to connect to your FOUNDRY server hosted by EVLBOX. Follow our guide to join directly by IP or browse for your server in-game.","url":"https://evlbox.com/docs/game-servers/foundry/how-to-connect-to-foundry/","image":"https://evlbox.com/docs/foundry/foundry-multiplayer.png","imageAlt":"FOUNDRY Multiplayer Connection Menu","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-16","dateModified":"2025-06-16"}
 ---
 
-# **How to Connect to Your FOUNDRY Server**
-
 Connecting to your **FOUNDRY server** hosted by **EVLBOX** is simple, whether you prefer the **direct connection method** or using the **in-game server browser**. We recommend using the **direct method** for the most reliable experience.
 
 ---

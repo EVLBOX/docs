@@ -3,8 +3,6 @@ title: "GameSwap"
 description: "Change which game your server runs — freeze your current game into a slot, install a new one, and restore it later exactly as you left it."
 ---
 
-# GameSwap
-
 GameSwap changes which game your server runs — Minecraft today, Palworld tomorrow, back to Minecraft next month — without losing anything. Before the new game is installed, your current game can be **frozen**: its files, saves and settings are stored safely off your server so you can bring them back later, exactly as you left them.
 
 Frozen games are stored off your server and don't use your disk space.

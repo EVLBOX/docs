@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"FOUNDRY Server Hosting | Automate Your Factory with EVLBOX","description":"Host your FOUNDRY server with EVLBOX and automate your factory with ease. Enjoy mod support, cloud backups, and seamless multiplayer experience.","url":"https://evlbox.com/docs/game-servers/foundry/","image":"https://evlbox.com/docs/foundry/foundryimage.jpg","imageAlt":"FOUNDRY Factory Assembly Line","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2025-06-16","dateModified":"2025-06-16"}
 ---
 
-# **FOUNDRY Server Hosting with EVLBOX**
-
 ![FOUNDRY Assembly Line](/docs/foundry/foundryimage.jpg)
 
 Build complex factories, program logistics, and expand your robotic workforce with **FOUNDRY**, the voxel-based automation game. Host your own dedicated **FOUNDRY server** with **EVLBOX** and enjoy uninterrupted gameplay, mod support, and full save management for your massive industrial empire.

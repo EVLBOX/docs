@@ -3,7 +3,6 @@ title: "How to Set Admin Access in Factorio"
 description: "How to Grant Admin Access in the Nitro Conosole"
 ---
 
-# How to Grant Admin Access in Factorio
 Admin Access is granted by Factorio Username. Make sure you have the correct usernames for the people you would like to grant access to. 
 
 ## Grant Admin Rights

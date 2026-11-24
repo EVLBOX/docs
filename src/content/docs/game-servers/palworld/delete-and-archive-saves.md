@@ -3,8 +3,6 @@ title: "How to Delete and Archive Saved Game Data"
 description: "A how to guide to walk you through deleting saves from your server or archiving and downloading the data"
 ---
 
-# How to Delete or Archive Save Data
-
 You may want to delete your saved game data if you wish to start a new game on your server.  You can also archive your save data if you want to revert your game back to a previous save or download the data off of your server for future use. 
 
 ## How to Delete Save Data

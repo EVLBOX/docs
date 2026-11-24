@@ -3,10 +3,8 @@ title: "Admin Commands"
 description: "How to use admin commands"
 ---
 
-# How to Use Admin Commands
 
-
-### Authorize Admin Access in Game
+## Authorize Admin Access in Game
 After setting up the admin password in the console under the startup menu, complete the following steps below
 
 - Log in to your server in palworld
@@ -16,7 +14,7 @@ After setting up the admin password in the console under the startup menu, compl
 If successful, you will get a SYSTEM confirmation message
 ![successadmin.png](/docs/palworld/successadmin.png)
 
-### Admin Commands
+## Admin Commands
 
 | Command | Description |
 |---------|-------------|

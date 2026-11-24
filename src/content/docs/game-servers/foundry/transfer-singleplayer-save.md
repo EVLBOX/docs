@@ -3,8 +3,6 @@ title: "Transfer singleplayer save to Foundry Server"
 description: "Learn how to transfer your singleplayer save to your Foundry dedicated server with this easy step-by-step EVLBOX guide."
 ---
 
-# **How to Transfer a Singleplayer Save to Your Foundry Server**
-
 Want to continue your singleplayer factory world on your **Foundry dedicated server**? Follow this simple guide to migrate your save and pick up exactly where you left off—now with friends!
 
 ---

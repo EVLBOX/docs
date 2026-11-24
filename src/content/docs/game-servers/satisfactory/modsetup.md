@@ -57,8 +57,6 @@ head:
       {"@context":"http://schema.org","@type":"Article","headline":"Satisfactory Mod Setup Guide | How to Install Mods on Your Dedicated Server","description":"Step-by-step guide for adding mods to your Satisfactory dedicated server. Learn how to install the Mod Manager, configure your server, and add mods with ease.","url":"https://evlbox.com/docs/game-servers/satisfactory/modsetup/","image":"https://evlbox.com/static/images/blog/satisfactory/outpost.webp","imageAlt":"Satisfactory Mod Setup","author":{"@type":"Organization","name":"EVLBOX","url":"https://evlbox.com"},"publisher":{"@type":"Organization","name":"EVLBOX","logo":{"@type":"ImageObject","url":"https://evlbox.com/docs/favicon.png"}},"datePublished":"2024-01-04","dateModified":"2026-11-04"}
 ---
 
-# Satisfactory Mod Setup Guide
-
 :::caution
 Mods can stop working after a game update or on the experimental branch. Check that your mods are up to date on [ficsit.app](https://ficsit.app/), and [download a copy of your saves](/docs/game-servers/satisfactory/manage-saves) before you install or update them. Everyone on the server needs the same mods installed.
 :::

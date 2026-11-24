@@ -3,8 +3,6 @@ title: "Reinstall OS on a VPS"
 description: "Learn how to re-install the Operating system on a VPS with ease"
 ---
 
-# Reinstall OS
-
 ## Login To The Panel
 
 Below is the client login for the VPS Panel

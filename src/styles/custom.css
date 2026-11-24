@@ -1,10 +1,14 @@
 /* EVLBOX Custom Theme - Dark Gaming/Hosting Brand */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Fonts are bundled with the site: see customCss in astro.config.mjs. */
 
 :root {
-  /* Poppins font family */
   --sl-font: 'Poppins', system-ui, sans-serif;
-  --sl-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --sl-font-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+
+  /* Brand colours shared with evlbox.com */
+  --evl-lavender: #ada8f8;
+  --evl-orange: #e08e2d;
+  --evl-page: #090540;
 
   /* Widen content area from default 50rem */
   --sl-content-width: 55rem;
@@ -178,4 +182,246 @@ hr,
   content: ' ↗';
   font-size: 0.75em;
   opacity: 0.6;
+}
+
+/* ===== HEADING SCALE ===== */
+/* Starlight's defaults put an h2 almost as large as the page title, so long
+   section headings ran to three lines. Keep a clear step between levels. */
+:root {
+  --sl-text-h1: 1.875rem;
+  --sl-text-h2: 1.5rem;
+  --sl-text-h3: 1.25rem;
+  --sl-text-h4: 1.0625rem;
+  --sl-text-h5: 1rem;
+}
+
+@media (min-width: 50em) {
+  :root {
+    --sl-text-h1: 2.25rem;
+    --sl-text-h2: 1.625rem;
+    --sl-text-h3: 1.3125rem;
+    --sl-text-h4: 1.125rem;
+    --sl-text-h5: 1rem;
+  }
+}
+
+/* Heading anchor icons: only shown on hover on desktop, always shown on touch
+   screens. Keep them grey so they don't compete with the heading. */
+.sl-markdown-content .sl-anchor-link {
+  color: var(--sl-color-gray-3);
+}
+
+.sl-markdown-content .sl-anchor-link:hover {
+  color: var(--sl-color-accent);
+}
+
+/* ===== SCREENSHOTS ===== */
+/* Frame content images so dark screenshots don't bleed into the page.
+   Skipped for logos (any file with "logo" in its name), SVGs, and anything
+   given class="no-frame". */
+.sl-markdown-content img:not(:where(.not-content *, .no-frame, [src*="logo" i], [src$=".svg"])) {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+}
+
+/* ===== NOTE / TIP / CAUTION / DANGER BOXES ===== */
+/* Tuned to the evlbox.com palette. The "low" tint is the colour mixed into
+   the page background, so the boxes sit on the page instead of fighting it. */
+:root {
+  --sl-color-blue: #51a2ed;
+  --sl-color-blue-high: #c0ddf8;
+  --sl-color-blue-low: color-mix(in srgb, #51a2ed 16%, var(--evl-page));
+
+  --sl-color-purple: #786ff4;
+  --sl-color-purple-high: #cfcbfb;
+  --sl-color-purple-low: color-mix(in srgb, #786ff4 22%, var(--evl-page));
+
+  --sl-color-orange: var(--evl-orange);
+  --sl-color-orange-high: #f7ce96;
+  --sl-color-orange-low: color-mix(in srgb, #e08e2d 16%, var(--evl-page));
+
+  --sl-color-red: #f0606b;
+  --sl-color-red-high: #fbc4c9;
+  --sl-color-red-low: color-mix(in srgb, #f0606b 16%, var(--evl-page));
+}
+
+.starlight-aside {
+  border-radius: 10px;
+}
+
+/* ===== HEADER LINKS ===== */
+/* Rendered by src/components/HeaderLinks.astro, in the desktop header and in
+   the footer of the mobile menu. */
+.site-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.site-links a {
+  font-size: var(--sl-text-sm);
+  font-weight: 500;
+  color: var(--sl-color-gray-1);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-links a:hover {
+  color: var(--sl-color-accent);
+}
+
+.site-links__social {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* There is no theme switcher after the icons, so drop the divider line. */
+.right-group .social-icons::after {
+  display: none;
+}
+
+/* Narrower desktop widths: keep the links and drop the social icons to make
+   room. Below 50rem the header shows none of this and the links move into the
+   mobile menu. */
+@media (max-width: 64rem) {
+  .right-group .site-links {
+    gap: 1rem;
+  }
+
+  .right-group .site-links__social {
+    display: none;
+  }
+}
+
+/* Mobile menu footer: links wrap onto their own row above the icons. */
+.mobile-preferences .social-icons {
+  flex-wrap: wrap;
+  row-gap: 1.25rem;
+}
+
+.mobile-preferences .site-links {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 0.9rem 1.25rem;
+}
+
+.mobile-preferences .site-links a {
+  font-size: var(--sl-text-base);
+}
+
+/* ===== SIDEBAR GROUPS ===== */
+/* Top-level sections read as small labels; the groups inside them (one per
+   game) read as normal entries, so the list is less heavy. */
+.sidebar-content .top-level > li > details > summary .large {
+  font-size: var(--sl-text-xs);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--evl-lavender);
+}
+
+.sidebar-content .top-level > li + li {
+  margin-top: 1.25rem;
+}
+
+.sidebar-content ul ul summary .large {
+  font-size: var(--sl-text-base);
+  font-weight: 500;
+  color: var(--sl-color-gray-1);
+}
+
+/* Match the size of the page links beside them: larger in the mobile menu,
+   smaller in the desktop sidebar. */
+@media (min-width: 50rem) {
+  .sidebar-content ul ul summary .large {
+    font-size: var(--sl-text-sm);
+  }
+}
+
+.sidebar-content ul ul summary:hover .large {
+  color: var(--sl-color-white);
+}
+
+/* ===== ON THIS PAGE ===== */
+starlight-toc a {
+  color: var(--evl-lavender);
+}
+
+starlight-toc a:hover {
+  color: var(--sl-color-white);
+}
+
+starlight-toc a[aria-current='true'] {
+  color: var(--sl-color-accent);
+}
+
+/* ===== TABLES ===== */
+.sl-markdown-content th:not(:where(.not-content *)) {
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--sl-color-white);
+}
+
+.sl-markdown-content :is(th, td):not(:where(.not-content *)) {
+  border-bottom-color: var(--sl-color-hairline);
+}
+
+/* ===== PREVIOUS / NEXT ===== */
+/* Quieter than Starlight's default: same tile style as the landing page,
+   with a small label and a normal-sized title. */
+.pagination-links a {
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: none;
+  font-size: var(--sl-text-xs);
+  color: var(--sl-color-gray-3);
+  transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.pagination-links a:hover {
+  border-color: var(--sl-color-accent);
+  background: rgba(0, 212, 255, 0.07);
+  color: var(--sl-color-gray-3);
+}
+
+.pagination-links .link-title {
+  font-size: var(--sl-text-base);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pagination-links svg {
+  font-size: 1.15rem;
+  color: var(--sl-color-accent);
+}
+
+/* Keep each link to half the row, so a lone "Next" isn't a full-width bar. */
+@media (min-width: 40rem) {
+  .pagination-links {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pagination-links [rel='next'] {
+    grid-column: 2;
+  }
+}
+
+/* ===== MOBILE MENU BUTTON ===== */
+/* Starlight's default is a solid white circle, the brightest thing on the
+   page. Match the dark, thin-bordered controls used elsewhere. */
+.sl-menu-button {
+  border: 1px solid var(--sl-color-hairline);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.06);
+  color: var(--sl-color-white);
+  box-shadow: none;
+}
+
+.sl-menu-button:has(~ :popover-open) {
+  border-color: var(--sl-color-accent);
+  background-color: rgba(0, 212, 255, 0.1);
+  color: var(--sl-color-accent);
 }

@@ -3,12 +3,10 @@ title: "Giving admin rights on Sons of the Forest"
 description: "Guide on giving your players admin rights on a Sons of the Forest Dedicated Server"
 ---
 
-# Adding admin users
-
 :::note
 Admin users can kick and ban players from in-game. Only set these to people you trust!
 :::
-### Find Steam ID's
+## Find Steam ID's
 
 
 1. You'll need to find the Steam ID's of people you'd like to add to your admin list. We suggest using [SteamID.io](https://steamid.io/ "Steam ID I/O Site"). Input your steam profile name and copy the steamID. It should look like this: "STEAM_0:0:11101"
